@@ -1,0 +1,272 @@
+/* =========================================================================
+                                 Blog
+========================================================================= */
+
+/* ============================ sponsored-article ============================ */
+
+.sponsored-article {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    &__bg {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        padding: 50px 70px;
+        color: $white;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 300px;
+            width: 100%;
+            background: linear-gradient(180deg, rgba($black, 0), rgba(black, 1));
+            z-index: 2;
+        }
+    }
+    &__top-text {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    &__category,
+    &__title,
+    &__desc,
+    &__link {
+        z-index: 3;
+    }
+    &__category,
+    &__title,
+    &__link {
+        text-transform: uppercase;
+    }
+    &__category,
+    &__link {
+        font-size: 18px;
+    }
+    &__title {
+        font-size: 40px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    &__link {
+        position: relative;
+        display: inline-block;
+        color: inherit;
+        margin-top: 15px;
+        transition: .2s ease-in-out;
+        img {
+            width: 16px;
+            height: auto;
+            display: inline-block;
+            position: relative;
+            top: -2px;
+            margin-left: 5px;
+            transition: .2s ease-in-out;
+        }
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+            img {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    &__desc {
+        font-family: "Open Sans";
+        font-weight: 100;
+        font-size: 22px;
+    }
+}
+
+/* ============================ blog-list ============================ */
+
+.blog-list {
+    &__category {
+        text-transform: uppercase;
+        color: $accent-color;
+        font-size: 20px;
+    }
+    &__title {
+        color: $dark-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 15px;
+        transition: .2s;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__desc {
+        color: $grey;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 100;
+    }
+    &__info {
+        color: $black;
+        font-family: "Open Sans";
+        font-size: 12px;
+        margin-top: 15px;
+        span {
+            margin-right: 10px;
+        }
+        .comment-image {
+            width: 16px;
+            height: auto;
+        }
+    }
+}
+
+.blog-list__hr {
+    margin: 50px 0;
+    border-top: 1px solid lighten($grey, 15%);
+}
+
+.load-more-btn {
+    text-transform: uppercase;
+    color: $accent-color;
+    font-size: 18px;
+    &:hover {
+        color: $accent-color;
+        text-decoration: none;
+        img {
+            transform: rotate(-90deg);
+        }
+    }
+    img {
+        width: 16px;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        margin-left: 5px;
+        transition: .2s;
+    }
+}
+/* ============================ right column ============================ */
+
+.advertisement {
+    margin-top: -17px;
+    &__top-text {
+        text-transform: uppercase;
+        color: $black;
+        font-weight: 700;
+        font-size: 12px;
+    }
+}
+
+.blog-popular {
+    &__top-desc {
+        color: $black;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__top-link {
+        color: $accent-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        position: relative;
+        top: 8px;
+        &:hover {
+            color: $accent-color;
+            text-decoration: none;
+        }
+        img {
+            width: 16px;
+            height: auto;
+            display: inline-block;
+            position: relative;
+            top: -2px;
+            margin-left: 5px;
+        }
+    }
+    &__hr {
+        margin: 10px 0;
+    }
+    &__category {
+        color: $accent-color;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        a {
+            color: inherit;
+            transition: .2s;
+            &:hover {
+                text-decoration: none;
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+.sorted {
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            position: relative;
+            ul {
+                display: none;
+                position: absolute;
+                z-index: 3;
+                width: 100%;
+                margin-top: 10px;
+                text-align: right;
+                border: 1px solid $accent-color;
+                &:after {
+                    content: '';
+                    top: -5px;
+                    right: 2px;
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 5px 5px 5px;
+                    border-color: transparent transparent $accent-color transparent;
+                }
+                li {
+                    a {
+                        background: $accent-color;
+                        color: $white;
+                        text-shadow: 0 0 5px rgba($black, .2);
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        display: block;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-right: 25px;
+                    }
+                }
+            }
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+        }
+    }
+}

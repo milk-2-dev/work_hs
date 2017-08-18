@@ -1,0 +1,187 @@
+.chat-modal {
+    top: 19px;
+    .modal-dialog {
+        width: 100%;
+        max-width: 1533px;
+    }
+    .modal-header {
+        border-bottom: 1px solid darken($white, 20%);
+    }
+    .chat-modal__column-wrapper {
+        display: flex;
+    }
+    .chat-modal__column-1 {
+        width: 400px;
+        border-right: 1px solid darken($white, 20%);
+    }
+    .chat-modal__column-2 {
+        width: calc(100% - 400px);
+        padding: 15px;
+    }
+    .left-chats-list {
+        display: flex;
+        flex-direction: column;
+        li a {
+            margin-right: 0px;
+            border: none;
+            padding: 10px 0;
+            border-bottom: 1px solid darken($white, 20%);
+        }
+        .active {
+            background: darken($white, 7%);
+            a,
+            a:hover,
+            a:focus {
+                color: #555;
+                cursor: default;
+                background: none;
+                border: none;
+                border-bottom: 1px solid darken($white, 20%);
+            }
+        }
+    }
+    .left-chat {
+        display: flex;
+        align-items: center;
+        &__photo {
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        &__right {
+            overflow: hidden;
+        }
+        &__name {
+            text-transform: uppercase;
+            color: $dark-color;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        &__massege {
+            color: lighten($dark-color, 30%);
+            max-height: 36px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.single-chat-header {
+        position: absolute;
+        top: -56px;
+        left: 399px;
+        border-left: 1px solid darken($white, 20%);
+        display: flex;
+        align-items: center;
+        &__name {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 20px;
+            line-height: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        &__photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            top: -2px;
+            margin-left: 20px;
+        }
+}
+
+.chat-messages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-chat-message {
+    margin-bottom: 30px;
+    width: 80%;
+}
+.single-chat-message .message-text {
+    background: darken($white, 5%);
+    padding: 15px 10px;
+    font-size: 16px;
+}
+.received {
+    align-self: flex-end;
+    color: $white;
+}
+.message-text {
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 15px;
+    color: lighten($black, 40%);
+}
+.received .message-text{
+    background: rgba($dark-color, .9);
+    color: lighten($black, 90%);
+}
+.message-author {
+    color: $black;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.message-time {
+    position: absolute;
+    right: 16px;
+    color: rgba($black, .5);
+}
+
+.unread .message-text{
+    border-bottom: 4px solid $accent-color;
+}
+
+.chat-messages {
+    overflow-y: scroll;
+}
+
+.chat-message-input {
+    width: 100%;
+    display: block;
+    textarea {
+        display: block;
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        border: 3px solid darken($white, 20%);
+        height: 150px;
+        padding: 20px;
+        font-family: "Open Sans";
+        font-weight: 100;
+        font-size: 15px;
+        color: lighten($black, 40%);
+        &:focus,
+        &:active {
+            border: 3px solid $accent-color;
+            outline: none;
+        }
+    }
+    button {
+        border: none;
+        background: $accent-color;
+        border-radius: 0;
+        padding: 7px 25px;
+        font-size: 16px;
+        position: absolute;
+        right: 30px;
+        bottom: 0;
+        &:hover,
+        &:visited,
+        &:focus,
+        &:active {
+            outline: none;
+            background: darken($accent-color, 10%);
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.container-fluid{
+  width:100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.block-title{
+  margin-bottom:50px;
+
+  p{
+    text-align: center;
+    position: relative;
+    margin:0;
+    font-size: 60px;
+    text-transform: uppercase;
+
+    &:after{
+      content: '';
+      position: absolute;
+      left:0;
+      right:0;
+      bottom:-20px;
+      width: 60px;
+      height: 3px;
+      margin:auto;
+      background: #b5a618;
+    }
+  }
+}
+
+.block-desc{
+  max-width: 660px;
+  margin-bottom:30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  p{
+    text-align: center;
+    color: #555;;
+  }
+}
+
+.wrapper{
+  padding:50px 0;
+}

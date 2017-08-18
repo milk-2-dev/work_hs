@@ -1,0 +1,2057 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hungry Seasons</title>
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="background-color" style="background-color: #212123;">
+    <div class="main-container" style="background-color: #fff;">
+
+    <header class="header">
+        <div class="header__bg">
+            <div class="row">
+                <div class="col-md-3 align-left">
+                    <div class="logo">
+                        <a href="/" class="logo__link">
+                            <img class="logo__image" src="img/icons/logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 align-center">
+                    <nav class="top-nav">
+                        <ul class="top-nav__ul">
+                            <li class="top-nav__li"><a class="top-nav__link  top-nav__link-active" href="/athletes.html">Athletes</a></li>
+                            <li class="top-nav__li"><a class="top-nav__link" href="/brands.html">Brands</a></li>
+                            <li class="top-nav__li"><a class="top-nav__link" href="/teams.html">Teams</a></li>
+                            <li class="top-nav__li"><a class="top-nav__link" href="/blog.html">Blog</a></li>
+                            <li class="top-nav__li"><a class="top-nav__link" href="#">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3 align-right">
+                    <!-- <div class="sing">
+                        <img src="img/lock.png" class="sing__img">
+                        <a href="" class="sing__link">Sing in</a>
+                        /
+                        <a href="" class="sing__link">sing up</a>
+                    </div> -->
+
+                        <div class="sing-wrapper">
+                            <a href="#" class="sing-wrapper__user">
+                                <div class="sing-wrapper__user__photo" style="background-image: url('https://dev.opera.com/authors/zach-leatherman.jpg');"></div>
+                                <div class="sing-wrapper__user__name">Allyson felix</div>
+                            </a>
+                            <a data-toggle="modal" data-target="#chatModal" class="sing__link">Chat</a>
+                            <div class="dropdown notifications sing__link">
+                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle sing__link">
+                                    <span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu sing__link">
+                                    <li><a>You have no notifications yet.</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown sing__link">
+                                <a href="#" type="button" data-toggle="dropdown" class="dropdown-toggle sing__link" aria-expanded="false">
+                                    <img src="http://hungryseason.com/img/lock.png" class="sing__img">
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu sing__link">
+                                    <li><a href="http://hungryseason.com/dashboard">Dashboard</a></li>
+                                    <li><a href="http://hungryseason.com/dashboard/settings">Settings</a></li>
+                                    <li>
+                                        <a href="http://hungryseason.com/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> Logout </a>
+                                        <form id="logout-form" action="http://hungryseason.com/logout" method="POST" style="display: none;">
+                                            <input type="hidden" name="_token" value="LCrhG7vjpbFS35KY1HraS3LUki5DcZoSkk0qkgkS">
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="without-search">
+            <div class="without-search__wrapper">
+                <div class="col-md-5 align-left">
+                    <div class="without-search__inner-flex">
+                        <div class="without-search__photo" style="background-image: url('https://dev.opera.com/authors/zach-leatherman.jpg');"></div>
+                        <div class="without-search__name">Allyson felix</div>
+                        <div class="without-search__desc">200m <span>sprint</span></div>
+                    </div>
+                </div>
+                <div class="col-md-2 align-center">
+                    <a href="#follow" class="without-search__follow">follow <span><img src="img/icons/icon-plus-white.png" alt=""></span></a>
+                </div>
+                <div class="col-md-5 align-right">
+                    <div class="without-search__social-flex">
+                        <div class="without-search__social"><i class="fa fa-youtube-play" aria-hidden="true"></i> 000k</div>
+                        <div class="without-search__social"><i class="fa fa-instagram" aria-hidden="true"></i> 000k</div>
+                        <div class="without-search__social"><i class="fa fa-twitter" aria-hidden="true"></i> 000k</div>
+                        <div class="without-search__social"><i class="fa fa-facebook" aria-hidden="true"></i> 000k</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="margin-top"></div>
+
+    <!-- +++++++++++++++++++++++++++++++++ single athlete page +++++++++++++++++++++++++++++++++++ -->
+
+    <section class="single-athlete">
+        <div class="single-athlete__header" style="background-image: url(http://bigboxtraining.co.uk/wp-content/uploads/2015/02/athlete.jpg)">
+            <h1 class="single-athlete__header-title">Name Surname</h1>
+            <a href="#follow" class="single-athlete__hearer-follow">follow <span><img src="img/icons/icon-plus-white.png" alt=""></span></a>
+            <div class="container text-center mb-10">
+                <div class="row">
+                    <div class="col-md-3 single-athlete__header-items">
+                        <div class="single-athlete__header-item">31yrs<br><span>age</span></div>
+                    </div>
+                    <div class="col-md-3 single-athlete__header-items">
+                        <div class="single-athlete__header-item">1.68m<br><span>height</span></div>
+                    </div>
+                    <div class="col-md-3 single-athlete__header-items">
+                        <div class="single-athlete__header-item">62kg<br><span>weight</span></div>
+                    </div>
+                    <div class="col-md-3 single-athlete__header-items">
+                        <div class="single-athlete__header-item">4.5m<br><span>followers</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-athlete__bg" style="background-color: rgba(255,22,2, .4);"></div>
+        </div>
+        <div class="single-athlete-about">
+            <div class="row height-kostyl">
+                <div class="col-md-6">
+                    <div class="single-athlete-about__title">
+                        <h2 class="athletes-list__title">About</h2>
+                        <table class="single-athlete-about__table mb-60">
+                            <tr>
+                                <td class="single-athlete-about__first">date of birth</td>
+                                <td class="single-athlete-about__second">18 nov 1985</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">HOMETOWN</td>
+                                <td class="single-athlete-about__second">LOS ANGELES, USA</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">CURRENT RES.</td>
+                                <td class="single-athlete-about__second">2.08m</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">HEIGHT</td>
+                                <td class="single-athlete-about__second">102kg</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">weight</td>
+                                <td class="single-athlete-about__second">SPRINTS</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">main sport</td>
+                                <td class="single-athlete-about__second">200m</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">position</td>
+                                <td class="single-athlete-about__second">PROFESSIONAL</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">standard</td>
+                                <td class="single-athlete-about__second">TEAM USA</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">current team</td>
+                                <td class="single-athlete-about__second">team usa</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">coach</td>
+                                <td class="single-athlete-about__second">LOS ANGELES, USA  (18-11-85)</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">education</td>
+                                <td class="single-athlete-about__second">UNIVERSITY OF SOUTHERN</td>
+                            </tr>
+                            <tr>
+                                <td class="single-athlete-about__first">agent</td>
+                                <td class="single-athlete-about__second">n/a</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6 height-kostyl__child">
+                    <div class="single-athlete-about__image" style="background-image: url(https://s-media-cache-ak0.pinimg.com/originals/63/9c/32/639c32dd3096e042b84ed112fe86be05.jpg)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="single-athlete-history">
+        <div class="container">
+            <div class="row">
+                <div><h2 class="athletes-list__title">Career history</h2></div>
+                <div class="single-blog__text mb-100 mt-60">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus exercitationem, odio distinctio similique suscipit quo facilis officia asperiores beatae dolorum voluptas placeat, inventore!</b></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus exercitationem, odio distinctio similique suscipit quo facilis officia asperiores beatae dolorum voluptas placeat, inventore! Placeat ullam maxime praesentium aut accusamus laboriosam debitis quaerat voluptatibus similique repudiandae voluptas nisi earum error provident a harum aspernatur blanditiis, neque facilis minus, quos at optio adipisci labore! Totam sed tenetur delectus tempora, eveniet harum in quibusdam tempore vel dolorum ad? Autem sequi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sa-video">
+        <div id="sa-video-slider" class="owl-carousel">
+            <div data-id="" data-modal="instagram-modal" class="sa-video__item show-modal sa-video__instagram-mouse">
+                <div class="instagram-mouse__body" style="background-image: url('http://www.trendingtopmost.com/wp-content/uploads/2016/12/Kobe-Bryant-Top-Popular-Richest-Sportsmen-in-The-World-2018.jpg');">
+                    <div class="instagram-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="instagram-mouse__footer">
+                        <div class="instagram-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="instagram-mouse__footer-right">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="sa-video__item show-modal sa-video__facebook-mouse">
+                <div class="facebook-mouse__body" style="background-image: url('https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2015/08/08/20/Hannah-Cockroft-Getty.jpg');">
+                    <div class="facebook-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="facebook-mouse__footer">
+                        <div class="facebook-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="facebook-mouse__footer-right">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="sa-video__item show-modal sa-video__instagram-mouse">
+                <div class="instagram-mouse__body" style="background-image: url('http://www.gogetnews.info/uploads/posts/2015-09/1441789367_bokser-top-10-usik.jpg');">
+                    <div class="instagram-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="instagram-mouse__footer">
+                        <div class="instagram-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="instagram-mouse__footer-right">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="youtube-modal" data-video="j0lSpNtjPM8" class="sa-video__item show-modal sa-video__youtube-mouse">
+                <div class="youtube-mouse__body" style="background-image: url('http://fed.sibnovosti.ru/pictures/0615/9771/1387071885.jpg');">
+                    <div class="youtube-mouse__footer">
+                        <div class="youtube-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="youtube-mouse__footer-right">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="youtube-mouse__logo"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history-period" style="background-image: url(http://bigboxtraining.co.uk/wp-content/uploads/2015/02/athlete.jpg);">
+        <div class="history-period__image-bg">
+            <div class="container text-center mb-10">
+                <div class="row">
+                    <div class="history-period__title-wrapper"><h2 class="athletes-list__title history-period__title text-left">Career history</h2></div>
+                </div>
+                <div class="row owl-carousel" id="sa-carier-history">
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">2014-17<br><span>team usa</span></div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">2012-13<br><span>team usa</span></div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">2002-2011<br><span>la sports club</span></div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">2001-1996<br><span>cali athletics club</span></div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">2001-1996<br><span>cali athletics club</span></div>
+                    </div>
+                </div>
+                <div class="row mt-70">
+                    <div class="history-period__title-wrapper"><h2 class="athletes-list__title history-period__title text-left">Achievements</h2></div>
+                </div>
+                <div class="row mb-60 owl-carousel" id="sa-achievements">
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">
+                            2nd<br>
+                            <span>200m SPRINT</span>
+                            <span>RIO OLYMPICS</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">
+                            2nd
+                            <span>200m SPRINT</span>
+                            <span>RIO OLYMPICS</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">
+                            2nd
+                            <span>200m SPRINT</span>
+                            <span>RIO OLYMPICS</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">
+                            2nd
+                            <span>200m SPRINT</span>
+                            <span>RIO OLYMPICS</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">
+                            2nd
+                            <span>200m SPRINT</span>
+                            <span>RIO OLYMPICS</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+                    <div class="single-athlete__header-items">
+                        <div class="single-athlete__header-item">
+                            2nd
+                            <span>200m SPRINT</span>
+                            <span>RIO OLYMPICS</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <div class="container text-center mb-10">
+            <div class="row">
+                <div class="history-period__title-wrapper"><h2 class="athletes-list__title text-left">Social media</h2></div>
+            </div>
+            <div class="row mb-70">
+                <div class="col-md-3 single-athlete__header-items">
+                    <div class="single-athlete__header-item">7.2m<br><span>total social audience</span></div>
+                </div>
+                <div class="col-md-3 single-athlete__header-items">
+                    <div class="single-athlete__header-item">+12.3k<br><span>audience growth last 30 days</span></div>
+                </div>
+                <div class="col-md-3 single-athlete__header-items">
+                    <div class="single-athlete__header-item">97k<br><span>audience growth last 100 days</span></div>
+                </div>
+                <div class="col-md-3 single-athlete__header-items">
+                    <div class="single-athlete__header-item">52.8k<br><span>social integration last 30 days</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="social-media__progres-wrapper">
+                        <div class="social-media__progres-item instagramm" data-progres="30"><i class="fa fa-instagram" aria-hidden="true"></i> 30%</div>
+                        <div class="social-media__progres-item twitter" data-progres="30"><i class="fa fa-twitter" aria-hidden="true"></i> 20%</div>
+                        <div class="social-media__progres-item facebook" data-progres="38"><i class="fa fa-facebook" aria-hidden="true"></i> 15%</div>
+                        <div class="social-media__progres-item youtube" data-progres="2"><i class="fa fa-youtube-play" aria-hidden="true"></i> 35%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 
+    data-id=""     - загрузить данные по ID
+    data-modal=""  - указатель определяющию данные в какую модаль подгрузить: youtube-modal, twitter-modal, instagram-modal, facebook-modal
+-->
+    <section class="mouse-wrapper" style="position: relative;">
+        <section class="mouse-items">
+            <div data-id="" data-modal="instagram-modal" class="mouse-item  show-modal instagram-mouse">
+                <div class="instagram-mouse__body" style="background-image: url('http://www.trendingtopmost.com/wp-content/uploads/2016/12/Kobe-Bryant-Top-Popular-Richest-Sportsmen-in-The-World-2018.jpg');">
+                    <div class="instagram-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="instagram-mouse__footer">
+                        <div class="instagram-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="instagram-mouse__footer-right">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="twitter-modal" class="mouse-item  show-modal twitter-mouse">
+                <div class="twitter-mouse__body">
+                    <div class="twitter-mouse__logo"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="twitter-mouse__likes">000k likes</div>
+                    <div class="twitter-mouse__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore incidunt sint, nam esse ducimus officiis doloribus officia illum quisquam explicabo!</div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item  show-modal facebook-mouse">
+                <div class="facebook-mouse__body" style="background-image: url('https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2015/08/08/20/Hannah-Cockroft-Getty.jpg');">
+                    <div class="facebook-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="facebook-mouse__footer">
+                        <div class="facebook-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="facebook-mouse__footer-right">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item  show-modal instagram-mouse">
+                <div class="instagram-mouse__body" style="background-image: url('http://www.gogetnews.info/uploads/posts/2015-09/1441789367_bokser-top-10-usik.jpg');">
+                    <div class="instagram-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="instagram-mouse__footer">
+                        <div class="instagram-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="instagram-mouse__footer-right">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="youtube-modal" data-video="ukWczot_4oQ" class="mouse-item show-modal youtube-mouse">
+                <div class="youtube-mouse__body" style="background-image: url('http://fed.sibnovosti.ru/pictures/0615/9771/1387071885.jpg');">
+                    <div class="youtube-mouse__footer">
+                        <div class="youtube-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="youtube-mouse__footer-right">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="youtube-mouse__logo"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+            </div>
+            <div data-id="" data-modal="twitter-modal" class="mouse-item show-modal twitter-mouse">
+                <div class="twitter-mouse__body">
+                    <div class="twitter-mouse__logo"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="twitter-mouse__likes">000k likes</div>
+                    <div class="twitter-mouse__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore incidunt sint, nam esse ducimus officiis doloribus officia illum quisquam explicabo!</div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item show-modal facebook-mouse">
+                <div class="facebook-mouse__body" style="background-image: url('https://static.independent.co.uk/s3fs-public/styles/story_medium/public/thumbnails/image/2015/08/08/20/GettyImages-477490862.jpg');">
+                    <div class="facebook-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="facebook-mouse__footer">
+                        <div class="facebook-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="facebook-mouse__footer-right">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="youtube-modal" data-video="uCFNzjhASic" class="mouse-item show-modal youtube-mouse">
+                <div class="youtube-mouse__body" style="background-image: url('http://cs9667.userapi.com/u30907034/10979619/x_3a8ae107.jpg');">
+                    <div class="youtube-mouse__footer">
+                        <div class="youtube-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="youtube-mouse__footer-right">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="youtube-mouse__logo"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item show-modal instagram-mouse">
+                <div class="instagram-mouse__body" style="background-image: url('http://hronika.info/uploads/posts/2014-11/1415274393_meyvez.jpg');">
+                    <div class="instagram-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="instagram-mouse__footer">
+                        <div class="instagram-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="instagram-mouse__footer-right">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item show-modal facebook-mouse">
+                <div class="facebook-mouse__body" style="background-image: url('http://www.wonderslist.com/wp-content/uploads/2014/01/Caroline-Wozniacki.jpg');">
+                    <div class="facebook-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="facebook-mouse__footer">
+                        <div class="facebook-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="facebook-mouse__footer-right">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="twitter-modal" class="mouse-item show-modal twitter-mouse">
+                <div class="twitter-mouse__body">
+                    <div class="twitter-mouse__logo"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="twitter-mouse__likes">000k likes</div>
+                    <div class="twitter-mouse__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore incidunt sint, nam esse ducimus officiis doloribus officia illum quisquam explicabo!</div>
+                </div>
+            </div>
+            <div data-id="" data-modal="youtube-modal" data-video="8I9p2AGwnu8" class="mouse-item show-modal youtube-mouse">
+                <div class="youtube-mouse__body" style="background-image: url('http://b2blogger.com/news/img/large/4289-Rossiyskiy-sportsmen-vyshel-v-chetvertfinalnuyu-stadiyu-pervenstva-mira-po-boksu.jpg');">
+                    <div class="youtube-mouse__footer">
+                        <div class="youtube-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="youtube-mouse__footer-right">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="youtube-mouse__logo"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item show-modal facebook-mouse">
+                <div class="facebook-mouse__body" style="background-image: url('http://i.telegraph.co.uk/multimedia/archive/01422/weightlifter-woman_1422542i.jpg');">
+                    <div class="facebook-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="facebook-mouse__footer">
+                        <div class="facebook-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="facebook-mouse__footer-right">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item show-modal instagram-mouse">
+                <div class="instagram-mouse__body" style="background-image: url('http://radiotochka.kz/uploads/posts/2015-12/main/standard/19369.jpg');">
+                    <div class="instagram-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="instagram-mouse__footer">
+                        <div class="instagram-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="instagram-mouse__footer-right">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="twitter-modal" class="mouse-item show-modal twitter-mouse">
+                <div class="twitter-mouse__body">
+                    <div class="twitter-mouse__logo"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="twitter-mouse__likes">000k likes</div>
+                    <div class="twitter-mouse__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore incidunt sint, nam esse ducimus officiis doloribus officia illum quisquam explicabo!</div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item show-modal facebook-mouse">
+                <div class="facebook-mouse__body" style="background-image: url('http://www.gunaxin.com/wp-content/uploads/2015/04/hope-solo-560x373.jpg');">
+                    <div class="facebook-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="facebook-mouse__footer">
+                        <div class="facebook-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="facebook-mouse__footer-right">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="instagram-modal" class="mouse-item show-modal instagram-mouse">
+                <div class="instagram-mouse__body" style="background-image: url('http://i.eurosport.com/2017/01/29/2014753-42290556-640-360.jpg');">
+                    <div class="instagram-mouse__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quia recusandae perspiciatis placeat. Fugiat, perspiciatis! Officia dolores pariatur quia pariatur.
+                    </div>
+                    <div class="instagram-mouse__footer">
+                        <div class="instagram-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="instagram-mouse__footer-right">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="" data-modal="twitter-modal" class="mouse-item show-modal twitter-mouse">
+                <div class="twitter-mouse__body">
+                    <div class="twitter-mouse__logo"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="twitter-mouse__likes">000k likes</div>
+                    <div class="twitter-mouse__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore incidunt sint, nam esse ducimus officiis doloribus officia illum quisquam explicabo!</div>
+                </div>
+            </div>
+            <div data-id="" data-modal="youtube-modal" data-video="WtBz-WRLuyc" class="mouse-item show-modal youtube-mouse">
+                <div class="youtube-mouse__body" style="background-image: url('http://rs.img.com.ua/crop?v2=1&w=600&h=0&url=http%3A%2F%2Fsport.img.com.ua%2Fb%2Forig%2F1%2Fda%2Ffefcfc56d063b05d8b12bcbbd1e12da1.jpg');">
+                    <div class="youtube-mouse__footer">
+                        <div class="youtube-mouse__footer-left">
+                            000k likes 100w
+                        </div>
+                        <div class="youtube-mouse__footer-right">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="youtube-mouse__logo"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+            </div>
+        </section>
+    </section>
+
+    <div class="mouse-trigget-wrapper">
+        <div class="mouse-trigger"></div>
+        <div class="mouse-trigger__btn mouse-trigger__btn-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="mouse-trigger__btn mouse-trigger__btn-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+    </div>
+
+    <!-- Styles for mouse trigger -->
+    <style type="text/css">
+        .mouse-trigget-wrapper {
+            background: rgba(0,0,0,.1);
+            position: relative;
+            margin: 30px 80px 30px;
+            border-radius: 3px;
+            height: 4px;
+        }
+        .mouse-trigger {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: #b0a635;
+            border-radius: 3px;
+            transition: .6s ease-in-out;
+        }
+        .mouse-trigger__btn {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 50%;
+            margin-top: -20px;
+            background: rgba(0,0,0,.2);
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: .2s;
+        }
+        .mouse-trigger__btn:hover {
+            background: #b0a635;
+            cursor: pointer;
+        }
+        .mouse-trigger__btn-left {
+            left: -60px;
+        }
+        .mouse-trigger__btn-right {
+            right: -60px;
+        }
+    </style>
+
+    <section class="sa-sponsors">
+        <div class="container">
+            <div class="row">
+                <div class="history-period__title-wrapper"><h2 class="athletes-list__title text-left">Sponsors</h2></div>
+            </div>
+            <div class="row sa-sponsors__wrapper mb-60 owl-carousel" id="sa-sponsors">
+                <div class="col-md-3-">
+                    <div class="sa-sponsors__item"><img src="http://img09.deviantart.net/e4d5/i/2011/345/4/4/coca_cola_logo_redesign_by_stephonatron-d4iu76q.png" class="img-responsive"></div>
+                </div>
+                <div class="col-md-3-">
+                    <div class="sa-sponsors__item"><img src="http://img09.deviantart.net/e4d5/i/2011/345/4/4/coca_cola_logo_redesign_by_stephonatron-d4iu76q.png" class="img-responsive"></div>
+                </div>
+                <div class="col-md-3-">
+                    <div class="sa-sponsors__item"><img src="http://img09.deviantart.net/e4d5/i/2011/345/4/4/coca_cola_logo_redesign_by_stephonatron-d4iu76q.png" class="img-responsive"></div>
+                </div>
+                <div class="col-md-3-">
+                    <div class="sa-sponsors__item"><img src="http://img09.deviantart.net/e4d5/i/2011/345/4/4/coca_cola_logo_redesign_by_stephonatron-d4iu76q.png" class="img-responsive"></div>
+                </div>
+                <div class="col-md-3-">
+                    <div class="sa-sponsors__item"><img src="http://img09.deviantart.net/e4d5/i/2011/345/4/4/coca_cola_logo_redesign_by_stephonatron-d4iu76q.png" class="img-responsive"></div>
+                </div>
+                <div class="col-md-3-">
+                    <div class="sa-sponsors__item"><img src="http://img09.deviantart.net/e4d5/i/2011/345/4/4/coca_cola_logo_redesign_by_stephonatron-d4iu76q.png" class="img-responsive"></div>
+                </div>
+                <div class="col-md-3-">
+                    <div class="sa-sponsors__item"><img src="http://img09.deviantart.net/e4d5/i/2011/345/4/4/coca_cola_logo_redesign_by_stephonatron-d4iu76q.png" class="img-responsive"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sa-quote">
+        <div class="container">
+            <div class="row">
+                <div class="sa-quote__text mb-70">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit ipsa saepe ipsum, obcaecati voluptatum laboriosam!
+                </div>
+                <div class="sa-quote__author mb-100">Muhammad Ali, 1972</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- +++++++++++++++++++++++++++++++++ Footer +++++++++++++++++++++++++++++++++++ -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-left">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav__ul">
+                            <li class="footer__nav__li"><a class="footer__nav__link" href="#">Home</a></li>
+                            <li class="footer__nav__li"><a class="footer__nav__link" href="#">Athletes</a></li>
+                            <li class="footer__nav__li"><a class="footer__nav__link" href="#">Brands</a></li>
+                            <li class="footer__nav__li"><a class="footer__nav__link" href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6 align-right">
+                    <div class="footer__social">
+                        <h4 class="footer__social__title">social</h4>
+                        <div class="footer__social__wrapper">
+                            <a href="#" class="footer__social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="footer__social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="footer__social__link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" class="footer__social__link"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 align-left">
+                    <div class="footer__copyright">&copy; 2017 Hungry Season. All Right Reserved</div>
+                </div>
+                <div class="col-md-6 align-right">
+                    <a href="#" class="footer__terms-link">Terms & Conditions</a>
+                    <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    <a href="#" class="footer__terms-link">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</div>
+
+
+
+<div class="modal fade cm-video" id="instagram-modal" tabindex="-1" role="dialog" aria-labelledby="youtube-modal-label">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row cm-video__row-flex">
+                    <div class="col-md-8">
+                        <img src="http://hq-wallpapers.ru/wallpapers/14/hq-wallpapers_ru_sport_69093_1280x1024.jpg" class="cm-video__image">
+                    </div>
+                    <div class="col-md-4 cm-video__wrapper">
+                        <div class="cm-video__header">
+                            <div class="cm-video__header-wrapper">
+                                <div class="cm-video__photo" style="background-image: url('https://dev.opera.com/authors/zach-leatherman.jpg');"></div>
+                                <span class="cm-video__title">Allyson Felix</span>
+                            </div>
+                            <a href="#follow" class="cm-video__follow">follow <span><img src="img/icons/icon-plus-white.png" alt=""></span></a>
+                        </div>
+                        <div class="cm-video__social">
+                            <div>000,000 likes</div>
+                            <div>00w</div>
+                        </div>
+                        <div class="cm-video__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum eius hic, voluptates alias expedita mollitia omnis laboriosam iure incidunt, repellendus possimus deserunt voluptatum. Aliquid pariatur iusto quam, consequuntur quasi facere error.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade cm-video" id="youtube-modal" tabindex="-1" role="dialog" aria-labelledby="youtube-modal-label">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row cm-video__row-flex">
+                    <div class="col-md-8">
+                        <div class="youtube-set-video" data-type="youtube" data-video-id=""></div>
+                    </div>
+                    <div class="col-md-4 cm-video__wrapper">
+                        <div class="cm-video__header">
+                            <div class="cm-video__header-wrapper">
+                                <div class="cm-video__photo" style="background-image: url('https://dev.opera.com/authors/zach-leatherman.jpg');"></div>
+                                <span class="cm-video__title">Allyson Felix</span>
+                            </div>
+                            <a href="#follow" class="cm-video__follow">follow <span><img src="img/icons/icon-plus-white.png" alt=""></span></a>
+                        </div>
+                        <div class="cm-video__social">
+                            <div>000,000 likes</div>
+                            <div>00w</div>
+                        </div>
+                        <div class="cm-video__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum eius hic, voluptates alias expedita mollitia omnis laboriosam iure incidunt, repellendus possimus deserunt voluptatum. Aliquid pariatur iusto quam, consequuntur quasi facere error.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        
+    });
+</script>
+
+<script type="text/javascript">
+    function mouse(){
+        var mouseItems = $('.mouse-items'),
+            newMouseWrapperWidth = 0,
+            mouseWrapper = $('.mouse-wrapper').width(),
+            mouseItemWidth = $('.mouse-item').width(),
+            block = 0;
+        $('.mouse-item').each(function(index){
+            $(this).css({
+                width: mouseWrapper/4 + 'px',
+                height: mouseWrapper/4 + 'px',
+            });
+            if (index % 2 != 0) {
+                $(this).css({
+                    marginTop: mouseWrapper/4 + 'px',
+                    marginLeft: -mouseWrapper/4 + 'px',
+                });
+            }
+            block = $(this).width();
+            newMouseWrapperWidth+=block;
+        });
+        if (newMouseWrapperWidth % 2 == 0) {
+            mouseItems.css({
+                width: newMouseWrapperWidth/2 + 'px'
+            });
+        } else {
+            mouseItems.css({
+                width: (newMouseWrapperWidth - block) / 2 + block + 'px'
+            });
+        }
+    }
+    $(document).ready(function () {
+        mouse();
+
+        // Переписать
+        var MouseWrapper = $('.mouse-wrapper'),
+            MouseWrapperWidth = MouseWrapper.width(),
+            MouseItems = MouseWrapper.find('.mouse-items').width(),
+            MouseTrigger = $('.mouse-trigger'),
+            FirstItem = MouseWrapper.find('.mouse-item').first(),
+            btnLeft = MouseTrigger.siblings('.mouse-trigger__btn-left'),
+            btnRight = MouseTrigger.siblings('.mouse-trigger__btn-right');
+
+        // params
+        var stepMove = 2;
+
+        // Inner code
+        var __directionSize = FirstItem.width() * stepMove,
+            __TranslateXForTrigger = 0,
+            __TranslateXForSlider = 0,
+            __oneStep = setOneStep();
+
+        function setOneStep(){
+            if ( (( MouseWrapperWidth / MouseItems ) * 100) > 100 ) {
+                return 100;
+            }
+            return ( MouseWrapperWidth / MouseItems ) * 100;
+        }
+
+        function isCanMoveLeft(translateX, leftBoard){
+            if (translateX <= leftBoard) {
+                return false;
+            }
+            return true;
+        }
+
+        function isCanMoveRight(){
+            if (__oneStep >= 100) {
+                return false;
+            }
+            return true;
+        }
+
+        // direction must be boolean
+        function setTranslateXForSlider(direction){
+            if(direction) {
+                if (isCanMoveRight()) {
+                    __TranslateXForSlider += __directionSize;
+                }
+            } else if ( isCanMoveLeft(__TranslateXForSlider, FirstItem.position().left) ){
+                __TranslateXForSlider -= __directionSize;
+            }
+        }
+
+        function setTranslateXForTrigger(){
+            __oneStep = ((__TranslateXForSlider + MouseWrapperWidth) / MouseItems) * 100;
+            if(__oneStep > 100) {
+                __oneStep = 100;
+            }
+        }
+
+        function moveTrigger(distance){
+            MouseTrigger.css({
+                width: distance + '%'
+            });
+        }
+
+        function moveSlider(distance){
+            MouseWrapper.find('.mouse-items').css({
+                transform: 'translateX(' + -distance + 'px)'
+            });
+        }
+
+        function correctSliderIfTooLeft(){
+            if (FirstItem.position().left > 0) {
+                __TranslateXForSlider = 0;
+                moveSlider(__TranslateXForSlider);
+            }
+        }
+
+        btnRight.click(function() {
+            setTranslateXForSlider(true);
+            moveSlider(__TranslateXForSlider);
+            setTranslateXForTrigger();
+            moveTrigger(__oneStep);
+        });
+
+        btnLeft.click(function() {
+            correctSliderIfTooLeft();
+            setTranslateXForSlider(false);
+            moveSlider(__TranslateXForSlider);
+            setTranslateXForTrigger();
+            moveTrigger(__oneStep);
+        });
+
+        MouseTrigger.css({
+            width: __oneStep + '%'
+        });
+
+    });
+    $(window).resize(function(){
+        mouse();
+    });
+</script>
+
+</body>
+</html>
+
+
+
+<div id="chatModal" class="modal fade in chat-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" class="close">×</button>
+                <h4 class="modal-title">ALL MESSAGES</h4>
+            </div>
+            <div class="modal-body">
+                <div class="chat-modal__column-wrapper">
+                    <div class="chat-modal__column-1 chats-list">
+                        <ul class="nav nav-tabs chats left-chats-list">
+                            <li class="active">
+                                <a data-toggle="tab" href="#chat-modal-1" aria-expanded="true" class="left-chat">
+                                    <div class="left-chat__left">
+                                        <div class="left-chat__photo" style="background-image: url('https://dev.opera.com/authors/zach-leatherman.jpg');"></div>
+                                    </div>
+                                    <div class="left-chat__right">
+                                        <h4 class="left-chat__name">Jeffry Rath</h4>
+                                        <div class="left-chat__massege">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ratione quisquam quas doloremque, asperiores itaque.</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#chat-modal-2" aria-expanded="false" class="left-chat">
+                                    <div class="left-chat__left">
+                                        <div class="left-chat__photo" style="background-image: url('https://dev.opera.com/authors/zach-leatherman.jpg');"></div>
+                                    </div>
+                                    <div class="left-chat__right">
+                                        <h4 class="left-chat__name">test brand</h4>
+                                        <div class="left-chat__massege">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ratione quisquam quas doloremque, asperiores itaque.</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat-modal__column-2 chats-bodies-container">
+                        <div class="tab-content chats-bodies">
+                            <div id="chat-modal-1" class="tab-pane single-chat active in">
+                                <div class="single-chat-header">
+                                    <div class="single-chat-header__photo" style="background-image: url('https://dev.opera.com/authors/zach-leatherman.jpg');"></div>
+                                    <h3 class="single-chat-header__name">Jeffry Rath</h3>
+                                </div>
+                                <div class="col-md-12 chat-messages">
+                                    <div message_id="1" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">Me</div>
+                                        <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                                        <div class="message-time">2017-05-26 13:28:12</div> 
+                                    </div>
+                                    <div message_id="157" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam molestiae, sunt vero eligendi in numquam, dolores ducimus, alias nam dicta maxime, sequi cumque.
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:15:16
+                                        </div>
+                                    </div>
+                                    <div message_id="129" class="col-md-12 single-chat-message sent unread">
+                                        <div class="message-author">Me</div>
+                                        <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iste tempora, quasi iusto eos nesciunt sit neque assumenda reiciendis vel atque. Animi voluptatibus dolor aliquid accusamus autem soluta quis rerum repudiandae voluptate commodi, eum, excepturi, est ad dolores. Quod, nulla.</div>
+                                        <div class="message-time">2017-05-26 13:28:12</div>
+                                    </div>
+                                    <div message_id="157" class="col-md-12 single-chat-message received unread">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            Ya tvoy dom truba shatal
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:15:16
+                                        </div>
+                                    </div>
+                                    <div message_id="172" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">Me</div>
+                                        <div class="message-text">Jeffry Rath Message 1</div>
+                                        <div class="message-time">2017-05-26 13:28:12</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 chat-message-input">
+                                    <textarea placeholder="Write you massege..."></textarea>
+                                    <button class="btn btn-primary chat-message-send">
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="chat-modal-2" class="tab-pane fade single-chat">
+                                <div class="single-chat-header">
+                                    <div class="single-chat-header__photo" style="background-image: url('https://dev.opera.com/authors/zach-leatherman.jpg');"></div>
+                                    <h3 class="single-chat-header__name">Test User</h3>
+                                </div>
+                                <div class="col-md-12 chat-messages">
+                                    <div message_id="32" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fdsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:39:58
+                                        </div>
+                                    </div>
+                                    <div message_id="34" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sdaaa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:40:38
+                                        </div>
+                                    </div>
+                                    <div message_id="36" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fdas
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:43:51
+                                        </div>
+                                    </div>
+                                    <div message_id="38" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            aaa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:46:46
+                                        </div>
+                                    </div>
+                                    <div message_id="40" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            11
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:47:09
+                                        </div>
+                                    </div>
+                                    <div message_id="42" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fsad
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:48:11
+                                        </div>
+                                    </div>
+                                    <div message_id="44" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            aaaa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:49:02
+                                        </div>
+                                    </div>
+                                    <div message_id="45" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            a
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:49:15
+                                        </div>
+                                    </div>
+                                    <div message_id="46" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            a
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:49:21
+                                        </div>
+                                    </div>
+                                    <div message_id="47" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            asd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:53:45
+                                        </div>
+                                    </div>
+                                    <div message_id="48" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            aaa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:54:08
+                                        </div>
+                                    </div>
+                                    <div message_id="49" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            fasd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:54:42
+                                        </div>
+                                    </div>
+                                    <div message_id="50" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fds
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:54:58
+                                        </div>
+                                    </div>
+                                    <div message_id="52" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            as
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:55:39
+                                        </div>
+                                    </div>
+                                    <div message_id="54" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ddd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:57:05
+                                        </div>
+                                    </div>
+                                    <div message_id="55" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            dsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:57:22
+                                        </div>
+                                    </div>
+                                    <div message_id="57" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            adfd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 14:59:32
+                                        </div>
+                                    </div>
+                                    <div message_id="59" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            aaa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:03:45
+                                        </div>
+                                    </div>
+                                    <div message_id="61" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ds
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:08:30
+                                        </div>
+                                    </div>
+                                    <div message_id="63" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            daa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:10:50
+                                        </div>
+                                    </div>
+                                    <div message_id="65" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            as
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:11:42
+                                        </div>
+                                    </div>
+                                    <div message_id="67" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            das
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:13:01
+                                        </div>
+                                    </div>
+                                    <div message_id="69" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            as
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:14:10
+                                        </div>
+                                    </div>
+                                    <div message_id="71" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            aaa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:18:03
+                                        </div>
+                                    </div>
+                                    <div message_id="73" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sadsda
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:19:01
+                                        </div>
+                                    </div>
+                                    <div message_id="75" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            1111
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:22:27
+                                        </div>
+                                    </div>
+                                    <div message_id="77" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            aa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:26:00
+                                        </div>
+                                    </div>
+                                    <div message_id="79" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:27:36
+                                        </div>
+                                    </div>
+                                    <div message_id="81" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sasa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:27:57
+                                        </div>
+                                    </div>
+                                    <div message_id="82" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            1231
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:29:34
+                                        </div>
+                                    </div>
+                                    <div message_id="84" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sddd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:30:10
+                                        </div>
+                                    </div>
+                                    <div message_id="86" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            12321
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:31:13
+                                        </div>
+                                    </div>
+                                    <div message_id="88" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            222
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:32:06
+                                        </div>
+                                    </div>
+                                    <div message_id="89" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fdsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:32:59
+                                        </div>
+                                    </div>
+                                    <div message_id="91" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ssss
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:34:39
+                                        </div>
+                                    </div>
+                                    <div message_id="93" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            123123
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:36:42
+                                        </div>
+                                    </div>
+                                    <div message_id="95" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sdssd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:38:36
+                                        </div>
+                                    </div>
+                                    <div message_id="97" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            dsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:38:49
+                                        </div>
+                                    </div>
+                                    <div message_id="99" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ssss
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:40:46
+                                        </div>
+                                    </div>
+                                    <div message_id="101" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ewq
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:45:02
+                                        </div>
+                                    </div>
+                                    <div message_id="103" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            12232
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:46:16
+                                        </div>
+                                    </div>
+                                    <div message_id="105" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            as
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:48:48
+                                        </div>
+                                    </div>
+                                    <div message_id="106" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            12
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:49:20
+                                        </div>
+                                    </div>
+                                    <div message_id="108" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ads
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:51:20
+                                        </div>
+                                    </div>
+                                    <div message_id="110" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ewwee
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:53:10
+                                        </div>
+                                    </div>
+                                    <div message_id="112" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sad
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:54:07
+                                        </div>
+                                    </div>
+                                    <div message_id="114" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            dsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:55:01
+                                        </div>
+                                    </div>
+                                    <div message_id="116" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ssss
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:56:28
+                                        </div>
+                                    </div>
+                                    <div message_id="117" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            dsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:56:43
+                                        </div>
+                                    </div>
+                                    <div message_id="118" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            dfs
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:58:25
+                                        </div>
+                                    </div>
+                                    <div message_id="119" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:58:33
+                                        </div>
+                                    </div>
+                                    <div message_id="121" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 16:00:27
+                                        </div>
+                                    </div>
+                                    <div message_id="123" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ds
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 16:01:28
+                                        </div>
+                                    </div>
+                                    <div message_id="124" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            ds
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 16:01:44
+                                        </div>
+                                    </div>
+                                    <div message_id="126" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sd
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 16:01:56
+                                        </div>
+                                    </div>
+                                    <div message_id="127" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fdsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 16:03:14
+                                        </div>
+                                    </div>
+                                    <div message_id="128" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            12312312
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 16:05:05
+                                        </div>
+                                    </div>
+                                    <div message_id="130" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            gfjhsadkl
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-30 06:45:31
+                                        </div>
+                                    </div>
+                                    <div message_id="131" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            123123
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-30 06:47:35
+                                        </div>
+                                    </div>
+                                    <div message_id="132" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            fdsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-30 06:55:39
+                                        </div>
+                                    </div>
+                                    <div message_id="133" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            dfs
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-30 08:45:11
+                                        </div>
+                                    </div>
+                                    <div message_id="141" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            12321
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 10:07:00
+                                        </div>
+                                    </div>
+                                    <div message_id="142" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            fdas
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 10:08:45
+                                        </div>
+                                    </div>
+                                    <div message_id="143" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fdsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 10:09:00
+                                        </div>
+                                    </div>
+                                    <div message_id="144" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            hi how are you?
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:10:30
+                                        </div>
+                                    </div>
+                                    <div message_id="145" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            what's new?
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:10:55
+                                        </div>
+                                    </div>
+                                    <div message_id="146" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            hi
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:11:14
+                                        </div>
+                                    </div>
+                                    <div message_id="147" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            who are you?)
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:11:23
+                                        </div>
+                                    </div>
+                                    <div message_id="148" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            Vladimir
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:11:34
+                                        </div>
+                                    </div>
+                                    <div message_id="149" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            really?
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:11:42
+                                        </div>
+                                    </div>
+                                    <div message_id="150" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            yes
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:11:47
+                                        </div>
+                                    </div>
+                                    <div message_id="151" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            it's cool
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:11:53
+                                        </div>
+                                    </div>
+                                    <div message_id="152" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            what about oil tasks?
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:12:04
+                                        </div>
+                                    </div>
+                                    <div message_id="153" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            oli*
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:12:12
+                                        </div>
+                                    </div>
+                                    <div message_id="154" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            all good!!
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:12:13
+                                        </div>
+                                    </div>
+                                    <div message_id="157" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            Ya tvoy dom truba shatal
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:15:16
+                                        </div>
+                                    </div>
+                                    <div message_id="158" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            shatay svoy
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:15:31
+                                        </div>
+                                    </div>
+                                    <div message_id="159" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            da da da i kepka toje
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-31 11:15:44
+                                        </div>
+                                    </div>
+                                    <div message_id="163" class="col-md-12 single-chat-message sent">
+                                        <div class="message-author">
+                                            Me
+                                        </div>
+                                        <div class="message-text">
+                                            Hi
+                                        </div>
+                                        <div class="message-time">
+                                            2017-06-09 19:16:06
+                                        </div>
+                                    </div>
+                                    <div message_id="164" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            fhf
+                                        </div>
+                                        <div class="message-time">
+                                            2017-06-09 19:18:27
+                                        </div>
+                                    </div>
+                                    <div message_id="103" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            12232
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:46:16
+                                        </div>
+                                    </div>
+                                    <div message_id="105" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            as
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:48:48
+                                        </div>
+                                    </div>
+                                    <div message_id="106" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            12
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:49:20
+                                        </div>
+                                    </div>
+                                    <div message_id="108" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ads
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:51:20
+                                        </div>
+                                    </div>
+                                    <div message_id="110" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ewwee
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:53:10
+                                        </div>
+                                    </div>
+                                    <div message_id="112" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            sad
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:54:07
+                                        </div>
+                                    </div>
+                                    <div message_id="114" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            dsa
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:55:01
+                                        </div>
+                                    </div>
+                                    <div message_id="116" class="col-md-12 single-chat-message received">
+                                        <div class="message-author">
+                                            test brand
+                                        </div>
+                                        <div class="message-text">
+                                            ssss
+                                        </div>
+                                        <div class="message-time">
+                                            2017-05-29 15:56:28
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-message-input">
+                                    <textarea class="col-md-12"></textarea>
+                                    <button class="btn btn-primary chat-message-send">
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

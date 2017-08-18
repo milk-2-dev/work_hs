@@ -1,0 +1,81 @@
+.icon{
+  display: inline-block;
+
+  &.icon-lock{
+    @include sprite($lock);
+  }
+
+  &.icon-arrow-down{
+    @include sprite($arrow-down);
+  }
+
+  &.icon-register{
+    @include sprite($register);
+  }
+
+  &.icon-profile{
+    @include sprite($profile);
+  }
+
+  &.icon-connect{
+    @include sprite($connect);
+  }
+
+  &.icon-arrow-right{
+    @include sprite($arrow-right);
+  }
+
+  //bar-icons
+
+  &.bar-icon1{
+    @include sprite($bar-icon1);
+  }
+
+  &.bar-icon2{
+    @include sprite($bar-icon2);
+
+  }
+
+  &.bar-icon3{
+    @include sprite($bar-icon3);
+  }
+
+  //filter icons
+
+  &.icon-search{
+    @include sprite($search);
+  }
+
+  &.icon-close-menu{
+    width:40px;
+    height: 40px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      left:0;
+      top:0;
+      right:0;
+      bottom:0;
+      width:40px;
+      height: 3px;
+      margin:auto;
+      background: #fff;
+      transform: rotate(45deg);
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      left:0;
+      top:0;
+      right:0;
+      bottom:0;
+      width:40px;
+      height: 3px;
+      margin:auto;
+      background: #fff;
+      transform: rotate(-45deg);
+    }
+  }
+}
