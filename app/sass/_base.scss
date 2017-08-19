@@ -92,3 +92,33 @@ body{
 .footer {
   flex: 0 0 auto;
 }
+
+.search-block{
+  position: relative;
+
+  input{
+    width: 100%;
+    padding: 6px 40px 6px 10px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+  }
+
+  button{
+    position: absolute;
+    top:0;
+    //bottom:0;
+    right:0;
+    //margin:auto;
+    border: none;
+    background: transparent;
+    width:40px;
+    height: 36px;
+    line-height: 45px;
+    padding:0;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}

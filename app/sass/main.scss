@@ -71,8 +71,8 @@
     p{
       margin:0;
       text-transform: uppercase;
-      font-size: 20px;
-      line-height: 1.5;
+      font-size: 30px;
+      line-height: 1;
     }
   }
 
@@ -163,33 +163,7 @@
     }
 
     .search-block{
-      position: relative;
       min-width: 300px;
-
-      input{
-        width: 100%;
-        padding: 6px 40px 6px 10px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-        border: 1px solid #ddd;
-      }
-
-      button{
-        position: absolute;
-        top:0;
-        bottom:0;
-        right:0;
-        margin:auto;
-        border: none;
-        background: transparent;
-        width:40px;
-        line-height: 45px;
-        padding:0;
-
-        &:focus{
-          outline: none;
-        }
-      }
     }
 
     .select-block{
@@ -365,6 +339,7 @@
 
     .owl-carousel{
       display: flex;
+      height: 100%;
 
       .owl-stage-outer{
         order:2;
@@ -488,6 +463,50 @@
 
   .page-calendar__todo-list{
     flex-grow: 2;
+    padding-left:40px;
+
+    p{
+      font-size: 40px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .search-block{
+      width:100%;
+      margin-bottom: 20px;
+    }
+
+    ul{
+      margin: 0;
+      padding:0;
+      list-style: none;
+
+      li{
+        position: relative;
+        padding-left: 80px;
+        margin-bottom: 20px;
+        //min-height: 25px;
+
+        em{
+          position: absolute;
+          top:0;
+          bottom: 0;
+          left:0;
+          background: map_get($colors, 'red');
+          border-radius: 20px;
+          color: #fff;
+          font-style: normal;
+          font-size: 18px;
+          height: 25px;
+          line-height: 25px;
+          padding: 0 10px;
+          margin: auto;
+          text-transform: uppercase;
+          display: inline-block;
+        }
+      }
+    }
   }
 }
 
