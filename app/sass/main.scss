@@ -1,62 +1,11 @@
 /* ============================ Main styles ============================ */
 
-$main-color: #004a80;
-$accent-color: #b0a635;
-$white: #fff;
-$grey: darken($white, 40%);
-$black: #000;
-$dark-color: #212123;
-$red-color: #d22;
-
-$youtube-color: #bb0000;
-$twitter-color: #00aced;
-$facebook-color: #3b5998;
-$instagramm-color: #517fa4;
-
-::selection {
-  background: rgba(#fff000, .5);
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-left {
-  text-align: left;
-}
-
-.align-center {
-  text-align: center;
-}
-
-input,
-.btn {
-  &:focus,
-  &:active {
-    outline: none;
-  }
-}
-
-.main-container {
-    max-width: 1533px;
-    margin: 0 auto;
-}
-
-body {
-    font-family: "Refrigerator Delux";
-}
-
-
-
+@import '_variables';
 @import 'my_functions';
 @import '_sprite';
 @import '_icons';
 @import '_base';
+@import '_atomic';
 @import '_forms';
 
 
@@ -111,7 +60,7 @@ body {
 
 .page__user-bar{
   padding:10px 0;
-  background: linear-gradient(to right, #fff 0%, #fff 54%, #d24c48 54%, #d24c48 100%);
+  background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'page-user-bar') 54%, map_get($colors, 'page-user-bar') 100%);
 
   .flex-container{
     flex-wrap: nowrap;

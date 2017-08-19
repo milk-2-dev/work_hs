@@ -27,7 +27,7 @@ gulp.task('sass', function(){
 
 gulp.task('browser-sync',function(){
     browserSync({
-        proxy: "HSstatic",
+        proxy: "work-hs",
         notify: false,
     });
 });
