@@ -175,6 +175,8 @@ $('document').ready(function(){
         elem.find(".status").html(x + "<span>%</span>");
     }
 
+
+
     $(".anchor").on("click", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
@@ -186,6 +188,45 @@ $('document').ready(function(){
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
+    //$("#sa-sponsors").owlCarousel({
+        //     items: 4,
+        //     loop: true,
+        //     lazyLoad: true,
+        //     margin: 30,
+        //     autoplay: true,
+        //     autoplayHoverPause: true,
+        //     nav: true,
+        //     navText: [
+        //         "<img src='/img/owl-prev.png'>",
+        //         "<img src='/img/owl-next.png'>"
+        //     ]
+        // });
+    var date = new Date();
+    var todayMonth = date.getMonth();
+
+    var owl = $("#page-calendar").owlCarousel({
+        items: 1,
+        slideSpeed: 500,
+        autoplay: false,
+        //autoplayTimeout: 4500,
+        loop: true,
+        mouseDrag: true,
+        singleItem: true,
+        dots: true,
+        margin: 0,
+        dotsClass:'slider__pager',
+        dotsData: true,
+        startPosition: todayMonth,
+        // responsive:true,
+        // navContainer: 'page-calendar__slider-nav',
+        // dotsContainer: 'page-calendar__slider-dots',
+        nav: true,
+        navText: [
+            "<i class='icon icon-calendar-left'></i>",
+            "<i class='icon icon-calendar-right'></i>"
+        ]
+    }).data('owlCarousel');
 
 });
 

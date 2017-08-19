@@ -37,7 +37,7 @@ gulp.task('scripts', function() {
         // 'app/libs/modernizr.js',
         'app/libs/jQuery/dist/jquery.min.js',
         'app/libs/bootstrap/dist/js/bootstrap.min.js',
-        'app/libs/owlcarousel2/dist/owl.carousel.min.js',
+        'app/libs/owlcarousel/dist/owl.carousel.min.js',
         'app/libs/plyr/dist/plyr.js',
         'app/libs/radialIndicator/radialIndicator.min.js',
         ])

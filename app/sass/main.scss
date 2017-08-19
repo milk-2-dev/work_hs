@@ -60,7 +60,7 @@
 
 .page__user-bar{
   padding:10px 0;
-  background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'page-user-bar') 54%, map_get($colors, 'page-user-bar') 100%);
+  background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'red') 54%, map_get($colors, 'red') 100%);
 
   .flex-container{
     flex-wrap: nowrap;
@@ -344,6 +344,150 @@
     &:nth-child(6){
       text-align: center;
     }
+  }
+}
+
+.page-calendar{
+  .flex-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-calendar__slider{
+    width: 55%;
+    position: relative;
+
+    .page-calendar__add-event{
+      position: absolute;
+      top: 12px;
+      right: 16px;
+    }
+
+    .owl-carousel{
+      display: flex;
+
+      .owl-stage-outer{
+        order:2;
+        width: 100%;
+        padding: 0 40px;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+      }
+
+      .slider__pager{
+        order:1;
+        width: 15%;
+
+        div{
+          display: block;
+          text-align: center;
+          margin-right: 0;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+
+          &.active{
+            color: map_get($colors, 'red')
+          }
+        }
+      }
+
+      .owl-nav{
+        position: absolute;
+        top:12px;
+        right:36px;
+
+        div{
+          display: inline-block;
+          margin-right: 16px;
+          opacity: .3;
+          transition: .2s ease-in-out;
+
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+
+      .item{
+        p{
+          font-size: 40px;
+          text-transform: uppercase;
+          line-height: 1;
+        }
+
+        table{
+          th, td{
+            padding: 16px 20px;
+            text-align: center;
+            vertical-align: middle;
+
+            &:first-child{
+              padding-left:0;
+            }
+          }
+
+          tr{
+
+          }
+
+          td{
+            &.another-month{
+              color: #ddd;
+            }
+
+            &.event-date{
+              position: relative;
+
+              &:before{
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: 0;
+                right: 0;
+                width: 5px;
+                height: 5px;
+                margin: auto;
+                background: map_get($colors, 'red');
+                border-radius: 50%;
+              }
+            }
+
+            &.today{
+              position: relative;
+              color: #fff;
+
+              &:before{
+                content: '';
+                position: absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                width: 40px;
+                height: 40px;
+                margin: auto;
+                background: map_get($colors, 'red');
+                border-radius: 50%;
+                z-index: -1;
+              }
+            }
+          }
+
+          th{
+            text-transform: uppercase;
+            color: map_get($colors, 'red')
+          }
+        }
+      }
+    }
+  }
+
+  .page-calendar__todo-list{
+    flex-grow: 2;
   }
 }
 
