@@ -321,6 +321,27 @@
   }
 }
 
+.campaigns{
+  @extend .applications;
+}
+
+.campaigns__title {
+  @extend .application__title;
+}
+.campaigns__head {
+  @extend .application__head;
+}
+.campaigns__item-add {
+  @extend .application__item-add;
+}
+.campaigns__status {
+  @extend .application__status;
+}
+.campaigns__item {
+  @extend .application__item;
+}
+
+
 .page-calendar{
   .flex-container{
     flex-wrap: wrap;
