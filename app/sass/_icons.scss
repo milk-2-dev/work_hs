@@ -9,6 +9,10 @@
     @include sprite($arrow-down);
   }
 
+  &.icon-arrow-down-circle-tr{
+    @include sprite($arrow-down-circle-tr);
+  }
+
   &.icon-register{
     @include sprite($register);
   }
@@ -56,13 +60,28 @@
     @include sprite ($arrow-right-circle);
   }
 
-  &.icon-calendar-add{
+  &.icon-circle-add{
     @include sprite ($plus-circle);
+  }
+
+  &.icon-circle2-add{
+    @include sprite ($plus-circle2);
   }
 
   &.icon-close-menu{
     width:40px;
     height: 40px;
+
+    //&:hover{
+    //  &:before{
+    //    transform: rotate(-135deg);
+    //  }
+    //
+    //  &:after{
+    //    transform: rotate(135deg);
+    //  }
+    //
+    //}
 
     &:before{
       content: '';
@@ -76,6 +95,7 @@
       margin:auto;
       background: #fff;
       transform: rotate(45deg);
+      transition: .2s;
     }
 
     &:after{
@@ -90,6 +110,7 @@
       margin:auto;
       background: #fff;
       transform: rotate(-45deg);
+      transition: .2s;
     }
   }
 }

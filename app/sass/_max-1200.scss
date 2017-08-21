@@ -3,5 +3,17 @@
     background: linear-gradient(to right, #fff 0%, #fff 48%, #d24c48 48%, #d24c48 100%);
   }
 
+  .athletes-list__item {
+    width: 30%;
+    margin-bottom: 45px;
+
+    &:nth-child(4n+4) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 
 }

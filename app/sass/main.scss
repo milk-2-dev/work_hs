@@ -341,7 +341,6 @@
   @extend .application__item;
 }
 
-
 .page-calendar{
   .flex-container{
     flex-wrap: wrap;
@@ -531,7 +530,99 @@
   }
 }
 
+.athletes-list{
+  .flex-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
+  .load-more{
+    margin-top: 20px;
+  }
+}
+
+.athletes-list__item{
+  position: relative;
+  min-height: 320px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 23%;
+  margin-right:30px;
+
+  &:nth-child(4n+4){
+    margin-right:0;
+  }
+
+  &:hover{
+    img{
+      transform: translate(-50%, -50%) scale(1.1) rotate(2deg);
+    }
+  }
+
+  > a{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width:285px;
+    transition: .2s ease-in-out;
+  }
+}
+
+.athletes-list__item-desc{
+  position: absolute;
+  bottom:0;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  color: #fff;
+
+  p{
+    font-size: 22px;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  span{
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  em{
+    font-style: normal;
+    font-size: 20px;
+    padding-right:26px;
+    display: block;
+  }
+
+  a{
+    display: block;
+    position: absolute;
+    right:10px;
+    bottom: 11px;
+    line-height: 0;
+
+    &:hover {
+      i{
+        transform:  scale(1) rotate(270deg);
+      }
+    }
+
+    i{
+      transition: .2s ease-in-out;
+      transform:  scale(-.77);
+    }
+  }
+}
 
 .youtube { background: #bb0000 };
 .twitter { background: #00aced };
@@ -551,3 +642,7 @@
 /* ============================ Media max-767px ============================ */
 
 @import 'max-767';
+
+/* ============================ Media max-550px ============================ */
+
+@import 'max-550';

@@ -1,0 +1,13 @@
+@media (max-width: 550px) {
+  .athletes-list__item {
+    width: 100%;
+    min-height: 430px;
+    max-width: 375px;
+    margin: 0 auto 35px !important;
+
+    img{
+      width: 375px;
+    }
+  }
+
+}

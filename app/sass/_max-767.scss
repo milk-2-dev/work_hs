@@ -37,10 +37,11 @@
 
         li{
           display: block;
+          text-align: center;
 
           a{
             padding:0;
-            display: block;
+            display: inline-block;
             position: relative;
             margin-bottom: 30px;
             text-align: center;
@@ -336,6 +337,24 @@
           content: 'status';
         }
       }
+    }
+  }
+
+  .athletes-list__item {
+    width: 45%;
+    margin-bottom: 65px;
+    min-height: 375px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    img{
+      width: 375px;
     }
   }
 

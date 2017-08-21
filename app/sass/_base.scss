@@ -122,3 +122,33 @@ body{
     }
   }
 }
+
+.load-more {
+  text-align: center;
+
+  a{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: map_get($colors, 'gold');
+    padding-right:20px;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+
+    &:hover{
+      transform: scale(1.1);
+      i{
+        transform: rotate(-90deg);
+      }
+    }
+
+    i{
+      position: absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      margin: auto;
+      transition: .2s ease-in-out;
+    }
+  }
+}
