@@ -228,6 +228,19 @@ $('document').ready(function(){
         ]
     }).data('owlCarousel');
 
+    function SocialProgressBar(){
+        var el = $('#social-progress-bar span');
+
+        el.each(function(spanItem) {
+            var elParam = $(this).attr('data-progress');
+            $(this).css('width', elParam +'%');
+            $(this).find('em').text(elParam +'%');
+        });
+    }
+
+    SocialProgressBar();
+
+
 });
 
 $(window).resize(function(){

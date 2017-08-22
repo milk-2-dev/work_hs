@@ -10,4 +10,57 @@
     }
   }
 
+  .page-calendar__slider{
+    .owl-carousel{
+      .slider__pager {
+        width: 35px;
+
+        div{
+          text-align: left;
+        }
+      }
+
+      .owl-nav{
+        right: 30px;
+
+        div{
+          margin-right: 8px;
+        }
+      }
+
+      .owl-stage-outer{
+        padding:0 10px;
+      }
+
+      .item{
+
+        table{
+          th, td{
+            padding: 12px 7px;
+          }
+
+          td{
+            &.today{
+              &:before{
+                width: 32px;
+                height: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .page-calendar__add-event{
+    right: 10px;
+  }
+
+  .footer{
+    padding-top:20px;
+
+    .footer-nav {
+      margin-bottom: 20px;
+    }
+  }
 }

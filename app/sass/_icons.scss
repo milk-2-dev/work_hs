@@ -113,4 +113,19 @@
       transition: .2s;
     }
   }
+
+  //social
+
+  &.icon-instagram{
+    @include sprite($progress-bar-instagram);
+  }
+
+  &.icon-twitter{
+    @include sprite($progress-bar-twitter);
+  }
+
+  &.icon-facebook{
+    @include sprite($progress-bar-facebook);
+  }
+
 }
