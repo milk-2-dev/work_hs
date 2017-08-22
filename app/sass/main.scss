@@ -671,7 +671,7 @@
 
 .page-massages__nav{
   //width: 20%;
-  padding: 0 30px;
+  padding-right: 30px;
 
   ul{
     margin: 0;
@@ -709,6 +709,10 @@
   border-left:1px solid #ddd;
   border-right:1px solid #ddd;
   width:35%;
+
+  .collapse-toggle{
+    display: none;
+  }
 }
 
 .page-massages__filter{
@@ -732,14 +736,7 @@
     top:0;
     left:0;
     bottom:0;
-    width:45px;
-    height:45px;
     margin: auto;
-    font-size: 30px;
-
-    &:hover{
-      transform: scale(1.1) rotate(270deg);
-    }
   }
 }
 
@@ -777,12 +774,8 @@
     display: flex;
     align-items: center;
 
-    a{
-      margin-right:10px;
-
-      &:hover{
-        transform: scale(1.1) rotate(270deg);
-      }
+    span{
+      margin-left:10px;
     }
   }
 }

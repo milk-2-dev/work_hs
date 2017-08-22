@@ -114,6 +114,10 @@
     }
   }
 
+  &.icon-collapse{
+    @include sprite($arrow-down-hover);
+  }
+
   //social
 
   &.icon-instagram{
@@ -128,5 +132,7 @@
     @include sprite($progress-bar-facebook);
   }
 
-
+  &.icon-plus{
+    @include sprite($icon-plus-white);
+  }
 }

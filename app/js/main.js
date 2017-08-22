@@ -240,6 +240,32 @@ $('document').ready(function(){
 
     SocialProgressBar();
 
+    $('.collapse-toggle').on('click', function(){
+        if( !$(this).parent().hasClass("open")){
+            var rezult = 0;
+
+            $(this).parent().find('.collapse-wrap >div').each(function() {
+                var h = $(this).outerHeight(true);
+
+                console.log('height el ='+ h);
+
+                rezult = rezult + h;
+                return rezult;
+            });
+
+            $('.collapse-wrap').css('height', rezult);
+
+            $(this).parent().addClass('open');
+        }
+
+        else {
+            $('.collapse-wrap').css('height', 0);
+            $(this).parent().removeClass('open');
+        }
+
+
+    })
+
 
 });
 

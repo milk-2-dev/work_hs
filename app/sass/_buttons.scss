@@ -4,20 +4,52 @@
   justify-content: center;
   border-radius: 50%;
   background: #c9c8c8;
-  font-family: serif;
-  font-weight: 700;
-  color: #fff;
   transition: .2s ease-in-out;
-  line-height: 1;
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:50%;
+    height:2px;
+    margin: auto;
+    background: #fff;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:50%;
+    height:2px;
+    margin: auto;
+    background: #fff;
+    transform: rotate(90deg);
+  }
 
   &:hover{
     text-decoration: none;
     color: #fff;
+    transform: scale(1.1) rotate(270deg);
   }
 
-  &.default{
+  &.button-lg{
+    width:45px;
+    height:45px;
+    font-size: 30px;
+  }
+
+  &.button-sm{
     width:20px;
     height:20px;
-    font-size: 13px;
   }
 }
+
+

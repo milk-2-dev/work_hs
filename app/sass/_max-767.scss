@@ -441,4 +441,42 @@
       }
     }
   }
+
+  .page-massages__list {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+
+    &.open{
+      .collapse-toggle{
+        transform: rotate(180deg);
+      }
+    }
+
+    .collapse-toggle{
+      display: block;
+      text-align: center;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: .2s ease-in-out;
+    }
+
+    .collapse-wrap{
+      overflow: hidden;
+      height: 0;
+      transition: .2s ease-in-out;
+      margin-bottom: 30px;
+    }
+  }
+
+  .page-massages__view {
+    width: 100%;
+    padding: 0;
+  }
 }
