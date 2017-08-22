@@ -1,0 +1,23 @@
+.button-circle__add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #c9c8c8;
+  font-family: serif;
+  font-weight: 700;
+  color: #fff;
+  transition: .2s ease-in-out;
+  line-height: 1;
+
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &.default{
+    width:20px;
+    height:20px;
+    font-size: 13px;
+  }
+}

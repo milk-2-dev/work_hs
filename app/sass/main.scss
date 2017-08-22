@@ -6,6 +6,7 @@
 @import '_icons';
 @import '_base';
 @import '_atomic';
+@import '_buttons';
 @import '_forms';
 
 
@@ -166,29 +167,6 @@
 
     .search-block{
       min-width: 300px;
-    }
-
-    .select-block{
-      label{
-        position: relative;
-        padding-right: 15px;
-        background: url("../img/select-bg.png");
-        background-position: center right;
-        background-repeat: no-repeat;
-      }
-
-      select {
-        padding: 0 8px;
-        border: none;
-        appearance: none;
-        text-transform: uppercase;
-        font-size: 18px;
-        cursor: pointer;
-
-        &:focus{
-          outline: none;
-        }
-      }
     }
   }
 }
@@ -681,6 +659,136 @@
     padding: 0 10px;
     text-transform: uppercase;
   }
+}
+
+.page-massages{
+  .flex-container{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+.page-massages__nav{
+  //width: 20%;
+  padding: 0 30px;
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      margin-bottom:20px;
+      text-align: center;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      a{
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #000;
+
+        &:hover{
+          text-decoration: none;
+        }
+
+        &.active{
+          color: map_get($colors, 'red');
+        }
+      }
+    }
+  }
+}
+
+.page-massages__list{
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left:1px solid #ddd;
+  border-right:1px solid #ddd;
+  width:35%;
+}
+
+.page-massages__filter{
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom:30px;
+}
+
+.page-massages__list-item{
+  position: relative;
+  padding-left:60px;
+  margin-bottom: 20px;
+
+  &:last-child{
+    margin-bottom:0;
+  }
+
+  a{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:45px;
+    height:45px;
+    margin: auto;
+    font-size: 30px;
+
+    &:hover{
+      transform: scale(1.1) rotate(270deg);
+    }
+  }
+}
+
+.page-massages__list-item-head{
+  display: flex;
+  justify-content: space-between;
+
+  p{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+.page-massages__view{
+  width:65%;
+  padding-left: 30px;
+}
+
+.page-massages__view-item{
+  border-bottom:1px solid #ddd;
+  margin-bottom: 30px;
+
+  &:last-child{
+    border-bottom:none;
+    margin-bottom: 0;
+  }
+}
+
+.page-massages__view-item-head{
+  @extend .page-massages__list-item-head;
+  margin-bottom: 30px;
+
+  p{
+    display: flex;
+    align-items: center;
+
+    a{
+      margin-right:10px;
+
+      &:hover{
+        transform: scale(1.1) rotate(270deg);
+      }
+    }
+  }
+}
+
+.page-massages__view-item-body{
+  margin-bottom: 30px;
 }
 
 .youtube { background: #bb0000 };
