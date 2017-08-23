@@ -367,11 +367,17 @@
 
     .owl-nav{
       position: absolute;
-      top:12px;
-      right:36px;
+      top:0;
+      right:35px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+
 
       div{
-        display: inline-block;
+        display: flex;
         margin-right: 16px;
         opacity: .3;
         transition: .2s ease-in-out;
@@ -458,8 +464,15 @@
 
 .page-calendar__add-event{
   position: absolute;
-  top: 12px;
-  right: 16px;
+  top: 0;
+  right: 1px;
+  height: 40px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  z-index: 2;
 }
 
 .page-calendar__todo-list{
