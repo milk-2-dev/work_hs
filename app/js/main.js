@@ -245,11 +245,11 @@ $('document').ready(function(){
             var rezult = 0;
 
             $(this).parent().find('.collapse-wrap >div').each(function() {
-                var h = $(this).outerHeight(true);
+                var blockHeight = $(this).outerHeight(true);
 
-                console.log('height el ='+ h);
+                console.log('height el ='+ blockHeight);
 
-                rezult = rezult + h;
+                rezult = rezult + blockHeight;
                 return rezult;
             });
 

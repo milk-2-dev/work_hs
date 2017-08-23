@@ -442,11 +442,22 @@
     }
   }
 
+  .page-massages__nav{
+    margin-bottom:30px;
+    padding-right:0;
+
+    ul{
+      li{
+        margin-bottom:0;
+      }
+    }
+  }
+
   .page-massages__list {
     width: 100%;
     border: none;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-bottom: 1px solid #ddd;
     position: relative;
 
@@ -471,7 +482,17 @@
       overflow: hidden;
       height: 0;
       transition: .2s ease-in-out;
-      margin-bottom: 30px;
+      //margin-bottom: 30px;
+    }
+  }
+
+  .page-massages__filter{
+    margin-bottom:15px;
+  }
+
+  .page-massages__list-item{
+    &:last-child{
+      margin-bottom:30px;
     }
   }
 
