@@ -800,7 +800,7 @@
 
 .user-status{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   a{
     display: flex;
@@ -852,13 +852,52 @@
 }
 
 .profile-section1{
-  min-height:500px;
+  min-height:750px;
   display: flex;
   align-items: flex-end;
+  position: relative;
+  overflow: hidden;
 
-  .flex-container{
-    align-content: flex-end;
-    flex-direction: column;
+  &:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
+    z-index: -1;
+  }
+
+  >img{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+
+  h1{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 80px;
+  }
+
+  .user-status{
+    margin-bottom: 50px;
+
+    a{
+      color: #fff;
+    }
+  }
+
+  .profile-info{
+    margin-bottom:30px;
   }
 }
 
@@ -870,6 +909,10 @@
 
 .profile-info__item{
   @extend .page-analytics__item;
+
+  p, span{
+    color:#fff;
+  }
 }
 
 .youtube { background: #bb0000 };
