@@ -68,6 +68,14 @@
     @include sprite ($plus-circle2);
   }
 
+  &.icon-plus2{
+    @include sprite ($plus-circle-18x18);
+  }
+
+  &.icon-ok{
+    @include sprite ($ok-circle-18x18);
+  }
+
   &.icon-close-menu{
     width:40px;
     height: 40px;
@@ -137,4 +145,23 @@
   &.icon-plus{
     @include sprite($icon-plus-white);
   }
+
+  //shared count
+
+  &.icon-hs{
+    @include sprite($shared-count-hs);
+  }
+
+  &.icon-instagram2{
+    @include sprite($shared-count-insta);
+  }
+
+  &.icon-twitter2{
+    @include sprite($shared-count-twiter);
+  }
+
+  &.icon-facebook2{
+    @include sprite($shared-count-facebook);
+  }
+
 }

@@ -228,3 +228,39 @@ body{
     }
   }
 }
+
+.user-info{
+  display: flex;
+  align-items: center;
+
+  .button-circle__add{
+    margin-right:10px;
+  }
+
+  span{
+    position: relative;
+    margin-right:18px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top:0;
+      bottom:0;
+      right:-10px;
+      width:2px;
+      height:18px;
+      margin: auto;
+      background: map_get($colors, 'gold');
+    }
+
+    &:last-child{
+      margin-right:0;
+
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
