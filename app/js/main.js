@@ -272,3 +272,5 @@ $('document').ready(function(){
 $(window).resize(function(){
     setSaHeight($("#sa-video-slider"));
 });
+
+
