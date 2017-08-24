@@ -801,21 +801,27 @@
 .user-status{
   display: flex;
   justify-content: space-between;
-}
 
-.user-status__item{
-  display: flex;
-  align-items: center;
-  margin-right:50px;
-  text-transform: uppercase;
-  font-size: 20px;
+  a{
+    display: flex;
+    align-items: center;
+    margin-right:50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000;
 
-  &:last-child{
-    margin-right: 0;
-  }
+    &:hover{
+      text-decoration: none;
+      //cursor: pointer;
+    }
 
-  i{
-    margin-left:16px;
+    &:last-child{
+      margin-right: 0;
+    }
+
+    i{
+      margin-left:16px;
+    }
   }
 }
 
@@ -843,6 +849,27 @@
       }
     }
   }
+}
+
+.profile-section1{
+  min-height:500px;
+  display: flex;
+  align-items: flex-end;
+
+  .flex-container{
+    align-content: flex-end;
+    flex-direction: column;
+  }
+}
+
+.profile-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info__item{
+  @extend .page-analytics__item;
 }
 
 .youtube { background: #bb0000 };
