@@ -58,7 +58,8 @@ gulp.task('sprite', function () {
     var spriteData = gulp.src('app/img/icons/*.png')
         .pipe(spritesmith({
             imgName: 'sprite.png',
-            cssName: '_sprite.scss'
+            cssName: '_sprite.scss',
+            padding:5
         }));
 
     // Pipe image stream through image optimizer and onto disk

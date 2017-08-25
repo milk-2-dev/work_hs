@@ -60,6 +60,15 @@
     @include sprite ($arrow-right-circle);
   }
 
+  &.icon-slider-nav{
+    @include sprite ($profile-img-slider);
+  }
+
+  &.icon-slider-nav-left{
+    @include sprite ($profile-img-slider);
+    transform: rotate(180deg);
+  }
+
   &.icon-circle-add{
     @include sprite ($plus-circle);
   }

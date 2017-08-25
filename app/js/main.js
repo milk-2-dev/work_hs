@@ -228,6 +228,52 @@ $('document').ready(function(){
         ]
     }).data('owlCarousel');
 
+    var owl = $("#profile-img-slider").owlCarousel({
+        items: 3,
+        slideSpeed: 500,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        loop: false,
+        mouseDrag: true,
+        singleItem: true,
+        dots: false,
+        margin: 2,
+        //dotsClass:'slider__pager',
+        //dotsData: true,
+        //startPosition: todayMonth,
+         //responsive:true,
+        // navContainer: 'page-calendar__slider-nav',
+        // dotsContainer: 'page-calendar__slider-dots',
+        nav: true,
+        navText: [
+            "<i class='icon icon-slider-nav-left'></i>",
+            "<i class='icon icon-slider-nav'></i>"
+        ]
+    }).data('owlCarousel');
+
+    var owl = $("#profile-news-slider").owlCarousel({
+        items: 2,
+        slideSpeed: 500,
+        autoplay: false,
+        //autoplayTimeout: 4500,
+        loop: false,
+        mouseDrag: true,
+        singleItem: true,
+        dots: true,
+        margin: 0,
+        dotsClass:'profile-news__pager',
+        dotsData: true,
+        //startPosition: todayMonth,
+        //responsive:true,
+        // navContainer: 'page-calendar__slider-nav',
+        // dotsContainer: 'page-calendar__slider-dots',
+        nav: true,
+        navText: [
+            "<i class='icon icon-slider-nav-left'></i>",
+            "<i class='icon icon-slider-nav'></i>"
+        ]
+    }).data('owlCarousel');
+
     function SocialProgressBar(){
         var el = $('#social-progress-bar span');
 
@@ -262,11 +308,7 @@ $('document').ready(function(){
             $('.collapse-wrap').css('height', 0);
             $(this).parent().removeClass('open');
         }
-
-
     })
-
-
 });
 
 $(window).resize(function(){
