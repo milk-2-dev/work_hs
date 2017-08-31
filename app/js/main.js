@@ -78,20 +78,20 @@ $('document').ready(function(){
     //     ]
     // });
     //
-    // // Single athlete SPONSORS
-    // $("#sa-sponsors").owlCarousel({
-    //     items: 4,
-    //     loop: true,
-    //     lazyLoad: true,
-    //     margin: 30,
-    //     autoplay: true,
-    //     autoplayHoverPause: true,
-    //     nav: true,
-    //     navText: [
-    //         "<img src='/img/owl-prev.png'>",
-    //         "<img src='/img/owl-next.png'>"
-    //     ]
-    // });
+    // Single athlete SPONSORS
+    $("#sa-sponsors").owlCarousel({
+        items: 4,
+        loop: true,
+        lazyLoad: true,
+        margin: 30,
+        autoplay: true,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: [
+            "<img src='/img/owl-prev.png'>",
+            "<img src='/img/owl-next.png'>"
+        ]
+    });
     //
     // setSaHeight($("#sa-video-slider"));
     //
@@ -261,16 +261,16 @@ $('document').ready(function(){
         singleItem: true,
         dots: true,
         margin: 0,
-        dotsClass:'profile-news__pager',
-        dotsData: true,
+        //dotsClass:'profile-news__pager',
+        //dotsData: true,
         //startPosition: todayMonth,
         //responsive:true,
-        // navContainer: 'page-calendar__slider-nav',
+        //navContainer: 'page-calendar__slider-nav',
         // dotsContainer: 'page-calendar__slider-dots',
         nav: true,
         navText: [
-            "<i class='icon icon-slider-nav-left'></i>",
-            "<i class='icon icon-slider-nav'></i>"
+            "<i class='icon icon-slider-nav2-left'></i>",
+            "<i class='icon icon-slider-nav2'></i>"
         ]
     }).data('owlCarousel');
 
@@ -293,8 +293,6 @@ $('document').ready(function(){
             $(this).parent().find('.collapse-wrap >div').each(function() {
                 var blockHeight = $(this).outerHeight(true);
 
-                console.log('height el ='+ blockHeight);
-
                 rezult = rezult + blockHeight;
                 return rezult;
             });
@@ -309,6 +307,15 @@ $('document').ready(function(){
             $(this).parent().removeClass('open');
         }
     })
+
+    function marginTopHeader(){
+        var headerHeight = $('.header').outerHeight(true);
+
+        $('.margin-top').css('padding-top', headerHeight);
+    }
+
+    marginTopHeader();
+
 });
 
 $(window).resize(function(){

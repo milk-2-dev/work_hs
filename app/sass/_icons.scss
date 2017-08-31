@@ -1,3 +1,5 @@
+//look at file name, it's place where is it placed
+
 .icon{
   display: inline-block;
 
@@ -63,11 +65,20 @@
   &.icon-slider-nav{
     @include sprite ($profile-img-slider);
   }
-
   &.icon-slider-nav-left{
     @include sprite ($profile-img-slider);
     transform: rotate(180deg);
   }
+
+  &.icon-slider-nav2{
+    @include sprite ($profile-news-slider);
+  }
+
+  &.icon-slider-nav2-left{
+    @include sprite ($profile-news-slider);
+    transform: rotate(180deg);
+  }
+
 
   &.icon-circle-add{
     @include sprite ($plus-circle);
@@ -147,15 +158,34 @@
     @include sprite($progress-bar-twitter);
   }
 
+  &.icon-twitter2{
+    @include sprite($shared-count-twiter);
+  }
+
+  &.icon-twitter3{
+    @include sprite($profile-news-twitter);
+  }
+
   &.icon-facebook{
     @include sprite($progress-bar-facebook);
+  }
+
+  &.icon-facebook2{
+    @include sprite($shared-count-facebook);
+  }
+
+  &.icon-youtube{
+    @include sprite($profile-news-item-footer-youtube);
+  }
+
+  &.icon-youtube2{
+    @include sprite($profile-news-youtube);
   }
 
   &.icon-plus{
     @include sprite($icon-plus-white);
   }
 
-  //shared count
 
   &.icon-hs{
     @include sprite($shared-count-hs);
@@ -165,12 +195,8 @@
     @include sprite($shared-count-insta);
   }
 
-  &.icon-twitter2{
-    @include sprite($shared-count-twiter);
-  }
 
-  &.icon-facebook2{
-    @include sprite($shared-count-facebook);
-  }
+
+
 
 }

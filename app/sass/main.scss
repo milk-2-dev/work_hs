@@ -986,11 +986,61 @@
 }
 
 #profile-news-slider{
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 80px;
+
   .slider__item{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
     align-content: flex-start;
+  }
+
+  .owl-nav {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+  }
+
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+    transition: .2s ease-in-out;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  .owl-prev {
+    left: 15px;
+  }
+
+  .owl-next {
+    right: 15px;
+  }
+
+  .owl-dots{
+    height: 2px;
+    background: #E9E8E7;
+    position: absolute;
+    bottom: -41px;
+    left: 70px;
+    right: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .owl-dot{
+    width:100%;
+    height:4px;
+
+    &.active{
+      background: map_get($colors, 'gold');
+    }
   }
 }
 
@@ -1001,21 +1051,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   padding:20px;
-
-  &:before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin:auto;
-    @include sprite($magnifier);
-    z-index: 1;
-  }
 
   &:after{
     content: '';
@@ -1025,8 +1061,42 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(0, #000, transparent);
     z-index: -1;
+  }
+
+  &:hover{
+    a{
+      background: rgba(0, 0, 0, 0.5);
+      &:before{
+        transform: scale(1);
+      }
+    }
+  }
+
+  a{
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    z-index: 1;
+    transition: .2s ease-in-out;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin:auto;
+      @include sprite($magnifier);
+      transform: scale(0);
+      transition: .2s ease-in-out;
+      z-index: 2;
+    }
   }
 
   img{
@@ -1041,10 +1111,71 @@
     object-fit: cover;
   }
 
-  p{
-    color: #fff;
-    font-size: 20px;
-    display: flex;
+  &.default{
+    justify-content: flex-end;
+
+    &:after{
+      top: 40%;
+      background: linear-gradient(0, #000, transparent);
+    }
+
+    p{
+      color: #fff;
+      font-size: 18px;
+      display: flex;
+      text-transform: uppercase;
+    }
+  }
+
+  &.twitter{
+    align-items: center;
+    justify-content: center;
+
+    &:after{
+
+    }
+
+    .icon{
+      margin-bottom:20px;
+    }
+
+    span{
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+
+    p{
+      font-size: 22px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+
+  &.youtube{
+    justify-content: flex-end;
+
+    .icon-youtube2{
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin:auto;
+
+      &:before{
+        content: '';
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width:80px;
+        height:80px;
+        background: #b00;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -1060,13 +1191,63 @@
   }
 }
 
+.profile-section9 {
+  padding: 50px 0 0;
 
+  .block-title{
+    margin-right: 20px;
+  }
 
+}
 
-.youtube { background: #bb0000 };
-.twitter { background: #00aced };
-.facebook { background: #3b5998 };
-.instagramm { background: #517fa4 };
+.worked-with{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.worked-with__item{
+  margin-bottom: 50px;
+  padding:10px;
+  width:20%;
+
+  .button-circle__add{
+    width:80px;
+    height:80px;
+    margin: auto;
+    background: transparent;
+    border: 2px solid #c9c8c8;
+
+    &:before, &:after{
+      background: #c9c8c8;
+    }
+  }
+}
+
+.profile-section10{
+  padding: 50px 0;
+  text-align: center;
+
+  .block-title{
+    p{
+      font-size: 50px;
+      font-weight:700;
+    }
+  }
+
+  span{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight:700;
+  }
+}
+
+//.youtube { background: #bb0000 };
+//.twitter { background: #00aced };
+//.facebook { background: #3b5998 };
+//.instagramm { background: #517fa4 };
 
 @import "fonts";
 
