@@ -177,6 +177,7 @@ $('document').ready(function(){
 
 
 
+    //scroll to link
     $(".anchor").on("click", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
@@ -202,6 +203,8 @@ $('document').ready(function(){
         //         "<img src='/img/owl-next.png'>"
         //     ]
         // });
+
+    //Calendar page
     var date = new Date();
     var todayMonth = date.getMonth();
 
@@ -218,9 +221,6 @@ $('document').ready(function(){
         dotsClass:'slider__pager',
         dotsData: true,
         startPosition: todayMonth,
-        // responsive:true,
-        // navContainer: 'page-calendar__slider-nav',
-        // dotsContainer: 'page-calendar__slider-dots',
         nav: true,
         navText: [
             "<i class='icon icon-calendar-left'></i>",
@@ -228,6 +228,8 @@ $('document').ready(function(){
         ]
     }).data('owlCarousel');
 
+
+    //profile page
     var owl = $("#profile-img-slider").owlCarousel({
         items: 3,
         slideSpeed: 500,
@@ -238,21 +240,27 @@ $('document').ready(function(){
         singleItem: true,
         dots: false,
         margin: 2,
-        //dotsClass:'slider__pager',
-        //dotsData: true,
-        //startPosition: todayMonth,
-         //responsive:true,
-        // navContainer: 'page-calendar__slider-nav',
-        // dotsContainer: 'page-calendar__slider-dots',
         nav: true,
         navText: [
             "<i class='icon icon-slider-nav-left'></i>",
             "<i class='icon icon-slider-nav'></i>"
-        ]
+        ],
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
     }).data('owlCarousel');
 
     var owl = $("#profile-news-slider").owlCarousel({
-        items: 2,
+        items: 4,
         slideSpeed: 500,
         autoplay: false,
         //autoplayTimeout: 4500,
@@ -261,18 +269,38 @@ $('document').ready(function(){
         singleItem: true,
         dots: true,
         margin: 0,
-        //dotsClass:'profile-news__pager',
-        //dotsData: true,
-        //startPosition: todayMonth,
-        //responsive:true,
-        //navContainer: 'page-calendar__slider-nav',
-        // dotsContainer: 'page-calendar__slider-dots',
         nav: true,
         navText: [
             "<i class='icon icon-slider-nav2-left'></i>",
             "<i class='icon icon-slider-nav2'></i>"
-        ]
+        ],
+
+        owl2row: true,
+        owl2rowTarget: 'slider__item',
+        owl2rowContainer: 'owl2row-item',
+        owl2rowDirection: 'utd', // ltr,
+
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1,
+                owl2row: false,
+            },
+            768:{
+                items:1,
+                owl2row: false,
+            },
+            992:{
+                items:2,
+                owl2row: false,
+            },
+            1200:{
+                items:4
+            }
+        }
     }).data('owlCarousel');
+    console.log(rowsCount);
+
 
     function SocialProgressBar(){
         var el = $('#social-progress-bar span');

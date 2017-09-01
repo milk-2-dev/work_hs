@@ -99,4 +99,29 @@
   .page-massages__view{
     width:55%;
   }
+
+  .profile-section1 {
+    min-height: 450px;
+  }
+
+  .worked-with {
+    width: 70%;
+  }
+
+  .worked-with__item {
+    width: 33%;
+    text-align: center;
+  }
+
+  .user-status {
+    a {
+      margin-right: 16px;
+    }
+  }
+
+  .block-title{
+    p{
+      font-size: 40px;
+    }
+  }
 }
