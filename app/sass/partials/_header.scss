@@ -5,9 +5,14 @@
 .header {
     position: fixed;
     width: 100%;
-    //max-width: 1533px;
+    top:0;
     z-index: 999;
     background: $dark-color;
+    transition: .2s ease-in-out;
+
+    &.fixed--hide{
+        top: -95px;
+    }
 
     .flex-container{
         justify-content: space-between;

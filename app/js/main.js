@@ -278,8 +278,7 @@ $('document').ready(function(){
         owl2row: true,
         owl2rowTarget: 'slider__item',
         owl2rowContainer: 'owl2row-item',
-        owl2rowDirection: 'utd', // ltr,
-
+        owl2rowDirection: 'utd',
         responsiveClass: true,
         responsive:{
             0:{
@@ -299,7 +298,6 @@ $('document').ready(function(){
             }
         }
     }).data('owlCarousel');
-    console.log(rowsCount);
 
 
     function SocialProgressBar(){
@@ -343,6 +341,104 @@ $('document').ready(function(){
     }
 
     marginTopHeader();
+
+
+    // var supportTouch = $.support.touch,
+    //     scrollEvent = "touchmove scroll",
+    //     touchStartEvent = supportTouch ? "touchstart" : "mousedown",
+    //     touchStopEvent = supportTouch ? "touchend" : "mouseup",
+    //     touchMoveEvent = supportTouch ? "touchmove" : "mousemove";
+    // $.event.special.swipeupdown = {
+    //     setup: function() {
+    //         var thisObject = this;
+    //         var $this = $(thisObject);
+    //         $this.bind(touchStartEvent, function(event) {
+    //             var data = event.originalEvent.touches ?
+    //                     event.originalEvent.touches[ 0 ] :
+    //                     event,
+    //                 start = {
+    //                     time: (new Date).getTime(),
+    //                     coords: [ data.pageX, data.pageY ],
+    //                     origin: $(event.target)
+    //                 },
+    //                 stop;
+    //
+    //             function moveHandler(event) {
+    //                 if (!start) {
+    //                     return;
+    //                 }
+    //                 var data = event.originalEvent.touches ?
+    //                     event.originalEvent.touches[ 0 ] :
+    //                     event;
+    //                 stop = {
+    //                     time: (new Date).getTime(),
+    //                     coords: [ data.pageX, data.pageY ]
+    //                 };
+    //
+    //                 // prevent scrolling
+    //                 if (Math.abs(start.coords[1] - stop.coords[1]) > 10) {
+    //                     event.preventDefault();
+    //                 }
+    //             }
+    //             $this
+    //                 .bind(touchMoveEvent, moveHandler)
+    //                 .one(touchStopEvent, function(event) {
+    //                     $this.unbind(touchMoveEvent, moveHandler);
+    //                     if (start && stop) {
+    //                         if (stop.time - start.time < 1000 &&
+    //                             Math.abs(start.coords[1] - stop.coords[1]) > 30 &&
+    //                             Math.abs(start.coords[0] - stop.coords[0]) < 75) {
+    //                             start.origin
+    //                                 .trigger("swipeupdown")
+    //                                 .trigger(start.coords[1] > stop.coords[1] ? "swipeup" : "swipedown");
+    //                         }
+    //                     }
+    //                     start = stop = undefined;
+    //                 });
+    //         });
+    //     }
+    // };
+    // $.each({
+    //     swipedown: "swipeupdown",
+    //     swipeup: "swipeupdown"
+    // }, function(event, sourceEvent){
+    //     $.event.special[event] = {
+    //         setup: function(){
+    //             $(this).bind(sourceEvent, $.noop);
+    //         }
+    //     };
+    // });
+    //
+    // $('.profile-section1').on('swipedown',function(){
+    //     $('.user-profile-bar').removeClass('user-profile-bar--hidden');
+    // } );
+    // $('.profile-section1').on('swipeup',function(){
+    //     $('.user-profile-bar').addClass('user-profile-bar--hidden');
+    // } );
+
+
+    //Hiding header on mob
+    function ReverseFixedHeader() {
+        var myWidth = $('body').innerWidth();
+        if (myWidth < 768) {
+            var heightScrollLocal, heightScroll = 0;
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop() > 50){
+                    heightScroll = $(this).scrollTop();
+                    if(heightScroll > heightScrollLocal){
+                        $('.header').addClass('fixed--hide');
+                    }
+                    else {
+                        $('.header').removeClass('fixed--hide');
+                    }
+                    heightScrollLocal = heightScroll;
+                }
+            });
+        }
+    }
+
+    ReverseFixedHeader();
+
 
 });
 

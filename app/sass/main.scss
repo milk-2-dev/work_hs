@@ -760,10 +760,17 @@
 .user-profile-bar{
   padding:6px 0;
   background: #fff;
+  transition: .2s;
 
   .flex-container{
     justify-content: space-between;
     align-items: center;
+  }
+
+  &.user-profile-bar--hidden{
+    overflow: hidden;
+    padding: 0;
+    height: 0;
   }
 }
 
@@ -906,6 +913,11 @@
 #profile-img-slider{
   position: relative;
 
+  .owl-item{
+    display: flex;
+    align-self: stretch;
+  }
+
   .owl-stage{
     display: flex;
     align-self: stretch;
@@ -913,7 +925,8 @@
 
   .slider-item{
     display: flex;
-    height: 100%;
+    //height: 100%;
+    width:100%;
     background: #ddd;
     justify-content: center;
     align-items: center;
