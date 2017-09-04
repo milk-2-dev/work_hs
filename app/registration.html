@@ -66,27 +66,118 @@
 
 <div class="wrapper">
     <div class="content">
-        <section>
-            <div class="container">
-                <h1>athletes:</h1>
+        <div class="container">
+            <div class="registration-form">
+                <div class="registration-form__tabs">
+                    <ul>
+                        <li class="active"><a href="#reg-step1" data-toggle="tab">register</a></li>
+                        <li><a href="#reg-step2" data-toggle="tab">user info</a></li>
+                        <li><a href="#reg-step3" data-toggle="tab">image</a></li>
+                        <li><a href="#reg-step4" data-toggle="tab">complete</a></li>
+                    </ul>
 
-                <ul>
-                    <li><a href="/athletes/application.html">Application</a></li>
-                    <li><a href="/athletes/analytics.html">Analytics</a></li>
-                    <li><a href="/athletes/calendar.html">Calendar</a></li>
-                    <li><a href="/athletes/campaigns.html">Campaigns</a></li>
-                    <li><a href="/athletes/campaigns-search.html">Campaigns search</a></li>
-                    <li><a href="/athletes/sponsor.html">Sponsor</a></li>
-                    <li><a href="/athletes/payments.html">Payments</a></li>
-                    <li><a href="/athletes/massages.html">Massages</a></li>
-                    <li><a href="/athletes/profile.html">Profile</a></li>
-                </ul>
+                    <div class="bottom-line">
+                        <div class="bottom-line__triangle"></div>
+                    </div>
+                </div>
+
+
+                <div class="tab-content">
+                    <form action="">
+
+                        <div class="tab-pane fade in active"    id="reg-step1">
+                            <p class="tab-pane__title">
+                                register
+                            </p>
+
+                            <div class="form-item">
+                                <label for="name">name</label>
+                                <input type="text" id="name" placeholder="Joe bloggs">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="email">email address</label>
+                                <input type="email" id="email" placeholder="joebloggs@hotmail.com">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="password">password</label>
+                                <input type="password" id="password" placeholder="********">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="confirm-password">confirm password</label>
+                                <input type="password" id="confirm-password" placeholder="********">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="account-type">account type</label>
+                                <div class="select-block">
+                                    <select name="" id="account-type">
+                                        <option value="athlete" selected >athlete</option>
+                                        <option value="brand">brand</option>
+                                        <option selected value="team">team</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="button-block">
+                                <a class="button gold" href="#reg-step2" data-toggle="tab">next</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade"              id="reg-step2">
+
+                            <p class="tab-pane__title">
+                                register
+                            </p>
+
+                            <div class="form-item">
+                                <label for="name">name</label>
+                                <input type="text" id="name" placeholder="Joe bloggs">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="email">email address</label>
+                                <input type="email" id="email" placeholder="joebloggs@hotmail.com">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="password">password</label>
+                                <input type="password" id="password" placeholder="********">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="confirm-password">confirm password</label>
+                                <input type="password" id="confirm-password" placeholder="********">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="account-type">account type</label>
+                                <div class="select-block">
+                                    <select name="" id="account-type">
+                                        <option value="athlete" selected >athlete</option>
+                                        <option value="brand">brand</option>
+                                        <option selected value="team">team</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="button-block">
+                                <a class="button gold" href="#reg-step2" data-toggle="tab">next</a>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade"              id="reg-step3">
+
+                        </div>
+                        <div class="tab-pane fade"              id="reg-step4">
+
+                        </div>
+                    </form>
+                </div>
             </div>
-
-
-        </section>
-
-
+        </div>
     </div>
 
     <footer class="footer">

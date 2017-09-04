@@ -9,13 +9,173 @@ input[type='text']{
   color: #000;
 }
 
+input{
+  height: 40px;
+  border: 1px solid #D5D7D7;
+  border-radius: 40px;
+  padding: 0 20px;
+  width:100%;
+}
 
-.order-form{
-  input{
+.form-item{
+  margin-bottom:45px;
 
+  &:last-child{
+    margin-bottom:0;
   }
 
-  button{
-
+  label{
+    display: block;
+    margin-left:20px;
+    font-weight: 100;
+    text-transform: uppercase;
   }
 }
+
+.select-block{
+  position: relative;
+  background-color: #ececec;
+  height: 40px;
+  border-radius:40px;
+
+  &:after{
+    content: '';
+    position: absolute;
+    top:0;
+    right:5px;
+    bottom: 0;
+    @include sprite($arrow-down);
+    margin:auto;
+    z-index: 0;
+  }
+
+  select{
+    @extend input;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    color: #888;
+    padding-right:40px;
+  }
+}
+
+.registration-form{
+  max-width: 600px;
+  margin: 50px auto;
+
+  .button-block{
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+.registration-form__tabs{
+  position: relative;
+
+  ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+
+    li{
+      position: relative;
+      padding:25px 0 0;
+
+      &:first-child{
+        &:after{
+          display: none;
+        }
+      }
+
+      &:before{
+        content: '';
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        width:20px;
+        height:20px;
+        margin:auto;
+        background: #D1D2D4;
+        border-radius: 50px;
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        right: calc(100% - 30px);
+        top: 8px;
+        width: 180px;
+        height: 4px;
+        background: #D1D2D4;
+        z-index: -1;
+      }
+
+      a{
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #d1d2d4;
+      }
+
+      &.active{
+        &:before{
+          background: map-get($colors, 'gold');
+        }
+
+        &:after{
+          background: map-get($colors, 'gold');
+        }
+
+        a{
+          color: map-get($colors, 'gold');
+        }
+      }
+    }
+  }
+
+  .bottom-line{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+  }
+
+  .bottom-line__triangle{
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      border: 1px solid #ddd;
+      background: #fff;
+      z-index: 1;
+    }
+  }
+}
+
+.tab-pane__title{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+

@@ -52,4 +52,31 @@
   }
 }
 
+.button{
+  display: inline-block;
+  text-align: center;
+  min-width:104px;
+  padding:6px 20px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 45px;
+  transition: .2s ease-in-out;
+
+
+  &:hover{
+    text-decoration: none;
+  }
+
+  &.gold{
+    background: map_get($colors, 'gold');
+    border: 1px solid map_get($colors, 'gold');
+
+    &:hover{
+      background: #fff;
+      color: map_get($colors, 'gold');
+    }
+  }
+}
+
 
