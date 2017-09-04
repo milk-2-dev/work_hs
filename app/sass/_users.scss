@@ -1,18 +1,43 @@
-.athletes{
-  .page__user-bar{
-    background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'athletes-color') 54%, map_get($colors, 'athletes-color') 100%);
-  }
+@each $user-type, $user-color in (athletes, map_get($colors, 'athletes-color')),
+                    (brands, map_get($colors, 'brands-color')),
+                    (teams, map_get($colors, 'teams-color')){
+  .#{$user-type} {
+    .page__user-bar{
+      background: linear-gradient(to right, #fff 0%, #fff 54%, #{$user-color} 54%, #{$user-color} 100%);
+    }
 
-}
+    .page-calendar__slider{
+      .item{
+        th{
+          color: #{$user-color};
+        }
 
-.brand{
-  .page__user-bar{
-    background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'brand-color') 54%, map_get($colors, 'brand-color') 100%);
-  }
-}
+        .event-date{
+          &:before {
+            background: #{$user-color};
+          }
+        }
 
-.teams{
-  page__user-bar{
-    background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'team-color') 54%, map_get($colors, 'team-color') 100%);
+        .today{
+          &:before{
+            background: #{$user-color};
+          }
+        }
+      }
+
+      .slider__pager{
+        .owl-dot{
+          &.active{
+            color: #{$user-color};
+          }
+        }
+      }
+    }
+
+    .page-calendar__todo-list{
+      em{
+        background: #{$user-color};
+      }
+    }
   }
 }

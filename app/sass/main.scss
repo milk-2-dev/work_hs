@@ -334,129 +334,114 @@
   .owl-carousel{
     display: flex;
     height: 100%;
+  }
 
-    .owl-stage-outer{
-      order:2;
-      width: 100%;
-      padding: 0 40px;
-      border-left: 1px solid #ddd;
-      border-right: 1px solid #ddd;
-    }
+  .owl-stage-outer{
+    order:2;
+    width: 100%;
+    padding: 0 40px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
 
-    .slider__pager{
-      order:1;
-      width: 15%;
+  .slider__pager{
+    order:1;
+    width: 15%;
 
-      div{
-        display: block;
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 10px;
-        text-transform: uppercase;
+    .owl-dot{
+      display: block;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 10px;
+      text-transform: uppercase;
 
-        &:last-child{
-          margin-bottom: 0;
-        }
-
-        &.active{
-          color: map_get($colors, 'red')
-        }
+      &:last-child{
+        margin-bottom: 0;
       }
     }
+  }
 
-    .owl-nav{
-      position: absolute;
-      top:0;
-      right:35px;
-      height: 40px;
+  .owl-nav{
+    position: absolute;
+    top:0;
+    right:35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+
+
+    div{
       display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #fff;
+      margin-right: 16px;
+      opacity: .3;
+      transition: .2s ease-in-out;
 
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
 
-      div{
-        display: flex;
-        margin-right: 16px;
-        opacity: .3;
-        transition: .2s ease-in-out;
+  .item{
+    p{
+      font-size: 40px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
 
-        &:hover{
-          opacity: 1;
-        }
+    th, td{
+      padding: 16px 20px;
+      text-align: center;
+      vertical-align: middle;
+
+      &:first-child{
+        padding-left:0;
       }
     }
 
-    .item{
-      p{
-        font-size: 40px;
-        text-transform: uppercase;
-        line-height: 1;
+    .another-month{
+      color: #ddd;
+    }
+
+    .event-date{
+      position: relative;
+
+      &:before{
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0;
+        right: 0;
+        width: 5px;
+        height: 5px;
+        margin: auto;
+        border-radius: 50%;
       }
+    }
 
-      table{
-        th, td{
-          padding: 16px 20px;
-          text-align: center;
-          vertical-align: middle;
+    .today{
+      position: relative;
+      color: #fff;
 
-          &:first-child{
-            padding-left:0;
-          }
-        }
-
-        tr{
-
-        }
-
-        td{
-          &.another-month{
-            color: #ddd;
-          }
-
-          &.event-date{
-            position: relative;
-
-            &:before{
-              content: '';
-              position: absolute;
-              top: 8px;
-              left: 0;
-              right: 0;
-              width: 5px;
-              height: 5px;
-              margin: auto;
-              background: map_get($colors, 'red');
-              border-radius: 50%;
-            }
-          }
-
-          &.today{
-            position: relative;
-            color: #fff;
-
-            &:before{
-              content: '';
-              position: absolute;
-              top:0;
-              left:0;
-              right:0;
-              bottom:0;
-              width: 40px;
-              height: 40px;
-              margin: auto;
-              background: map_get($colors, 'red');
-              border-radius: 50%;
-              z-index: -1;
-            }
-          }
-        }
-
-        th{
-          text-transform: uppercase;
-          color: map_get($colors, 'red')
-        }
+      &:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        border-radius: 50%;
+        z-index: -1;
       }
+    }
+
+    th{
+      text-transform: uppercase;
     }
   }
 }
@@ -494,34 +479,35 @@
     margin: 0;
     padding:0;
     list-style: none;
+  }
 
-    li{
-      position: relative;
-      padding-left: 80px;
-      margin-bottom: 20px;
-      //min-height: 25px;
+  li{
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    //min-height: 25px;
 
-      em{
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left:0;
-        background: map_get($colors, 'red');
-        border-radius: 20px;
-        color: #fff;
-        font-style: normal;
-        font-size: 18px;
-        height: 25px;
-        width: 65px;
-        justify-content: center;
-        padding: 0 6px;
-        margin: auto;
-        text-transform: uppercase;
-        display: inline-block;
-        display: flex;
-        align-items: center;
-      }
-    }
+
+  }
+
+  em{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    border-radius: 20px;
+    color: #fff;
+    font-style: normal;
+    font-size: 18px;
+    height: 25px;
+    width: 65px;
+    justify-content: center;
+    padding: 0 6px;
+    margin: auto;
+    text-transform: uppercase;
+    display: inline-block;
+    display: flex;
+    align-items: center;
   }
 }
 
