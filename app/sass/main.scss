@@ -8,6 +8,7 @@
 @import '_atomic';
 @import '_buttons';
 @import '_forms';
+@import '_users';
 
 
 @import 'partials/header';
@@ -61,9 +62,7 @@
 
 .page__user-bar{
   padding:10px 0;
-  background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'red') 54%, map_get($colors, 'red') 100%);
   box-shadow: 0 0 6px -2px #000;
-
 
   .flex-container{
     flex-wrap: nowrap;

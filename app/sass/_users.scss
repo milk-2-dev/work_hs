@@ -1,0 +1,18 @@
+.athletes{
+  .page__user-bar{
+    background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'athletes-color') 54%, map_get($colors, 'athletes-color') 100%);
+  }
+
+}
+
+.brand{
+  .page__user-bar{
+    background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'brand-color') 54%, map_get($colors, 'brand-color') 100%);
+  }
+}
+
+.teams{
+  page__user-bar{
+    background: linear-gradient(to right, #fff 0%, #fff 54%, map_get($colors, 'team-color') 54%, map_get($colors, 'team-color') 100%);
+  }
+}
