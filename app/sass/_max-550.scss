@@ -59,4 +59,26 @@
   .worked-with__item {
     width: 100%;
   }
+
+  .profile-section1{
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    .user-status,
+    .info-summary, h1{
+      position: relative;
+    }
+
+    h1{
+      font-size: 50px;
+    }
+  }
 }
