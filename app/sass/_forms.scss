@@ -3,40 +3,80 @@
 :-moz-placeholder           {color:#888; font-size: 16px;text-transform: uppercase}
 :-ms-input-placeholder      {color:#888; font-size: 16px;text-transform: uppercase}
 
-
-
 input[type='text']{
   color: #000;
 }
 
-input{
-  height: 40px;
-  border: 1px solid #D5D7D7;
-  border-radius: 40px;
-  padding: 0 20px;
-  width:100%;
-}
-
-.form-item{
-  margin-bottom:45px;
-
-  &:last-child{
-    margin-bottom:0;
+.form-default{
+  input{
+    height: 40px;
+    border: 1px solid #D5D7D7;
+    border-radius: 40px;
+    padding: 6px 20px;
+    width:100%;
   }
 
-  label{
-    display: block;
-    margin-left:20px;
-    font-weight: 100;
-    text-transform: uppercase;
+  .form-group{
+    margin-bottom:45px;
+    position: relative;
+
+    &:last-child{
+      margin-bottom:0;
+    }
+
+    label{
+      display: block;
+      margin-left:20px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+
+  .select-block{
+    position: relative;
+    background-color: #ececec;
+    height: 40px;
+    border-radius:40px;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top:0;
+      right:5px;
+      bottom: 0;
+      @include sprite($arrow-down);
+      margin:auto;
+      z-index: 0;
+    }
+
+    select{
+      @extend input;
+      position: relative;
+      z-index: 1;
+      background: transparent;
+      color: #888;
+      padding-right:40px;
+    }
+  }
+
+  textarea{
+    @extend input;
+    border-radius: 20px;
+    resize: none;
   }
 }
 
-.select-block{
-  position: relative;
+.upload-block{
+  @extend input;
   background-color: #ececec;
-  height: 40px;
-  border-radius:40px;
+  position: relative;
+  overflow: hidden;
+  font-size:18px;          /* example */
+  z-index: 1;
+  padding:0 !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 
   &:after{
     content: '';
@@ -46,16 +86,77 @@ input{
     bottom: 0;
     @include sprite($arrow-down);
     margin:auto;
-    z-index: 0;
+    z-index: -1;
   }
 
-  select{
-    @extend input;
-    position: relative;
-    z-index: 1;
-    background: transparent;
+
+  button,
+  .file_upload > div{
+    cursor: pointer
+  }
+
+  > button{
+    float: right;
+    width: 8em;            /* example */
+    height: 100%
+  }
+
+  > div{
+    padding: 6px 20px;
     color: #888;
-    padding-right:40px;
+    width:100%;
+  }
+
+  @media only screen and ( max-width: 500px ){  /* example */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.1s linear;
+
+    > div{
+      display: none
+    }
+
+    > button{
+      width: 100%
+    }
+  }
+
+  input[type=file]{
+    position: absolute;
+    top: 0;
+    visibility: hidden
+  }
+
+  &.focus{
+    box-shadow: 0 0 5px rgba(0,30,255,0.4)
+  }
+
+  > button{
+    background: #7300df;
+    transition: background 0.2s;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #fff;
+    text-shadow: #6200bd 0 -1px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+  }
+  &:hover {
+    > button{
+      background: #6200bd;
+      text-shadow: #5d00b3 0 -1px 0
+    }
+  }
+
+  &:active {
+    > button{
+      background: #5d00b3;
+      box-shadow: 0 0 3px rgba(0,0,0,0.3) inset
+    }
   }
 }
 

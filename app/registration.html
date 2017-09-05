@@ -57,7 +57,7 @@
 
     <!--<div class="top-search">-->
     <!--<form method="" action="" class="top-search__form">-->
-    <!--<input type="text" name="search" class="top-search__input" placeholder="search">-->
+    <!--<input class="form-control" type="text" name="search" class="top-search__input" placeholder="search">-->
     <!--<button class="hidden"></button>-->
     <!--</form> -->
     <!--</div>-->
@@ -81,34 +81,34 @@
                     </div>
                 </div>
 
-                <form action="">
+                <form class="form-default" action="">
                     <div class="tab-content">
                         <div class="tab-pane fade in active"    id="reg-step1">
                             <p class="tab-pane__title">
                                 register
                             </p>
 
-                            <div class="form-item">
+                            <div class="form-group">
                                 <label for="name">name</label>
-                                <input type="text" id="name" placeholder="Joe bloggs">
+                                <input class="form-control" type="text" id="name" placeholder="Joe bloggs">
                             </div>
 
-                            <div class="form-item">
+                            <div class="form-group">
                                 <label for="email">email address</label>
-                                <input type="email" id="email" placeholder="joebloggs@hotmail.com">
+                                <input class="form-control" type="email" id="email" placeholder="joebloggs@hotmail.com">
                             </div>
 
-                            <div class="form-item">
+                            <div class="form-group">
                                 <label for="password">password</label>
-                                <input type="password" id="password" placeholder="********">
+                                <input class="form-control" type="password" id="password" placeholder="********">
                             </div>
 
-                            <div class="form-item">
+                            <div class="form-group">
                                 <label for="confirm-password">confirm password</label>
-                                <input type="password" id="confirm-password" placeholder="********">
+                                <input class="form-control" type="password" id="confirm-password" placeholder="********">
                             </div>
 
-                            <div class="form-item">
+                            <div class="form-group">
                                 <label for="account-type">account type</label>
                                 <div class="select-block">
                                     <select name="" id="account-type">
@@ -127,48 +127,140 @@
                         <div class="tab-pane fade"              id="reg-step2">
 
                             <p class="tab-pane__title">
-                                register
+                                user info configuration
                             </p>
 
-                            <div class="form-item">
-                                <label for="name">name</label>
-                                <input type="text" id="name" placeholder="Joe bloggs">
+                            <div class="form-group">
+                                <label for="Hometown-city">Hometown city <sup>*</sup></label>
+                                <input class="form-control" type="text" id="Hometown-city" placeholder="London">
                             </div>
 
-                            <div class="form-item">
-                                <label for="email">email address</label>
-                                <input type="email" id="email" placeholder="joebloggs@hotmail.com">
+                            <div class="form-group">
+                                <label for="Hometown-country">Hometown country <sup>*</sup></label>
+                                <input class="form-control" type="text" id="Hometown-country" placeholder="UK">
                             </div>
 
-                            <div class="form-item">
-                                <label for="password">password</label>
-                                <input type="password" id="password" placeholder="********">
+                            <div class="form-group">
+                                <label for="residence">curent residence country <sup>*</sup></label>
+                                <input class="form-control" type="text" id="residence" placeholder="UK">
                             </div>
 
-                            <div class="form-item">
-                                <label for="confirm-password">confirm password</label>
-                                <input type="password" id="confirm-password" placeholder="********">
-                            </div>
-
-                            <div class="form-item">
-                                <label for="account-type">account type</label>
+                            <div class="form-group">
+                                <label for="gender">gender <sup>*</sup></label>
                                 <div class="select-block">
-                                    <select name="" id="account-type">
-                                        <option value="athlete" selected >athlete</option>
-                                        <option value="brand">brand</option>
-                                        <option selected value="team">team</option>
+                                    <select name="" id="gender">
+                                        <option value="men" selected >men</option>
+                                        <option value="woman">woman</option>
                                     </select>
                                 </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="height">height, kg <sup>*</sup></label>
+                                <input class="form-control" type="text" id="height" placeholder="000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="weight">weight, cm <sup>*</sup></label>
+                                <input class="form-control" type="text" id="weight" placeholder="000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sport">sport <sup>*</sup></label>
+                                <div class="select-block">
+                                    <select name="" id="sport">
+                                        <option value="men" selected >football</option>
+                                        <option value="woman">basketball</option>
+                                        <option value="woman">volleyball</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sport-standart">sport-standart <sup>*</sup></label>
+                                <div class="select-block">
+                                    <select name="" id="sport-standart">
+                                        <option value="men" selected >football</option>
+                                        <option value="woman">basketball</option>
+                                        <option value="woman">volleyball</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sport-position">sport-position <sup>*</sup></label>
+                                <div class="select-block">
+                                    <select name="" id="sport-position">
+                                        <option value="men" selected >football</option>
+                                        <option value="woman">basketball</option>
+                                        <option value="woman">volleyball</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="coach">coach</label>
+                                <input class="form-control" type="text" id="coach" placeholder="uk">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="education">education</label>
+                                <input class="form-control" type="text" id="education" placeholder="school">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="agent">agent</label>
+                                <input class="form-control" type="text" id="agent" placeholder="loe bloggs">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="page-text">personal page text</label>
+                                <textarea class="form-control" name="" id="page-text" cols="30" rows="10" placeholder=""></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="page-quote-text">personal page quote text</label>
+                                <input class="form-control" type="text" id="page-quote-text" placeholder="lorem ipsum epsom dolor...">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="page-quote-author">personal page quote author</label>
+                                <input class="form-control" type="text" id="page-quote-author" placeholder="joe bloggs. 2017">
                             </div>
 
                             <div class="button-block">
                                 <a class="button gold" href="#reg-step2" data-toggle="tab">next</a>
                             </div>
-
                         </div>
-                        <div class="tab-pane fade"              id="reg-step3">
 
+                        <div id="reg-step3" class="tab-pane fade">
+                            <p class="tab-pane__title">profile images</p>
+
+                            <div class="form-group">
+                                <label for="banner_image">banner image</label>
+
+                                <div class="upload-block" id="bannerImage">
+                                    <div>CHOOSE FILE</div>
+                                    <input id="banner_image" type="file" name="banner_image" accept="image/*">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="main_image">Avatar image</label>
+
+                                <div class="upload-block" id="mainImage">
+                                    <div>CHOOSE FILE</div>
+                                    <input id="main_image" type="file" name="banner_image" accept="image/*">
+                                </div>
+                            </div>
+
+                            <div class="button-block">
+                                <button type="submit" class="btn btn-gold">
+                                    register
+                                </button>
+                            </div>
                         </div>
+
                         <div class="tab-pane fade"              id="reg-step4">
 
                         </div>
