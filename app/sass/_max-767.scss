@@ -412,24 +412,6 @@
     padding-bottom: 10px;
     background: rgba(176, 166, 53, 0.3);
 
-    //padding-bottom: 10px;
-
-    //&:after{
-    //  content: '';
-    //  position: absolute;
-    //  left:0;
-    //  right:0;
-    //  bottom: -16px;
-    //  width:150px;
-    //  height:2px;
-    //  margin:auto;
-    //  background: map_get($colors, 'gold');
-    //}
-
-    //&:last-child{
-    //  margin-bottom:0;
-    //}
-
     &:last-child{
       margin-bottom: 0;
     }
@@ -577,5 +559,11 @@
   .news__item{
     width:100%;
     border-bottom: 1px solid #ddd;
+  }
+
+  .tooltip__title {
+    right: 0;
+    top: -32px;
+    transform: translate(0, 0);
   }
 }

@@ -108,15 +108,6 @@ input[type='text']{
   }
 
   @media only screen and ( max-width: 500px ){  /* example */
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    transition: box-shadow 0.1s linear;
-
-    > div{
-      display: none
-    }
-
     > button{
       width: 100%
     }
@@ -167,6 +158,12 @@ input[type='text']{
   .button-block{
     margin-top: 50px;
     text-align: center;
+
+    &.two-buttons{
+      .btn:last-child{
+        margin-left:35px;
+      }
+    }
   }
 }
 
@@ -185,6 +182,8 @@ input[type='text']{
 
     li{
       position: relative;
+      width:25%;
+      text-align: center;
 
       &:first-child{
         &:after{
@@ -208,9 +207,9 @@ input[type='text']{
       &:after{
         content: '';
         position: absolute;
-        right: calc(100% - 30px);
+        right: 55%;
         top: 8px;
-        width: 180px;
+        width: 100%;
         height: 4px;
         background: #D1D2D4;
         z-index: -1;
@@ -226,7 +225,7 @@ input[type='text']{
         position: relative;
       }
 
-      &.active{
+      &.active,&.complete{
         &:before{
           background: map-get($colors, 'gold');
         }

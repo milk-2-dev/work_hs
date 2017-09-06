@@ -70,7 +70,7 @@
             <div class="registration-form">
                 <div class="registration-form__tabs">
                     <ul>
-                        <li class="active"><a href="#reg-step1" data-toggle="tab">register</a></li>
+                        <li class="active complete" ><a href="#reg-step1" data-toggle="tab">register</a></li>
                         <li><a href="#reg-step2" data-toggle="tab">user info</a></li>
                         <li><a href="#reg-step3" data-toggle="tab">image</a></li>
                         <li><a href="#reg-step4" data-toggle="tab">complete</a></li>
@@ -120,7 +120,7 @@
                             </div>
 
                             <div class="button-block">
-                                <a class="button gold" href="#reg-step2" data-toggle="tab">next</a>
+                                <a class="btn btn-gold" href="#reg-step2" data-toggle="tab">next</a>
                             </div>
                         </div>
 
@@ -229,7 +229,7 @@
                             </div>
 
                             <div class="button-block">
-                                <a class="button gold" href="#reg-step2" data-toggle="tab">next</a>
+                                <a class="btn btn-gold" href="#reg-step2" data-toggle="tab">next</a>
                             </div>
                         </div>
 
@@ -239,18 +239,31 @@
                             <div class="form-group">
                                 <label for="banner_image">banner image</label>
 
-                                <div class="upload-block" id="bannerImage">
-                                    <div>CHOOSE FILE</div>
-                                    <input id="banner_image" type="file" name="banner_image" accept="image/*">
+                                <div class="tooltip-wrap">
+                                    <span class="tooltip__title">what is this?</span>
+                                    <span class="tooltip__text">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, unde omnis iste natus unde omnis iste natus totperspiciatis undiste natus totperspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    </span>
+                                    <div class="upload-block" id="bannerImage">
+                                        <div>CHOOSE FILE</div>
+                                        <input id="banner_image" type="file" name="banner_image" accept="image/*">
+                                    </div>
                                 </div>
+
                             </div>
 
                             <div class="form-group">
                                 <label for="main_image">Avatar image</label>
 
-                                <div class="upload-block" id="mainImage">
-                                    <div>CHOOSE FILE</div>
-                                    <input id="main_image" type="file" name="banner_image" accept="image/*">
+                                <div class="tooltip-wrap">
+                                    <span class="tooltip__title">what is this?</span>
+                                    <span class="tooltip__text">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, unde omnis iste natus unde omnis iste natus totperspiciatis undiste natus totperspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    </span>
+                                    <div class="upload-block" id="mainImage">
+                                        <div>CHOOSE FILE</div>
+                                        <input id="main_image" type="file" name="banner_image" accept="image/*">
+                                    </div>
                                 </div>
                             </div>
 
@@ -262,7 +275,23 @@
                         </div>
 
                         <div class="tab-pane fade"              id="reg-step4">
+                            <p class="tab-pane__title">profile images</p>
 
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan-
+                                tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                                vitae dicta sunt.
+                            </p>
+
+                            <div class="button-block two-buttons">
+                                <a href="javascript:void(0);" class="btn btn-gold">
+                                    VIEW PROFILE
+                                </a>
+
+                                <a href="javascript:void(0);" class="btn btn-gold">
+                                    EDIT PROFILE
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </form>

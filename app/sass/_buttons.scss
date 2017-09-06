@@ -52,7 +52,7 @@
   }
 }
 
-.button{
+.btn{
   display: inline-block;
   text-align: center;
   min-width:104px;
@@ -68,7 +68,7 @@
     text-decoration: none;
   }
 
-  &.gold{
+  &.btn-gold{
     background: map_get($colors, 'gold');
     border: 1px solid map_get($colors, 'gold');
 

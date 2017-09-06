@@ -255,6 +255,56 @@ body{
   }
 }
 
+.tooltip-wrap{
+  position: relative;
+}
+
+.tooltip__title{
+  position: absolute;
+  right:-120px;
+  top:50%;
+  transform: translate(0, -50%);
+  color: map-get($colors, 'gold');
+  font-size: 20px;
+  font-weight:bold;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover{
+    ~ .tooltip__text {
+      opacity: 1; /* Показываем его */
+      visibility: visible;
+    }
+  }
+}
+
+.tooltip__text {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px 8px 8px 0px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  opacity: 0;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 120%;
+  left: 0;
+  font-size: 16px;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  z-index: 5;
+
+  &:after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    border-left: 10px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 10px solid transparent;
+
+  }
+}
+
+
 .user-info{
   display: flex;
   align-items: center;
@@ -290,7 +340,6 @@ body{
     }
   }
 }
-
 
 .info-summary{
   display: flex;
