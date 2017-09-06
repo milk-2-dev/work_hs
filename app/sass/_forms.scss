@@ -66,6 +66,19 @@ input[type='text']{
   }
 }
 
+.form-row{
+  display: flex;
+  justify-content: space-between;
+
+  .form-group{
+    flex-grow: 1;
+
+    &:first-child{
+      margin-right:30px;
+    }
+  }
+}
+
 .upload-block{
   @extend input;
   background-color: #ececec;
@@ -280,4 +293,10 @@ input[type='text']{
   margin-bottom: 30px;
 }
 
+.payment-details-form{
+  @extend .registration-form;
 
+  .button-block {
+    margin-top: 5px;
+  }
+}

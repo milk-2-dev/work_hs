@@ -227,6 +227,8 @@
     }
 
     .spec-half__img{
+        border-right:2px solid #000;
+
         &:hover{
             &:before{
                 opacity: .5;
