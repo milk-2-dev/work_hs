@@ -66,16 +66,22 @@ input[type='text']{
   }
 }
 
-.form-row{
+.form__row{
   display: flex;
   justify-content: space-between;
 
-  .form-group{
-    flex-grow: 1;
+  .left-block,
+  .right-block{
+    width: 50%;
+  }
 
-    &:first-child{
-      margin-right:30px;
-    }
+  .left-block{
+    margin-right:7%;
+    margin-bottom:45px;
+  }
+
+  .right-block{
+    margin-bottom:45px;
   }
 }
 
@@ -298,5 +304,18 @@ input[type='text']{
 
   .button-block {
     margin-top: 5px;
+  }
+}
+
+.settings-form{
+  @extend .details-form;
+  max-width:100%;
+}
+
+.form__item{
+  margin:0 0 50px;
+
+  &:last-child{
+    margin:0;
   }
 }

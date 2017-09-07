@@ -592,15 +592,25 @@
     transform: translate(0, 0);
   }
 
-  .form-row{
+  .form__row{
     flex-direction: column;
-    margin-bottom:50px;
+    //margin-bottom:50px;
 
-    .form-group{
-      &:first-child{
-        margin-right:0;
-      }
+    .left-block{
+      width:100%;
+      margin-right:0;
     }
+
+    .right-block{
+      width:100%;
+      margin-right:0;
+    }
+
+    //.form-group{
+    //  &:first-child{
+    //    margin-right:0;
+    //  }
+    //}
   }
 
   .registration-form__tabs{
