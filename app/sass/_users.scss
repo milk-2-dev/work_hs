@@ -2,41 +2,59 @@
                     (brands, map_get($colors, 'brands-color')),
                     (teams, map_get($colors, 'teams-color')){
   .#{$user-type} {
-    .page__user-bar{
+    .page__user-bar {
       background: linear-gradient(to right, #fff 0%, #fff 54%, #{$user-color} 54%, #{$user-color} 100%);
     }
 
-    .page-calendar__slider{
-      .item{
-        th{
+    .page-calendar__slider {
+      .item {
+        th {
           color: #{$user-color};
         }
 
-        .event-date{
+        .event-date {
           &:before {
             background: #{$user-color};
           }
         }
 
-        .today{
-          &:before{
+        .today {
+          &:before {
             background: #{$user-color};
           }
         }
       }
 
-      .slider__pager{
-        .owl-dot{
-          &.active{
+      .slider__pager {
+        .owl-dot {
+          &.active {
             color: #{$user-color};
           }
         }
       }
     }
 
-    .page-calendar__todo-list{
-      em{
+    .page-calendar__todo-list {
+      em {
         background: #{$user-color};
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .page__user-bar {
+        background: linear-gradient(to right, #fff 0%, #fff 48%, #{$user-color} 48%, #{$user-color} 100%);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .page__user-bar {
+        background: linear-gradient(to right, #fff 0%, #fff 35%, #{$user-color} 35%, #{$user-color} 100%);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .page__user-bar {
+        background: transparent;
       }
     }
   }
