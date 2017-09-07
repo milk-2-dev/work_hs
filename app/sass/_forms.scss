@@ -182,16 +182,16 @@ input[type='text']{
 
 .registration-form__tabs{
   position: relative;
+  overflow: hidden;
 
   ul{
-    margin: 0;
+    margin: 0 -50px 50px;
     padding:0;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-bottom: 50px;
 
     li{
       position: relative;
