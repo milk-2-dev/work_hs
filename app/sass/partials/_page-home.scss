@@ -410,44 +410,39 @@
         }
     }
 
-    .order-form{
+    .order-form {
         max-width: 660px;
         margin: auto;
 
-        .form-item{
+        .form-group{
             position: relative;
             padding-right: 140px;
-
-            &:after,
-            &:before{
-                content: '';
-                display: block;
-                clear: both;
-            }
         }
+
+
+
+        //.form-item{
+        //    position: relative;
+        //    padding-right: 140px;
+        //
+        //    &:after,
+        //    &:before{
+        //        content: '';
+        //        display: block;
+        //        clear: both;
+        //    }
+        //}
         input{
             width: 100%;
-            padding:6px 10px;
+            padding:6px 20px;
             border-radius: 50px;
             border: 1px solid #ddd;
         }
 
-        button{
+        .btn{
             position: absolute;
             top:0;
             right:0;
-            width: 120px;
-            padding: 6px 10px;
-            text-transform: uppercase;
-            background: #b5a618;
-            border: none;
-            border-radius: 50px;
-            color: #fff;
-            min-height: 33px;
-
-            &:focus{
-                outline: none;
-            }
         }
     }
 }
