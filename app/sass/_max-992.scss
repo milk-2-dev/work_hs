@@ -87,6 +87,26 @@
     }
   }
 
+  .page-filter{
+    .search-block{
+      min-width: 0;
+    }
+  }
+
+  .page-filter__item{
+    margin-right: 20px;
+
+    &:after {
+      right: -16px;
+    }
+
+    &:first-child{
+      width:100%;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+
   .page-massages__list{
     width:45%;
   }

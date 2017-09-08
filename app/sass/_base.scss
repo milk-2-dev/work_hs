@@ -233,29 +233,6 @@ body{
   }
 }
 
-.select-block{
-  label{
-    position: relative;
-    padding-right: 15px;
-    background: url("../img/select-bg.png");
-    background-position: center right;
-    background-repeat: no-repeat;
-  }
-
-  select {
-    padding: 0 8px;
-    border: none;
-    appearance: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    cursor: pointer;
-
-    &:focus{
-      outline: none;
-    }
-  }
-}
-
 .tooltip-wrap{
   position: relative;
 }
