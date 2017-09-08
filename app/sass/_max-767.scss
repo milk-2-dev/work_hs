@@ -82,10 +82,30 @@
     }
   }
 
+
+
   .user-shared-count {
-    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: -35px;
+    background: #fff;
+    padding: 4px 20px;
+    width: 100%;
+    visibility: hidden;
+    height: 0;
+
     ul {
       justify-content: flex-start;
+    }
+  }
+
+  .user-info{
+    &:hover{
+      ~ .user-shared-count{
+        height:100%;
+        visibility: visible;
+      }
     }
   }
 
