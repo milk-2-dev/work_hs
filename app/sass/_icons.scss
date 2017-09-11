@@ -39,11 +39,44 @@
 
   &.bar-icon2{
     @include sprite($bar-icon2);
-
   }
 
   &.bar-icon3{
     @include sprite($bar-icon3);
+  }
+
+  &.bar-icon4{
+    @include sprite($bar-icon4);
+  }
+
+  &.bar-icon5{
+    @include sprite($bar-icon5);
+  }
+
+  &.bar-icon6{
+    @include sprite($bar-icon6);
+  }
+
+  &.bar-icon7{
+    @include sprite($bar-icon7);
+  }
+
+  &.bar-icon8{
+    @include sprite($bar-icon8);
+  }
+
+  //dashboard
+
+  &.dash-icon{
+    @include sprite($dashboard-icon);
+  }
+
+  &.dash-message{
+    @include sprite($dashboard-message);
+  }
+
+  &.das-settings{
+    @include sprite($dashboard-settings);
   }
 
   //filter icons
@@ -154,16 +187,28 @@
     @include sprite($progress-bar-instagram);
   }
 
+  &.icon-instagram2{
+    @include sprite($user-profile-bar-insta);
+  }
+
+  &.icon-instagram3{
+    @include sprite($athletes-list-social-bar-insta);
+  }
+
   &.icon-twitter{
     @include sprite($progress-bar-twitter);
   }
 
   &.icon-twitter2{
-    @include sprite($shared-count-twiter);
+    @include sprite($user-profile-bar-twitter);
   }
 
   &.icon-twitter3{
     @include sprite($profile-news-twitter);
+  }
+
+  &.icon-twitter4{
+    @include sprite($athletes-list-social-bar-twitter);
   }
 
   &.icon-facebook{
@@ -171,7 +216,7 @@
   }
 
   &.icon-facebook2{
-    @include sprite($shared-count-facebook);
+    @include sprite($user-profile-bar-facebook);
   }
 
   &.icon-youtube{
@@ -182,21 +227,21 @@
     @include sprite($profile-news-youtube);
   }
 
+  &.icon-youtube3{
+    @include sprite($athletes-list-social-bar-youtube);
+  }
+
   &.icon-plus{
     @include sprite($icon-plus-white);
   }
 
-
   &.icon-hs{
-    @include sprite($shared-count-hs);
+    @include sprite($user-profile-bar-hs);
   }
 
-  &.icon-instagram2{
-    @include sprite($shared-count-insta);
+  &.icon-hs2{
+    @include sprite($athletes-list-social-bar-hs);
   }
-
-
-
 
 
 }

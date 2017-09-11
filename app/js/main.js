@@ -301,6 +301,24 @@ $('document').ready(function(){
         }
     }).data('owlCarousel');
 
+    //search page slider
+    var owl = $("#search-top-slider").owlCarousel({
+        items: 1,
+        slideSpeed: 500,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        loop: false,
+        mouseDrag: true,
+        singleItem: true,
+        dots: false,
+        margin: 0,
+        nav: true,
+        navText: [
+            "<i class='icon icon-slider-nav-left'></i>",
+            "<i class='icon icon-slider-nav'></i>"
+        ]
+    }).data('owlCarousel');
+
 
     function SocialProgressBar(){
         var el = $('#social-progress-bar span');
@@ -413,6 +431,20 @@ $('document').ready(function(){
 
     $( window ).resize(function(){
         $( ".upload-block input" ).triggerHandler( "change" );
+    });
+
+
+    //search form user-profile-bar
+    $('.user-profile-bar__search').find('.search-prev').on('click', function(){
+        $(this).parent().find('form').css('width', '320px');
+        $(this).hide();
+        $(this).parent().find('.icon-close-menu').show();
+    });
+
+    $('.icon-close-menu').on('click', function(){
+        $(this).parent().find('form').css('width', '0');
+        $(this).parent().find('.search-prev').show();
+        $(this).hide();
     });
 
 });

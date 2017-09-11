@@ -4,6 +4,27 @@
   .#{$user-type} {
     .page__user-bar {
       background: linear-gradient(to right, #fff 0%, #fff 54%, #{$user-color} 54%, #{$user-color} 100%);
+
+      .user-bar{
+        li{
+          &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #{$user-color};
+            opacity:.5;
+          }
+
+          //&:hover{
+          //  &:before{
+          //    background: transparent;
+          //  }
+          //}
+        }
+      }
     }
 
     .page-calendar__slider {

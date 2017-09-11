@@ -118,7 +118,7 @@ body{
 
   input{
     width: 100%;
-    padding: 6px 40px 6px 10px;
+    padding: 6px 60px 6px 20px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
     border: 1px solid #ddd;
@@ -127,13 +127,11 @@ body{
   button{
     position: absolute;
     top:0;
-    //bottom:0;
-    right:0;
-    //margin:auto;
+    right:10px;
     border: none;
     background: transparent;
     width:40px;
-    height: 36px;
+    height: 40px;
     line-height: 45px;
     padding:0;
 
@@ -145,6 +143,7 @@ body{
 
 .load-more {
   text-align: center;
+  width:100%;
 
   a{
     position: relative;
@@ -319,6 +318,41 @@ body{
   }
 }
 
+.user-profile-bar__search{
+  display: flex;
+  align-items: center;
+
+  .search-prev{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    .icon{
+      margin-left:10px;
+    }
+  }
+
+  form{
+    overflow: hidden;
+    width:0;
+    transition: .2s ease-in-out;
+  }
+
+  .icon-close-menu{
+    display: none;
+    position: relative;
+    margin-left:10px;
+    cursor: pointer;
+
+    &:before,
+    &:after{
+      background: #000;
+    }
+  }
+}
+
 .info-summary{
   display: flex;
   justify-content: space-between;
@@ -456,5 +490,94 @@ body{
     height:100%;
     object-fit: cover;
     z-index: -1;
+  }
+}
+
+.owl-carousel{
+  &.nav-big-center{
+    .owl-nav{
+      position: absolute;
+      top:50%;
+      left:0;
+      right:0;
+      transform: translate(0, -50%);
+      margin-top: -28px;
+    }
+
+    .owl-prev,
+    .owl-next{
+      position: absolute;
+      top:0;
+      opacity: 0.7;
+      transition: .2s ease-in-out;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    .owl-prev{
+      left:15px;
+    }
+
+    .owl-next{
+      right:15px;
+    }
+  }
+
+  &.with-add-block{
+    .owl-item{
+      display: flex;
+      align-self: stretch;
+    }
+
+    .owl-stage{
+      display: flex;
+      align-self: stretch;
+    }
+
+    .slider-item{
+      display: flex;
+      //height: 100%;
+      width:100%;
+      background: #ddd;
+      justify-content: center;
+      align-items: center;
+
+      &.empty{
+        a{
+          width: 90px;
+          height: 90px;
+          border: 2px solid #fff;
+        }
+      }
+    }
+  }
+}
+
+.user-social-bar{
+  ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li{
+      font-size: 20px;
+      margin-right:20px;
+      display: flex;
+      align-items: center;
+
+      i{
+        margin-right:6px;
+      }
+
+      &:last-child{
+        margin-right:0;
+      }
+    }
   }
 }
