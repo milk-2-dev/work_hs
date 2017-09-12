@@ -122,6 +122,8 @@ body{
     -webkit-border-radius: 50px;
     border-radius: 50px;
     border: 1px solid #ddd;
+    -webkit-text-size-adjust: none;
+    -webkit-appearance: none;
 
     &:focus{
       border-color: #b0a635;
