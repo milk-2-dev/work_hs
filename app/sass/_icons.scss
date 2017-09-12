@@ -195,6 +195,14 @@
     @include sprite($athletes-list-social-bar-insta);
   }
 
+  &.icon-instagram4{
+    @include sprite($info-summary-insta);
+  }
+
+  &.icon-instagram4--white{
+    @include sprite($info-summary-insta_white);
+  }
+
   &.icon-twitter{
     @include sprite($progress-bar-twitter);
   }
@@ -211,12 +219,28 @@
     @include sprite($athletes-list-social-bar-twitter);
   }
 
+  &.icon-twitter5{
+    @include sprite($info-summary-twitter);
+  }
+
+  &.icon-twitter5--white{
+    @include sprite($info-summary-twitter_white);
+  }
+
   &.icon-facebook{
     @include sprite($progress-bar-facebook);
   }
 
   &.icon-facebook2{
     @include sprite($user-profile-bar-facebook);
+  }
+
+  &.icon-facebook3{
+    @include sprite($info-summary-facebook);
+  }
+
+  &.icon-facebook3--white{
+    @include sprite($info-summary-facebook_white);
   }
 
   &.icon-youtube{
@@ -242,6 +266,15 @@
   &.icon-hs2{
     @include sprite($athletes-list-social-bar-hs);
   }
+
+  &.icon-minus-circle{
+    @include sprite($minus-cirkle);
+  }
+
+  &.icon-step-back{
+    @include sprite($step-back);
+  }
+
 
 
 }

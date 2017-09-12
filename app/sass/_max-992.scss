@@ -157,4 +157,17 @@
   .spec-half--img-left .spec-half__right {
     margin-left: 40%;
   }
+
+  .sponsor-info{
+    flex-direction: column;
+  }
+
+  .sponsor-info__left{
+    margin-bottom:50px;
+  }
+
+  .sponsor-info__left,
+  .sponsor-info__right{
+    width:100%;
+  }
 }

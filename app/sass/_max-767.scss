@@ -23,6 +23,7 @@
       position: absolute;
       left:-100%;
       top: 0;
+      //bottom: -100px;
       width:100%;
       height:10000000%;
       flex-wrap: wrap;
@@ -30,7 +31,7 @@
       padding: 70px 20px 20px 20px;
       align-content: flex-start;
       display: flex;
-      transition: .1s ease-in-out;
+      //transition: .1s ease-in-out;
       z-index: 5;
 
       .top-nav{
@@ -92,7 +93,7 @@
       justify-content: center;
       display: flex;
       background: #fff;
-      padding: 0 20px;
+      //padding: 0 20px;
       width: 100%;
       overflow: hidden;
       height: 0;
@@ -142,6 +143,12 @@
     &.item-border--red {
       .info-summary__item {
         background: rgb(210, 76, 72);
+      }
+    }
+
+    &.item-border--black {
+      .info-summary__item {
+        background: #000;
       }
     }
   }
@@ -596,12 +603,6 @@
       width:100%;
       margin-right:0;
     }
-
-    //.form-group{
-    //  &:first-child{
-    //    margin-right:0;
-    //  }
-    //}
   }
 
   .registration-form__tabs{
@@ -617,6 +618,32 @@
       img{
         height: 100%;
         object-fit: cover;
+      }
+    }
+  }
+
+  .page-step-back{
+    display: none;
+  }
+
+  .sponsor{
+    .info-summary__item-title{
+      .icon-instagram4{
+        @include sprite($info-summary-insta_white);
+      }
+
+      .icon-twitter5{
+        @include sprite($info-summary-twitter_white);
+      }
+
+      .icon-facebook3{
+        @include sprite($info-summary-facebook_white);
+      }
+    }
+
+    .sponsor-costing{
+      .icon-minus-circle{
+        @include sprite($minus-cirkle_white);
       }
     }
   }
