@@ -356,24 +356,6 @@
     }
   }
 
-  .athletes-list__item {
-    width: 45%;
-    margin-bottom: 65px;
-    min-height: 375px;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-
-    img{
-      width: 375px;
-    }
-  }
-
   .page-calendar__slider{
     .owl-carousel{
       .slider__pager{
