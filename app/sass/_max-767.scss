@@ -153,12 +153,24 @@
     }
   }
 
+  .section-1 {
+    min-height: 350px;
+    padding-top: 50px;
+  }
+
   .section-3{
     padding: 50px 0;
 
     .spec-half__img{
       border-left: 2px solid #000;
     }
+  }
+
+  .section-5{
+    ::-webkit-input-placeholder {text-align: center}
+    ::-moz-placeholder          {text-align: center}
+    :-moz-placeholder           {text-align: center}
+    :-ms-input-placeholder      {text-align: center}
   }
 
   .footer{
@@ -616,7 +628,11 @@
       min-height: 300px;
 
       img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
         height: 100%;
+        transform: translate(-50%, -50%);
         object-fit: cover;
       }
     }

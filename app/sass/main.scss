@@ -178,31 +178,12 @@
 .page-filter__item{
   margin-right:30px;
   position: relative;
-
-  &:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: -20px;
-    width: 2px;
-    height: 100%;
-    margin: auto;
-    background: #ddd;
-  }
-
-  &:first-child{
-    &:after{
-      display: none;
-    }
-  }
+  display: flex;
+  justify-content: space-between;
+  //width: 30%;
 
   &:last-child{
     margin-right:0;
-
-    &:after{
-      display: none;
-    }
   }
 
   .search-block{
@@ -210,6 +191,29 @@
   }
 
   .select-block{
+    position: relative;
+    margin-right: 30px;
+
+    &:last-child{
+      margin-right:0;
+
+      &:after{
+        display: none;
+      }
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -20px;
+      width: 2px;
+      height: 20px;
+      margin: auto;
+      background: #ddd;
+    }
+
     label{
       position: relative;
       margin-bottom:0;

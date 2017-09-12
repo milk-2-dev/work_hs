@@ -44,21 +44,22 @@
     }
   }
 
-  .page-filter{
-    .flex-container{
-      align-items: flex-start;
-      //flex-direction: column;
+  .page-filter__item {
+    flex-wrap: wrap;
+
+    .search-block{
+      margin-bottom:30px;
     }
-  }
+    .select-block {
+      margin-right: 0;
+      width: 50%;
+      text-align: center;
+      margin-bottom: 20px;
 
-  .page-filter__item{
-    margin-right: 0;
-    width: 50%;
-    text-align: center;
-    margin-bottom: 9px;
-
-    &:after {
-      display: none;
+      &:nth-child(3),
+      &:nth-child(4){
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -94,10 +95,6 @@
     h1{
       font-size: 50px;
     }
-  }
-
-  .section-1 {
-    min-height: 430px;
   }
 
   .sponsor-info__meta{

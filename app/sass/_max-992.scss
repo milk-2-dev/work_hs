@@ -103,21 +103,25 @@
 
   .page-filter{
     .search-block{
-      min-width: 0;
+      min-width: 100%;
+      margin-bottom: 16px;
     }
   }
 
   .page-filter__item{
-    margin-right: 20px;
+    margin-right: 0;
+    width:100%;
 
-    &:after {
-      right: -16px;
-    }
+    //&:first-child{
+    //  width:100%;
+    //  margin-bottom: 16px;
+    //  margin-right: 0;
+    //}
 
-    &:first-child{
-      width:100%;
-      margin-bottom: 16px;
-      margin-right: 0;
+    .select-block{
+      &:after {
+        display: none;
+      }
     }
   }
 

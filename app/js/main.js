@@ -305,7 +305,7 @@ $('document').ready(function(){
     var owl = $("#search-top-slider").owlCarousel({
         items: 1,
         slideSpeed: 500,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 4500,
         loop: false,
         mouseDrag: true,
