@@ -7,7 +7,7 @@
 .section-1 {
     position: relative;
     z-index: 1;
-    height: 660px;
+    min-height: 660px;
     overflow: hidden;
     background: url("../img/main-bg.jpg");
     background-size: cover;

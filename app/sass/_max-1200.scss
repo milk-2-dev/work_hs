@@ -19,4 +19,48 @@
   .details-form{
 
   }
+
+  .section-3 {
+    .spec-half__img{
+      p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        bottom:auto;
+        min-width:0;
+        transform: translate(-50%, -50%) rotate(0deg);
+
+        &:after{
+          opacity: 1;
+          transition: 1s, visibility 0s;
+          visibility: visible;
+          width:40px;
+        }
+      }
+
+      &:hover{
+        &:before{
+          opacity: .5;
+        }
+
+        //p{
+        //  position: absolute;
+        //  top: 50%;
+        //  left: 50%;
+        //  bottom:auto;
+        //  min-width:0;
+        //  transform: translate(-50%, -50%) rotate(0deg);
+        //
+        //  &:after{
+        //    opacity: 1;
+        //    transition: 1s, visibility 0s;
+        //    visibility: visible;
+        //    width:40px;
+        //  }
+        //}
+      }
+    }
+  }
+
+
 }

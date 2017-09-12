@@ -122,6 +122,12 @@ body{
     -webkit-border-radius: 50px;
     border-radius: 50px;
     border: 1px solid #ddd;
+
+    &:focus{
+      border-color: #b0a635;
+      outline: 0;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 3px rgba(176,166,53,.6);
+    }
   }
 
   button{
@@ -323,7 +329,7 @@ body{
   align-items: center;
 
   .search-prev{
-    font-size: 22px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -567,7 +573,7 @@ body{
 
     li{
       font-size: 20px;
-      margin-right:20px;
+      margin-right:15px;
       display: flex;
       align-items: center;
 

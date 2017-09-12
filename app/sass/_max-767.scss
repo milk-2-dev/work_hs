@@ -30,7 +30,7 @@
       padding: 70px 20px 20px 20px;
       align-content: flex-start;
       display: flex;
-      transition: .3s ease-in-out;
+      transition: .1s ease-in-out;
       z-index: 5;
 
       .top-nav{
@@ -64,7 +64,11 @@
       }
 
       .icon-close-menu{
-        display: block;
+        display: none;
+      }
+
+      &.open{
+        left:0;
       }
     }
   }
@@ -80,33 +84,42 @@
       display: none;
       justify-content: flex-start;
     }
-  }
 
+    .flex-container{
+      flex-direction: column;
+    }
+    .user-social-bar {
+      justify-content: center;
+      display: flex;
+      background: #fff;
+      padding: 0 20px;
+      width: 100%;
+      overflow: hidden;
+      height: 0;
+      transition: .2s ease-in-out;
 
-
-  .user-shared-count {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    bottom: -35px;
-    background: #fff;
-    padding: 4px 20px;
-    width: 100%;
-    visibility: hidden;
-    height: 0;
-
-    ul {
-      justify-content: flex-start;
+      ul {
+        justify-content: flex-start;
+      }
     }
   }
 
   .user-info{
+    justify-content: center;
+    //margin-bottom: 5px;
+
     &:hover{
-      ~ .user-shared-count{
-        height:100%;
-        visibility: visible;
+      ~ .user-social-bar{
+        height: 28px;
+        margin: 5px 0;
       }
     }
+  }
+
+  .user-profile-bar__search {
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 
   .info-summary{
@@ -612,6 +625,17 @@
   .registration-form__tabs{
     ul{
       margin: 0 0 50px;
+    }
+  }
+
+  #search-top-slider{
+    .slider-item{
+      min-height: 300px;
+
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
