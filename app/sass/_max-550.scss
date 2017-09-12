@@ -47,12 +47,15 @@
   .page-filter{
     .flex-container{
       align-items: flex-start;
-      flex-direction: column;
+      //flex-direction: column;
     }
   }
 
   .page-filter__item{
     margin-right: 0;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 9px;
 
     &:after {
       display: none;
@@ -91,5 +94,9 @@
     h1{
       font-size: 50px;
     }
+  }
+
+  .section-1 {
+    min-height: 430px;
   }
 }
