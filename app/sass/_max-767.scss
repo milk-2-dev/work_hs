@@ -554,8 +554,10 @@
     }
 
     .spec-half__left{
-      width: 100%;
+      width: 115%;//впилил костыль нет времени разбераться
       position: relative;
+      left: -15px;
+      right: -15px;
     }
 
     .spec-half__wrap {
