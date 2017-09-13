@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name=viewport content="initial-scale=1.0, maximum-scale=1, user-scalable=no" width=device-width>
-    <title>MAIN USER INFO</title>
+    <title>ABOUT ME</title>
     <link rel="stylesheet" href="../css/libs.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/registration.css">
@@ -22,7 +22,7 @@
         <div class="flex-container">
             <div class="logo">
                 <a href="/">
-                    <img src="img/icons/logo.png">
+                    <img src="../img/icons/logo.png">
                 </a>
             </div>
 
@@ -79,13 +79,13 @@
                 <div class="col-md-7">
                     <div class="registration-form__tabs">
                         <ul>
-                            <li class="active complete"><a href="#reg-step1" data-toggle="tab">main user</a></li>
-                            <li><a href="#reg-step2" data-toggle="tab">info for sponsors</a></li>
-                            <li><a href="#reg-step3" data-toggle="tab">about me</a></li>
-                            <li><a href="#reg-step4" data-toggle="tab">sport info</a></li>
-                            <li><a href="#reg-step4" data-toggle="tab">social networks</a></li>
-                            <li><a href="#reg-step4" data-toggle="tab">carrer history</a></li>
-                            <li><a href="#reg-step4" data-toggle="tab">achievements</a></li>
+                            <li class="active complete"><a href="#setings-about-step1" data-toggle="tab">main user</a></li>
+                            <li><a href="#setings-about-step2" data-toggle="tab">info for sponsors</a></li>
+                            <li><a href="#setings-about-step3" data-toggle="tab">about me</a></li>
+                            <li><a href="#setings-about-step4" data-toggle="tab">sport info</a></li>
+                            <li><a href="#setings-about-step5" data-toggle="tab">social networks</a></li>
+                            <li><a href="#setings-about-step6" data-toggle="tab">carrer history</a></li>
+                            <li><a href="#setings-about-step7" data-toggle="tab">achievements</a></li>
                         </ul>
                         <div class="bottom-line">
                             <div class="bottom-line__triangle"></div>
@@ -93,7 +93,7 @@
                     </div>
                     <form class="form-default" action="">
                         <div class="tab-content">
-                            <div class="tab-pane fade in active" id="reg-step1">
+                            <div class="tab-pane fade active in" id="setings-about-step1">
                                 <p class="form__title">MAIN USER INFO</p>
 
                                 <div class="form-group">
@@ -188,174 +188,121 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="reg-step2">
-
-                                <p class="form__title">
-                                    user info configuration
-                                </p>
+                            <div class="tab-pane fade" id="setings-about-step2">
+                                <p class="form__title">INFO FOR SPONSORS</p>
 
                                 <div class="form-group">
-                                    <label for="Hometown-city">Hometown city <sup>*</sup></label>
-                                    <input class="form-control" type="text" id="Hometown-city" placeholder="London">
+                                    <label for="name">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="name" placeholder="DOLOR IPSUM">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="Hometown-country">Hometown country <sup>*</sup></label>
-                                    <input class="form-control" type="text" id="Hometown-country" placeholder="UK">
+                                    <label for="email">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="email" placeholder="DOLOR IPSUM">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="residence">curent residence country <sup>*</sup></label>
-                                    <input class="form-control" type="text" id="residence" placeholder="UK">
+                                    <label for="password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="password" placeholder="DOLOR IPSUM">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="gender">gender <sup>*</sup></label>
-                                    <div class="select-block">
-                                        <select name="" id="gender">
-                                            <option value="men" selected >men</option>
-                                            <option value="woman">woman</option>
-                                        </select>
-                                    </div>
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="height">height, kg <sup>*</sup></label>
-                                    <input class="form-control" type="text" id="height" placeholder="000">
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="weight">weight, cm <sup>*</sup></label>
-                                    <input class="form-control" type="text" id="weight" placeholder="000">
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="sport">sport <sup>*</sup></label>
-                                    <div class="select-block">
-                                        <select name="" id="sport">
-                                            <option value="men" selected >football</option>
-                                            <option value="woman">basketball</option>
-                                            <option value="woman">volleyball</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="sport-standart">sport-standart <sup>*</sup></label>
-                                    <div class="select-block">
-                                        <select name="" id="sport-standart">
-                                            <option value="men" selected >football</option>
-                                            <option value="woman">basketball</option>
-                                            <option value="woman">volleyball</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="sport-position">sport-position <sup>*</sup></label>
-                                    <div class="select-block">
-                                        <select name="" id="sport-position">
-                                            <option value="men" selected >football</option>
-                                            <option value="woman">basketball</option>
-                                            <option value="woman">volleyball</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="coach">coach</label>
-                                    <input class="form-control" type="text" id="coach" placeholder="uk">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="education">education</label>
-                                    <input class="form-control" type="text" id="education" placeholder="school">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="agent">agent</label>
-                                    <input class="form-control" type="text" id="agent" placeholder="loe bloggs">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="page-text">personal page text</label>
-                                    <textarea class="form-control" name="" id="page-text" cols="30" rows="10" placeholder=""></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="page-quote-text">personal page quote text</label>
-                                    <input class="form-control" type="text" id="page-quote-text" placeholder="lorem ipsum epsom dolor...">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="page-quote-author">personal page quote author</label>
-                                    <input class="form-control" type="text" id="page-quote-author" placeholder="joe bloggs. 2017">
-                                </div>
-
-                                <div class="button-block">
-                                    <a class="btn btn-gold" href="#reg-step2" data-toggle="tab">next</a>
+                                <div class="button-block text-center">
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">save</a>
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">next</a>
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">view profile</a>
                                 </div>
                             </div>
 
-                            <div id="reg-step3" class="tab-pane fade">
-                                <p class="form__title">profile images</p>
-
+                            <div class="tab-pane fade" id="setings-about-step3">
+                                <p class="form__title">ABOUT ME</p>
                                 <div class="form-group">
-                                    <label for="banner_image">banner image</label>
-
-                                    <div class="tooltip-wrap">
-                                        <span class="tooltip__title">what is this?</span>
-                                        <span class="tooltip__text">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, unde omnis iste natus unde omnis iste natus totperspiciatis undiste natus totperspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        </span>
-                                        <div class="upload-block" id="bannerImage">
-                                            <div>CHOOSE FILE</div>
-                                            <input id="banner_image" type="file" name="banner_image" accept="image/*">
-                                        </div>
-                                    </div>
-
+                                    <label for="name">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="name" placeholder="DOLOR IPSUM">
                                 </div>
-
                                 <div class="form-group">
-                                    <label for="main_image">Avatar image</label>
-
-                                    <div class="tooltip-wrap">
-                                        <span class="tooltip__title">what is this?</span>
-                                        <span class="tooltip__text">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, unde omnis iste natus unde omnis iste natus totperspiciatis undiste natus totperspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        </span>
-                                        <div class="upload-block" id="mainImage">
-                                            <div>CHOOSE FILE</div>
-                                            <input id="main_image" type="file" name="banner_image" accept="image/*">
-                                        </div>
-                                    </div>
+                                    <label for="email">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="email" placeholder="DOLOR IPSUM">
                                 </div>
-
-                                <div class="button-block">
-                                    <button type="submit" class="btn btn-gold">
-                                        register
-                                    </button>
+                                <div class="form-group">
+                                    <label for="password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="password" placeholder="DOLOR IPSUM">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
+                                </div>
+                                <div class="button-block text-center">
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">save</a>
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">next</a>
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">view profile</a>
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade"              id="reg-step4">
-                                <p class="form__title">profile images</p>
+                            <div class="tab-pane fade" id="setings-about-step4">
+                                <p class="form__title">SPORT INFO</p>
 
-                                <p>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan-
-                                    tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                    vitae dicta sunt.
-                                </p>
-
-                                <div class="button-block two-buttons">
-                                    <a href="javascript:void(0);" class="btn btn-gold">
-                                        VIEW PROFILE
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="btn btn-gold">
-                                        EDIT PROFILE
-                                    </a>
+                                <div class="form-group">
+                                    <label for="name">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="name" placeholder="DOLOR IPSUM">
                                 </div>
+
+                                <div class="form-group">
+                                    <label for="email">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="email" placeholder="DOLOR IPSUM">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="password" placeholder="DOLOR IPSUM">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="confirm-password">Lorem ipsum</label>
+                                    <input class="form-control" type="text" id="confirm-password" placeholder="DOLOR IPSUM">
+                                </div>
+
+                                <div class="button-block text-center">
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">save</a>
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">next</a>
+                                    <a class="btn btn-gold btn-margin-x-md" href="#reg-step2" data-toggle="tab">view profile</a>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="setings-about-step5">
+                                
                             </div>
                         </div>
                     </form>
@@ -406,8 +353,8 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="js/libs.min.js"></script>
-<script src="js/main.js"></script>
+<script src="../js/libs.min.js"></script>
+<script src="../js/main.js"></script>
 
 </body>
 </html>
