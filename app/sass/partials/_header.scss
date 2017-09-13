@@ -89,6 +89,11 @@
         }
 
         &.toggle{
+            position: fixed;
+            top:10px;
+            right:20px;
+
+
             i{
                 height:0;
                 width:100%;

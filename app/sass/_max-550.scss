@@ -103,4 +103,11 @@
       margin-right: 0;
     }
   }
+
+  .search-block{
+    ::-webkit-input-placeholder {text-align: center; font-size: 20px}
+    ::-moz-placeholder          {text-align: center; font-size: 20px}
+    :-moz-placeholder           {text-align: center; font-size: 20px}
+    :-ms-input-placeholder      {text-align: center; font-size: 20px}
+  }
 }

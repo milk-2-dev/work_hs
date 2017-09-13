@@ -3,6 +3,21 @@
 :-moz-placeholder           {color:#888; font-size: 16px;text-transform: uppercase}
 :-ms-input-placeholder      {color:#888; font-size: 16px;text-transform: uppercase}
 
+textarea::-webkit-scrollbar {
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+
+
+
 input[type='text']{
   color: #000;
 }
@@ -65,8 +80,11 @@ input[type='text']{
     @extend input;
     border-radius: 20px;
     resize: none;
+    height: 110px;
   }
 }
+
+
 
 .form__row{
   display: flex;
@@ -123,9 +141,12 @@ input[type='text']{
   }
 
   > div{
-    padding: 6px 20px;
+    padding: 6px 40px 6px 20px;
     color: #888;
     width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   @media only screen and ( max-width: 500px ){  /* example */
@@ -205,6 +226,7 @@ input[type='text']{
       position: relative;
       width:25%;
       text-align: center;
+      pointer-events: none;
 
       &:first-child{
         &:after{
@@ -258,6 +280,10 @@ input[type='text']{
         a{
           color: map-get($colors, 'gold');
         }
+      }
+
+      &.complete{
+        pointer-events: auto;
       }
     }
   }
