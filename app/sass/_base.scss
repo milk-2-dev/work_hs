@@ -50,6 +50,20 @@ body{
 .flex-container{
   display: flex;
 }
+.athletes-list{
+  .flex-container{
+    flex-wrap: wrap;
+  }
+  .athletes-list__item{
+    width: 23%;
+  }
+}
+
+.users-list{
+  .athletes-list__item{
+    width: auto;
+  }
+}
 
 .block-title{
   margin-bottom:70px;
