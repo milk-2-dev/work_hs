@@ -1,0 +1,152 @@
+.modal-content{
+  padding:30px 50px 30px 50px;
+  border: 1px solid #ddd;
+}
+
+.modal-header {
+  padding: 0;
+  border-bottom: none;
+
+  .close{
+      left: 10px;
+      top: 15px;
+      position: absolute;
+  }
+}
+
+.campaign-pending{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-menu{
+  text-align: right;
+
+  ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li{
+      margin-right: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      max-width: 50px;
+      text-transform: uppercase;
+      line-height: 1;
+      font-size: 12px;
+
+      &:last-child{
+        margin-right:0;
+      }
+
+      a{
+        display: block;
+        color:#000;
+        transition: .2s ease-in-out;
+
+        &:hover{
+          color:map_get($colors, 'gold');
+          text-decoration: none;
+        }
+      }
+
+      i{
+        display: block;
+        text-align: center;
+        margin: 0 auto 5px;
+      }
+    }
+  }
+}
+
+.modal-body{
+  padding:0;
+}
+
+.close{
+  color: #000;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  margin:0;
+  float:none;
+
+  //&:before{
+  //  content: '';
+  //  position: absolute;
+  //  top:0;
+  //  left:0;
+  //  right:0;
+  //  bottom:0;
+  //  width:20px;
+  //  height:20px;
+  //  margin:auto;
+  //  border-radius: 50%;
+  //  border:1px solid #000;
+  //}
+  //
+  //&:after{
+  //  content: '×';
+  //  position: absolute;
+  //  top:0;
+  //  left:0;
+  //  right:0;
+  //  bottom:0;
+  //  width:20px;
+  //  height:1px;
+  //  margin:auto;
+  //  line-height: 0;
+  //}
+}
+
+.modal-title{
+  p{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+.messages{
+  position: fixed;
+  top: -100%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 20;
+  width: 600px;
+  transition: 2s ease-in-out;
+  opacity: 0;
+
+  &.active{
+    animation: alert 1s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0.35s;
+  }
+
+  &.close-alert{
+    animation: closeAlert 1s ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.task-modal{
+
+}

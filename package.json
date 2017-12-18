@@ -4,7 +4,8 @@
   "description": "My first gulp using",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "node-gyp": "^3.6.2"
   },
   "devDependencies": {
     "browser-sync": "^2.12.5",

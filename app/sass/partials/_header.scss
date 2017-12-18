@@ -89,11 +89,6 @@
         }
 
         &.toggle{
-            position: fixed;
-            top:10px;
-            right:20px;
-
-
             i{
                 height:0;
                 width:100%;
@@ -185,33 +180,43 @@
         font-family: "Refrigerator Delux";
         font-weight: 100;
 
-        &:after,
-        &:before {
-            position: absolute;
-            display: block;
-            content: '';
-            bottom: 10px;
-            width: 0;
-            height: 1px;
-            background: $white;
-            transition: .2s ease-in-out;
-        }
-
-        &:before {
-            left: 0;            
-        }
-        &:after {
-            right: 0;            
-        }
 
         &:hover {
-            color: $white;
             text-decoration: none;
+        }
+
+
+        @media(min-width: 768px) {
             &:after,
             &:before {
-                width: 50%;
+                position: absolute;
+                display: block;
+                content: '';
+                bottom: 10px;
+                width: 0;
+                height: 1px;
+                background: $white;
+                transition: .2s ease-in-out;
+            }
+
+            &:before {
+                left: 0;
+            }
+            &:after {
+                right: 0;
+            }
+
+            &:hover {
+                color: $white;
+                text-decoration: none;
+                &:after,
+                &:before {
+                    width: 50%;
+                }
             }
         }
+
+
 
         &:focus {
             color: $white;
@@ -287,10 +292,14 @@
             border-radius: 50%;
             background-size: cover;
             position: relative;
-            top: -6px;
-            margin-right: 10px;
+            //top: -6px;
+            //margin-right: 10px;
             transition: .2s;
             border: 2px solid transparent;
+
+            &:hover{
+                border-color: $accent-color;
+            }
         }
         &:hover,
         &:focus,
@@ -298,9 +307,6 @@
             text-decoration: none;
             .sing-wrapper__user__name {
                 color: $accent-color;
-            }
-            .sing-wrapper__user__photo {
-                border-color: $accent-color;
             }
         }
     }

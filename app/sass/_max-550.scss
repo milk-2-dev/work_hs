@@ -11,37 +11,48 @@
   }
 
   .page-calendar__slider{
-    .owl-carousel{
-      .slider__pager {
-        width: 35px;
 
-        div{
-          text-align: left;
-        }
-      }
+  }
 
-      .owl-stage-outer{
-        padding:0 10px;
-      }
-
-      .item{
-
-        table{
-          th, td{
-            padding: 12px 7px;
-          }
-
-          td{
-            &.today{
-              &:before{
-                width: 32px;
-                height: 32px;
-              }
-            }
-          }
-        }
-      }
+  .progress_container{
+    .page-filter__item{
+      //margin-top: 0;
     }
+    .search-block{
+      min-width: 100%;
+      margin-top: 20px;
+    }
+    .progress__btn{
+      font-size: 18px;
+      margin-right: 0;
+    }
+  }
+  .options__item{
+    width: 100%;
+    &:nth-child(2n){
+      padding-left: 0;
+    }
+    border-right: 0;
+  }
+  .athletes-list__item-desc{
+    height: 430px;
+    top: 330px;
+  }
+
+  #calendar{
+    margin-left: 0;
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .fc-day-top {
+    width: auto;
+  }
+
+  .page-calendar__add-event {
+    right: 15px;
   }
 
   .page-filter__item {
@@ -52,14 +63,6 @@
     }
     .select-block {
       margin-right: 0;
-      width: 50%;
-      text-align: center;
-      margin-bottom: 20px;
-
-      &:nth-child(3),
-      &:nth-child(4){
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -104,10 +107,69 @@
     }
   }
 
-  .search-block{
-    ::-webkit-input-placeholder {text-align: center; font-size: 20px}
-    ::-moz-placeholder          {text-align: center; font-size: 20px}
-    :-moz-placeholder           {text-align: center; font-size: 20px}
-    :-ms-input-placeholder      {text-align: center; font-size: 20px}
+  .registration-aside{
+    flex-direction: column;
   }
+
+  .btn-margin-x-md{
+    margin: 0 0 20px;
+    display: block;
+    width: 100%;
+
+    &:last-child{
+      margin:0 0 0;
+    }
+  }
+
+  .button-block{
+    &.more-buttons{
+      .btn{
+        display: block;
+        width: 100%;
+
+        &:last-child{
+          margin-left:0;
+        }
+
+        &:first-child{
+          margin-bottom:20px;
+        }
+      }
+    }
+  }
+
+  .blog-popular{
+    &__item{
+      width: 100%;
+      float: none;
+      margin-right: 0;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+
+    &__hr{
+      margin-bottom: 20px;
+    }
+  }
+  .info-summary__item{
+    width: 25%;
+    .info-summary__item-title{
+      font-size: 22px;
+      span{
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .campaigns-search .athletes-list__item-desc {
+    top: 295px;
+  }
+
+  .campaigns-search .athletes-list .athletes-list__item{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+
 }

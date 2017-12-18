@@ -40,6 +40,7 @@ gulp.task('scripts', function() {
         'app/libs/carousel-2rows/carousel-2rows.js',
         'app/libs/plyr/dist/plyr.js',
         'app/libs/radialIndicator/radialIndicator.min.js',
+        'app/libs/jquery.ThreeDots/jquery.ThreeDots.js',
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

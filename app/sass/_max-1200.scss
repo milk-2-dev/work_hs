@@ -1,15 +1,32 @@
 @media (max-width: 1200px) {
+  .athletes-list{
+    &.sm-wrap{
+      .athletes-list__item{
+        width: 47%;
+
+        &:nth-child(4n+4) {
+          margin-right: 0;
+        }
+
+        &:nth-child(3n) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
+
   .athletes-list__item {
-    width: 30%;
-    margin-bottom: 45px;
-
-    &:nth-child(4n+4) {
-      margin-right: 30px;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+    //width: 30%;
+    //margin-bottom: 45px;
+    //
+    //&:nth-child(4n+4) {
+    //  margin-right: 30px;
+    //}
+    //
+    //&:nth-child(3n) {
+    //  margin-right: 0;
+    //}
   }
 
   .profile-section1 {
@@ -20,13 +37,19 @@
 
   }
 
+  .section-1 {
+    min-height: 460px;
+    height: calc(100vh - 100px);
+    align-items: center;
+  }
+
   .section-3 {
     .spec-half__img{
       p{
         position: absolute;
         top: 50%;
         left: 50%;
-        bottom:auto;
+        bottom:42%;
         min-width:0;
         transform: translate(-50%, -50%) rotate(0deg);
 
@@ -62,5 +85,25 @@
     }
   }
 
+  .individual-campaign__task-answers{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
 
+    &:last-child{
+      border-bottom: none;
+      padding-bottom:0;
+      margin-bottom:0;
+    }
+  }
+
+  .individual-campaign__task-user,
+  .individual-campaign__task-menu{
+    width:50%;
+    margin-bottom: 50px;
+  }
+
+  .individual-campaign__task-items{
+    order: 3;
+    width:100%;
+  }
 }

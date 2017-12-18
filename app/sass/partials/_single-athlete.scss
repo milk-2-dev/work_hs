@@ -16,40 +16,40 @@
         text-transform: uppercase;
         font-size: 80px;
     }
-    &__hearer-follow {
-        z-index: 2;
-        text-transform: uppercase;
-        color: $white;
-        text-decoration: none;
-        font-size: 20px;
-        display: flex;
-        position: relative;
-        transition: .2s;
-        margin-bottom: 40px;
-        span {
-            margin-left: 10px;
-            margin-top: 2px;
-            width: 20px;
-            height: 20px;
-            background: $accent-color;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: .2s;
-            img {
-                width: 10px;
-                height: 10px;
-            }
-        }
-        &:hover {
-            color: $accent-color;
-            text-decoration: none;
-            span {
-                transform: scale(1.3) rotate(180deg);
-            }
-        }
-    }
+    //&__hearer-follow {
+    //    z-index: 2;
+    //    text-transform: uppercase;
+    //    color: $white;
+    //    text-decoration: none;
+    //    font-size: 20px;
+    //    display: flex;
+    //    position: relative;
+    //    transition: .2s;
+    //    margin-bottom: 40px;
+    //    span {
+    //        margin-left: 10px;
+    //        margin-top: 2px;
+    //        width: 20px;
+    //        height: 20px;
+    //        background: $accent-color;
+    //        border-radius: 50%;
+    //        display: flex;
+    //        justify-content: center;
+    //        align-items: center;
+    //        transition: .2s;
+    //        img {
+    //            width: 10px;
+    //            height: 10px;
+    //        }
+    //    }
+    //    &:hover {
+    //        color: $accent-color;
+    //        text-decoration: none;
+    //        span {
+    //            transform: scale(1.3) rotate(180deg);
+    //        }
+    //    }
+    //}
     &__header-items {
         padding-left: 0;
         padding-right: 0;
@@ -864,9 +864,9 @@
     border-radius: 0;
 }
 
-.modal-body {
-    padding: 0;
-}
+//.modal-body {
+//    padding: 0;
+//}
 
 .cm-video {
     &__row-flex {

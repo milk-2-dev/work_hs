@@ -60,16 +60,17 @@
   span{
     color: #fff;
     background: map_get($colors, 'gold');
-    width:23%;
     margin-right:10px;
     margin-bottom:10px;
     text-align: center;
     text-transform: uppercase;
     border-radius:20px;
+    padding-right:20px;
+    padding-left:20px;
 
-    &:nth-child(4n+4){
-      margin-right:0;
-    }
+    //&:nth-child(4n+4){
+    //  margin-right:0;
+    //}
   }
 }
 
