@@ -7,6 +7,7 @@
   transition: .2s ease-in-out;
   position: relative;
 
+
   &:before{
     content: '';
     position: absolute;
@@ -52,31 +53,190 @@
   }
 }
 
+.buttons-feedback {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #fff;
+  color: rgb(192, 192, 192);
+  transition: .2s ease-in-out;
+  position: relative;
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    text-decoration: none;
+    color: map_get($colors, 'gold');
+    transform: scale(1.1) rotate(360deg);
+  }
+
+  &.button-lg{
+    width:40px;
+    height:40px;
+    font-size: 26px;
+  }
+
+  &.button-sm{
+    width:20px;
+    height:20px;
+  }
+
+  .fa-star:before {
+    color: map_get($colors, 'gold');
+  }
+
+  .fa-thumbs-up:before {
+    color: map_get($colors, 'gold');
+  }
+
+  .fa-thumbs-o-down:before {
+    color: map_get($colors, 'gold');
+  }
+}
+
+.button-block{
+  &.more-buttons{
+    .btn{
+      margin-right:30px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .btn{
   display: inline-block;
   text-align: center;
   min-width:104px;
-  padding:5px 20px;
+  padding:5px 20px 3px;
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
   border-radius: 45px;
   transition: .2s ease-in-out;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  justify-content: center;
 
+  .fa{
+    font-size: 20px;
+    vertical-align: bottom;
+  }
+
+  &:focus,
+  &:active,
+  &:active:focus,
+  &.active{
+    outline: none;
+    text-decoration: none;
+    //color: inherit;
+  }
 
   &:hover{
     text-decoration: none;
   }
 
+  &.btn-lg,
+  &.btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+  }
+  &.btn-sm,
+  &.btn-group-sm > .btn {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 20px;
+    min-width:80px;
+  }
+  &.btn-xs,
+  &.btn-group-xs > .btn {
+    padding: 2px 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 20px;
+    min-width:65px;
+  }
+
   &.btn-gold{
     background: map_get($colors, 'gold');
-    border: 1px solid map_get($colors, 'gold');
+    border-color: map_get($colors, 'gold');
 
     &:hover{
       background: #fff;
       color: map_get($colors, 'gold');
     }
   }
+
+  &.btn-black{
+    background: #000;
+    border-color: #000;
+
+    &:hover{
+      background: #fff;
+      color: #000;
+    }
+  }
+
+  &.btn-add{
+    color: map_get($colors, 'grey');
+    padding-left: 35px;
+    position: relative;
+    font-size: 16px;
+    padding: 5px 10px 5px 35px;
+
+    &:hover{
+      color:map_get($colors, 'gold');
+      border-color:map_get($colors, 'gold');
+    }
+
+    .icon{
+      transform: scale(.8);
+      position: absolute;
+      left:4px;
+      top:0;
+      bottom:0;
+      margin:auto;
+    }
+  }
+
+  &.btn-danger {
+    color: #fff;
+    background-color: map_get($colors, 'btn-red');
+    border-color: map_get($colors, 'btn-red');
+
+    &:focus,
+    &:hover{
+      color: map_get($colors, 'btn-red');
+      background-color: #fff;
+      border-color: map_get($colors, 'btn-red--hover');
+    }
+  }
+
+  &.btn-grey{
+    color: #fff;
+    background-color: map_get($colors, 'btn-grey');
+    border-color: map_get($colors, 'btn-grey');
+
+    &:focus,
+    &:hover{
+      color: map_get($colors, 'btn-grey');
+      background-color: #fff;
+      border-color: map_get($colors, 'btn-grey');
+    }
+  }
 }
 
-
+button{
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}

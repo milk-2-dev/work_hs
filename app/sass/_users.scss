@@ -6,6 +6,7 @@
       background: linear-gradient(to right, #fff 0%, #fff 54%, #{$user-color} 54%, #{$user-color} 100%);
 
       .user-bar{
+
         li{
           &:before{
             content: '';
@@ -17,47 +18,45 @@
             background: #{$user-color};
             opacity:.5;
           }
+        }
 
-          //&:hover{
-          //  &:before{
-          //    background: transparent;
-          //  }
-          //}
+        @media(max-width: 767px){
+          background: #{$user-color};
         }
       }
     }
 
-    .page-calendar__slider {
-      .item {
-        th {
-          color: #{$user-color};
-        }
-
-        .event-date {
-          &:before {
-            background: #{$user-color};
-          }
-        }
-
-        .today {
-          &:before {
-            background: #{$user-color};
-          }
-        }
+    .page-calendar{
+      .fc-highlight {
+        background: #{$user-color};
       }
 
-      .slider__pager {
-        .owl-dot {
-          &.active {
-            color: #{$user-color};
-          }
+      .fc-day-number{
+        &:before {
+          background: #{$user-color};
         }
+      }
+    }
+
+    .calendar-month{
+      li{
+        &.active{
+          color: #{$user-color};
+        }
+      }
+    }
+
+    .event-custom-dot{
+      &:before {
+        background: #{$user-color};
       }
     }
 
     .page-calendar__todo-list {
-      em {
-        background: #{$user-color};
+      .panel{
+        em {
+          background: #{$user-color};
+        }
       }
     }
 

@@ -91,6 +91,21 @@
 /* ============================ blog-list ============================ */
 
 .blog-list {
+    padding-bottom:50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid lighten($grey, 15%);
+
+    &:last-child{
+        //border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    &:nth-child(4){
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 1px solid lighten($grey, 15%);
+    }
+
     &__category {
         text-transform: uppercase;
         color: $accent-color;
@@ -124,20 +139,40 @@
         font-family: "Open Sans";
         font-size: 12px;
         margin-top: 15px;
+        display: flex;
+        align-items: center;
+
         span {
             margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            &.share,
+            &.comment{
+                i{
+                    margin-right:6px;
+                }
+            }
         }
-        .comment-image {
-            width: 16px;
-            height: auto;
+
+        &.icon-right{
+            justify-content: flex-end;
         }
+    }
+
+    &__image{
+        width:100%;
     }
 }
 
-.blog-list__hr {
-    margin: 50px 0;
-    border-top: 1px solid lighten($grey, 15%);
-}
+//.blog-list__hr {
+//    margin: 50px 0;
+//    border-top: 1px solid lighten($grey, 15%);
+//}
 
 .load-more-btn {
     text-transform: uppercase;
@@ -163,13 +198,27 @@
 /* ============================ right column ============================ */
 
 .advertisement {
-    margin-top: -17px;
+    position: relative;
+    padding-top: 17px;
+
+
     &__top-text {
+        position:absolute;
+        top:0;
+        right:0;
         text-transform: uppercase;
         color: $black;
         font-weight: 700;
         font-size: 12px;
     }
+}
+
+.advertisement-wrap--sm{
+    max-width: 300px;
+    margin: auto;
+}
+.advertisement-wrap--lg{
+
 }
 
 .blog-popular {
@@ -198,9 +247,6 @@
             margin-left: 5px;
         }
     }
-    &__hr {
-        margin: 10px 0;
-    }
     &__category {
         color: $accent-color;
         text-transform: uppercase;
@@ -218,6 +264,31 @@
                 color: $accent-color;
             }
         }
+    }
+
+    &__item{
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid lighten($grey, 15%);
+
+        //&:last-child{
+        //    padding-bottom:0;
+        //    border-bottom:none;
+        //}
+
+        //&:after,
+        //&:before{
+        //    content:'';
+        //    display: block;
+        //    clear: both;
+        //}
+    }
+
+    &__hr{
+        border-bottom: 1px solid lighten($grey, 15%);
+        border-top: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 

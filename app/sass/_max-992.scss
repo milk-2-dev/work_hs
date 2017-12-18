@@ -5,7 +5,7 @@
         text-align: left;
       }
       a{
-        padding: 8px 20px;
+        padding: 8px 15px;
       }
     }
   }
@@ -45,6 +45,7 @@
         display: block;
         width:300px;
         margin: 0 auto 20px;
+        text-align: center;
       }
 
       .btn{
@@ -56,22 +57,28 @@
     }
   }
 
+  .athletes-list{
+    .flex-container{
+      justify-content: space-between;
+    }
+  }
+
   .athletes-list__item {
-    width: 45%;
-    margin-bottom: 65px;
-    min-height: 375px;
+    //width: 45%;
+    //margin-bottom: 65px;
+    //min-height: 375px;
+    //
+    //&:nth-child(2n) {
+    //  margin-right: 0;
+    //}
+    //
+    //&:nth-child(3n) {
+    //  margin-right: 0;
+    //}
 
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-
-    img{
-      width: 375px;
-    }
+    //img{
+    //  width: 375px;
+    //}
   }
 
   .page-calendar__slider{
@@ -103,10 +110,60 @@
 
   .page-filter{
     .search-block{
-      min-width: 100%;
+      //min-width: 100%;
       margin-bottom: 16px;
     }
   }
+  .progress_container{
+    .search-block{
+      margin-bottom: 0;
+      //min-width: auto;
+    }
+    .page-filter__item{
+      margin-top: 20px;
+      padding-right: 20px;
+      margin-right: 15px;
+      width: auto;
+    }
+
+    .page-filter__item:after{
+      // left: 0;
+      right: 0;
+    }
+  }
+
+  .options__item{
+    width: 50%;
+  }
+  .options__link{
+    margin: auto;
+    padding: 0;
+  }
+  .options__item{
+    margin-bottom: 20px;
+    &:nth-child(2n){
+      border-right: 0px;
+      padding-left: 20px;
+    }
+    &:first-child{
+      margin-left: 0px;
+    }
+    &:last-child{
+      margin-right: 0px;
+    }
+
+  }
+
+  .athletes-block__panel{
+    justify-content: flex-start;
+  }
+  .athletes-block{
+    .button-circle__add{
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
 
   .page-filter__item{
     margin-right: 0;
@@ -173,5 +230,42 @@
   .sponsor-info__left,
   .sponsor-info__right{
     width:100%;
+  }
+
+  .registration-aside{
+    margin-bottom: 40px;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+
+    li{
+      float: none;
+    }
+  }
+
+  .blog-list{
+    &:last-child{
+      margin-bottom: 50px;
+    }
+  }
+
+  .blog-popular{
+    &__item{
+      width: 47.9%;
+      float: left;
+      margin-right: 4.1%;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+
+      &:nth-child(2n){
+        margin-right:0;
+      }
+    }
+
+    &__image-wrapper{
+      img{
+        width:100%;
+      }
+    }
   }
 }
