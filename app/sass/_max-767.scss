@@ -988,4 +988,14 @@
       }
     }
   }
+  // .athletes-list__item{
+  //   margin-left: 10px;
+  //   margin-right: 10px;
+  // }
+  .athletes-list .flex-container{
+    justify-content: space-around;
+  }
+  .campaigns-search .athletes-list .athletes-list__item{
+    width: 45%;
+  }
 }

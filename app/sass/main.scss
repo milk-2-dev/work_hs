@@ -2888,7 +2888,10 @@
 }
 
 .campaigns-search .athletes-list__item-desc{
-  top: 185px;  
+  top: 185px;
+}
+.campaigns-search .athletes-list .athletes-list__item{
+  min-width: 260px;
 }
 
 //.youtube { background: #bb0000 };
