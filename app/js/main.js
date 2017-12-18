@@ -614,7 +614,7 @@ $(document).ready(function(){
       }
       );
     });
-
+    $('.athletes-list__item-text').ThreeDots({ max_rows:2 });
 
 });
 
