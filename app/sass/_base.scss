@@ -990,8 +990,6 @@ body{
   height: 58px;
   line-height: 58px;
   border: 1px silver solid;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   align-items: center;
   width: 350px;
@@ -999,6 +997,7 @@ body{
   padding-left: 17px;
   padding-right: 18px;
   margin-right: 40px;
+
   &>i{
     font-size: 27px;
     color: red;
@@ -1034,17 +1033,16 @@ body{
   height: 30px;
   font-weight: 500;
   border-right: 2px silver solid;
+
   &:last-child{
     border-right: 0;
+    margin-right: -20px;
   }
   &:first-child{
     margin-left: -20px;
   }
-  &:last-child{
-    margin-right: -20px;
-  }
-
 }
+
 .options__link{
   color: black;
   text-transform: uppercase;
@@ -1062,7 +1060,8 @@ body{
 
 .invite{
   #invite{
-    color: red;
+    color: map_get($colors, 'example');
+    
   }
 }
 .invited{
