@@ -1,0 +1,107 @@
+.sponsor{
+  section{
+    padding:50px 0;
+    border-bottom:1px solid #ddd;
+  }
+
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .button-circle__add{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+  }
+
+  .info-summary{
+    margin-bottom:30px;
+  }
+
+  .social-progress-bar{
+    margin:50px 0 30px;
+  }
+}
+
+.sponsor__place{
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom:50px;
+}
+
+.sponsor-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sponsor-info__left{
+  width:50%;
+  margin-right:50px;
+}
+
+.sponsor-info__right{
+  width:50%;
+}
+
+.sponsor-info__meta{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom:50px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  span{
+    color: #fff;
+    background: map_get($colors, 'gold');
+    margin-right:10px;
+    margin-bottom:10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius:20px;
+    padding-right:20px;
+    padding-left:20px;
+
+    //&:nth-child(4n+4){
+    //  margin-right:0;
+    //}
+  }
+}
+
+.sponsor-costing{
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.sponsor-type{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+
+  p{
+    text-transform: uppercase;
+  }
+
+  ul{
+    margin:0;
+    padding:0;
+
+    li{
+      color: #fff;
+      background: #b0a635;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding:0 25px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 20px;
+      display: inline-block;
+    }
+  }
+}

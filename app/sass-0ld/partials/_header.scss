@@ -1,0 +1,433 @@
+/* =========================================================================
+                                 HEADER
+========================================================================= */
+
+.header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 999;
+    background: $dark-color;
+    transition: .2s ease-in-out;
+
+    &.fixed--hide{
+        //top: -95px;
+    }
+
+    .flex-container{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        width: 30px;
+        float: left;
+
+        a{
+            display: block;
+        }
+
+        img{
+            width: 24px;
+            height: auto;
+        }
+    }
+
+    .menu-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 30px);
+
+        .icon-close-menu{
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+    }
+
+    .mob-menu-toggle{
+        width: 40px;
+        height: 30px;
+        border-radius: 4px;
+        position: relative;
+        display: none;
+        float: right;
+        z-index: 10;
+
+        i{
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right: 0;
+            display: inline-block;
+            width: 25px;
+            height: 3px;
+            margin:auto;
+            background: #fff;
+
+
+            &:before,
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height:3px;
+                background: #fff;
+                transition: .2s ease-in-out;
+            }
+
+            &:before{
+                top:-10px;
+            }
+
+            &:after{
+                bottom:-10px;
+            }
+        }
+
+        &.toggle{
+            i{
+                height:0;
+                width:100%;
+
+                &:before{
+                    top:0;
+                    transform: rotate(45deg);
+                }
+
+                &:after{
+                    top:0;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+    }
+
+    .top-nav{
+        flex-grow: 2;
+    }
+
+    .sing{
+        color: $white;
+        font-family: "Refrigerator Delux";
+        font-weight: 100;
+        font-size: 18px;
+        text-align: right;
+
+        a {
+            color: $white;
+            font-family: inherit;
+            font-weight: inherit;
+            font-size: inherit;
+            text-transform: uppercase;
+
+            .icon{
+                margin-right: 4px;
+            }
+
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+    //&__bg {
+    //    background: $dark-color;
+    //}
+}
+
+.margin-top {
+    padding-top: 55px;
+}
+
+/* ============================ Logo ============================ */
+
+//.logo {
+//    padding-top: 12px;
+//    &__link {
+//        margin-left: 30px;
+//    }
+//    &__image {
+//        width: 24px;
+//        height: auto;
+//    }
+//}
+
+/* ============================ Top nav ============================ */
+
+.top-nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    a {
+        padding: 12px 30px;
+        font-size: 22px;
+        color: $white;
+        text-transform: uppercase;
+        display: block;
+        font-family: "Refrigerator Delux";
+        font-weight: 100;
+
+
+        &:hover {
+            text-decoration: none;
+        }
+
+
+        @media(min-width: 768px) {
+            &:after,
+            &:before {
+                position: absolute;
+                display: block;
+                content: '';
+                bottom: 10px;
+                width: 0;
+                height: 1px;
+                background: $white;
+                transition: .2s ease-in-out;
+            }
+
+            &:before {
+                left: 0;
+            }
+            &:after {
+                right: 0;
+            }
+
+            &:hover {
+                color: $white;
+                text-decoration: none;
+                &:after,
+                &:before {
+                    width: 50%;
+                }
+            }
+        }
+
+
+
+        &:focus {
+            color: $white;
+            text-decoration: none;
+        }
+
+        &.active {
+            color: $accent-color;
+        }
+    }
+}
+
+//.sing {
+//    color: $white;
+//    font-family: "Refrigerator Delux";
+//    font-weight: 100;
+//    //margin-right: 25px;
+//    //margin-top: 15px;
+//    font-size: 18px;
+//    text-align: right;
+//
+//    &__img {
+//        width: 14px;
+//        position: relative;
+//        top: -3px;
+//        margin-right: 5px;
+//    }
+//    a {
+//        color: $white;
+//        font-family: inherit;
+//        font-weight: inherit;
+//        font-size: inherit;
+//        text-transform: uppercase;
+//
+//        &:hover {
+//            color: inherit;
+//        }
+//    }
+//}
+
+.sing-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: 15px;
+    font-size: 18px;
+    .dropdown {
+        margin-left: 15px;
+    }
+
+    .sing__link:focus,
+    .sing__link:hover,
+    .sing__link:active{
+        color: $accent-color;
+        text-decoration: none;
+    }
+    .open>.dropdown-menu {
+        display: block;
+        position: absolute;
+        transform: translateX(-100%);
+        margin-left: 40px;
+    }
+    &__user {
+        display: flex;
+        margin-right: 15px;
+        &__name {
+            color: $white;
+            text-transform: uppercase;
+        }
+        &__photo {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-size: cover;
+            position: relative;
+            //top: -6px;
+            //margin-right: 10px;
+            transition: .2s;
+            border: 2px solid transparent;
+
+            &:hover{
+                border-color: $accent-color;
+            }
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            .sing-wrapper__user__name {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+/* ============================ Top search ============================ */
+
+//.top-search {
+//    &__input {
+//        width: 100%;
+//        font-size: 20px;
+//        padding: 10px 30px;
+//        border: none;
+//        text-align: center;
+//        font-family: "Refrigerator Delux";
+//        font-weight: 400;
+//        border-bottom: 1px solid darken($white, 15%);
+//        box-shadow: 0 0 6px rgba($black, .07);
+//        &::placeholder {
+//            color: $dark-color;
+//            text-transform: uppercase;
+//        }
+//    }
+//}
+
+/* ============================ without search ============================ */
+
+.without-search {
+    background: $white;
+    border-bottom: 1px solid darken($white, 10%);
+    height: 45px;
+    &__wrapper {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    &__follow {
+        z-index: 2;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $black;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        transition: .2s;
+        span {
+            margin-left: 10px;
+            width: 20px;
+            height: 20px;
+            background: $accent-color;
+            border-radius: 50%;
+            transition: .2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-3px);
+            img {
+                width: 8px;
+                height: 8px;
+            }
+        }
+        &:hover {
+            color: $accent-color;
+            text-decoration: none;
+            span {
+                transform: scale(1.3) rotate(180deg) translateY(3px);
+            }
+        }
+    }
+    &__inner-flex {
+        display: flex;
+        align-items: center;
+    }
+    &__photo {
+        background-size: cover;
+        background-position: center center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    &__name {
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 3px;
+        position: relative;
+        margin-right: 20px;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 2px;
+            background: $accent-color;
+            right: -10px;
+            top: 6px;
+            bottom: 9px;
+        }
+    }
+    &__desc {
+        font-size: 22px;
+        text-transform: lowercase;
+        margin-top: 3px;
+        span {
+            text-transform: uppercase;
+        }
+    }
+    &__social-flex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    &__social {
+        font-size: 22px;
+        margin-top: 3px;
+        margin-left: 20px;
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+

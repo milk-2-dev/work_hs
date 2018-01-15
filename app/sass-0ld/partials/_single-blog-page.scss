@@ -1,0 +1,113 @@
+.single-blog {
+    &__title {
+        color: $black;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 46px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    &__desc {
+        color: $grey;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-weight: 100;
+    }
+    &__text {
+        font-size: 14px;
+        color: $black;
+        font-family: "Open sans";
+        line-height: 26px;
+        b,strong {
+            font-weight: 700;
+            font-style: italic;
+        }
+        a {
+            color: $accent-color;
+            text-decoration: none;
+            font-weight: 700;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        p {
+            font-size: 14px;
+            color: $black;
+            font-family: "Open sans";
+            font-style: normal;
+            font-weight: 400;
+        }
+        img {
+            margin: 40px 0;
+        }
+    }
+    &__slider {
+        .owl-stage-outer {
+            position: relative;
+        }
+        .owl-dots {
+            position: absolute;
+            bottom: 15px;
+            height: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .owl-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: rgba($white, .5);
+            margin: 0 3px;
+            border-radius: 50%;
+            transition: .2s;
+        }
+        .owl-dot.active {
+            background: $accent-color;
+        }
+        .owl-next,
+        .owl-prev {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 26px;
+            width: 26px;
+            top: 50%;
+            margin-top: -13px;
+            background: rgba($black, .5);
+            border-radius: 50%;
+            transition: .2s;
+            &:hover {
+                background: $accent-color;
+            }
+        }
+        .owl-prev {
+            left: 20px;
+        }
+        .owl-next {
+            right: 20px;
+        }
+    }
+}
+
+.share {
+    &__title {
+        text-transform: uppercase;
+        color: $black;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    img {
+        height: 22px;
+        width: auto;
+        transition: .2s;
+    }
+    a {
+        margin-right: 40px;
+        &:hover {
+            img {
+                transform: translateY(-3px);
+            }
+        }
+    }
+}

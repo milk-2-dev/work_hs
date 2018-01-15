@@ -4,6 +4,8 @@ function setSaHeight(saVideo) {
     });
 }
 
+
+
 $(document).ready(function(){
 
     // Single blog page - slider
@@ -612,9 +614,7 @@ $(document).ready(function(){
       }
       );
     });
-
-    // ERROR
-    // $('.athletes-list__item-text').ThreeDots({ max_rows:2 });
+    $('.athletes-list__item-text').ThreeDots({ max_rows:2 });
 
 
 
@@ -622,4 +622,4 @@ $(document).ready(function(){
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-});
+})

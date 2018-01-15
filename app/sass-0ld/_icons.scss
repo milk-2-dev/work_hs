@@ -1,0 +1,302 @@
+//look at file name, it's place where is it placed
+
+.icon{
+  display: inline-block;
+
+  &.icon-lock{
+    @include sprite($lock);
+  }
+
+  &.icon-arrow-down{
+    @include sprite($arrow-down);
+  }
+
+  &.icon-arrow-down-circle-tr{
+    @include sprite($arrow-down-circle-tr);
+  }
+
+  &.icon-register{
+    @include sprite($register);
+  }
+
+  &.icon-profile{
+    @include sprite($profile);
+  }
+
+  &.icon-connect{
+    @include sprite($connect);
+  }
+
+  &.icon-arrow-right{
+    @include sprite($arrow-right);
+  }
+
+  //bar-icons
+
+  &.bar-icon1{
+    @include sprite($bar-icon1);
+  }
+
+  &.bar-icon2{
+    @include sprite($bar-icon2);
+  }
+
+  &.bar-icon3{
+    @include sprite($bar-icon3);
+  }
+
+  &.bar-icon4{
+    @include sprite($bar-icon4);
+  }
+
+  &.bar-icon5{
+    @include sprite($bar-icon5);
+  }
+
+  &.bar-icon6{
+    @include sprite($bar-icon6);
+  }
+
+  &.bar-icon7{
+    @include sprite($bar-icon7);
+  }
+
+  &.bar-icon8{
+    @include sprite($bar-icon8);
+  }
+
+  //dashboard
+
+  &.dash-icon{
+    @include sprite($dashboard-icon);
+  }
+
+  &.dash-message{
+    @include sprite($dashboard-message);
+  }
+
+  &.das-settings{
+    @include sprite($dashboard-settings);
+  }
+
+  //filter icons
+
+  &.icon-search{
+    @include sprite($search);
+  }
+
+  //slider arrow
+
+  &.icon-calendar-left{
+    @include sprite ($arrow-left-circle);
+  }
+
+  &.icon-calendar-right{
+    @include sprite ($arrow-right-circle);
+  }
+
+  &.icon-slider-nav{
+    @include sprite ($profile-img-slider);
+  }
+  &.icon-slider-nav-left{
+    @include sprite ($profile-img-slider);
+    transform: rotate(180deg);
+  }
+
+  &.icon-slider-nav2{
+    @include sprite ($profile-news-slider);
+  }
+
+  &.icon-slider-nav2-left{
+    @include sprite ($profile-news-slider);
+    transform: rotate(180deg);
+  }
+
+
+  &.icon-circle-add{
+    @include sprite ($plus-circle);
+  }
+
+  &.icon-circle2-add{
+    @include sprite ($plus-circle2);
+  }
+
+  &.icon-plus2{
+    @include sprite ($plus-circle-18x18);
+  }
+
+  &.icon-ok{
+    @include sprite ($ok-circle-18x18);
+  }
+
+  &.icon-close-menu{
+    padding: 10px;
+
+    //&:hover{
+    //  &:before{
+    //    transform: rotate(-135deg);
+    //  }
+    //
+    //  &:after{
+    //    transform: rotate(135deg);
+    //  }
+    //
+    //}
+    &:before{
+      content: '';
+      position: absolute;
+      left:0;
+      top:0;
+      right:0;
+      bottom:0;
+      width: 100%;
+      height: 20%;
+      margin:auto;
+      background: #fff;
+      transform: rotate(45deg);
+      transition: .2s;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      left:0;
+      top:0;
+      right:0;
+      bottom:0;
+      width: 100%;
+      height: 20%;
+      margin:auto;
+      background: #fff;
+      transform: rotate(-45deg);
+      transition: .2s;
+    }
+  }
+
+  //massages
+
+  &.icon-collapse{
+    @include sprite($arrow-down-hover);
+  }
+
+  //social
+
+  &.icon-instagram{
+    @include sprite($progress-bar-instagram);
+  }
+
+  &.icon-instagram2{
+    @include sprite($user-profile-bar-insta);
+  }
+
+  &.icon-instagram3{
+    @include sprite($athletes-list-social-bar-insta);
+  }
+
+  &.icon-instagram4{
+    @include sprite($info-summary-insta);
+  }
+
+  &.icon-instagram4--white{
+    @include sprite($info-summary-insta_white);
+  }
+
+  &.icon-twitter{
+    @include sprite($progress-bar-twitter);
+  }
+
+  &.icon-twitter2{
+    @include sprite($user-profile-bar-twitter);
+  }
+
+  &.icon-twitter3{
+    @include sprite($profile-news-twitter);
+  }
+
+  &.icon-twitter4{
+    @include sprite($athletes-list-social-bar-twitter);
+  }
+
+  &.icon-twitter5{
+    @include sprite($info-summary-twitter);
+  }
+
+  &.icon-twitter5--white{
+    @include sprite($info-summary-twitter_white);
+  }
+
+  &.icon-facebook{
+    @include sprite($progress-bar-facebook);
+  }
+
+  &.icon-facebook2{
+    @include sprite($user-profile-bar-facebook);
+  }
+
+  &.icon-facebook3{
+    @include sprite($info-summary-facebook);
+  }
+
+  &.icon-facebook3--white{
+    @include sprite($info-summary-facebook_white);
+  }
+
+  &.icon-youtube{
+    @include sprite($profile-news-item-footer-youtube);
+  }
+
+  &.icon-youtube2{
+    @include sprite($profile-news-youtube);
+  }
+
+  &.icon-youtube3{
+    @include sprite($athletes-list-social-bar-youtube);
+  }
+
+  &.icon-youtube4{
+    @include sprite($dashbord-social-networks);
+  }
+
+  &.icon-plus{
+    @include sprite($icon-plus-white);
+  }
+
+  &.icon-hs{
+    @include sprite($user-profile-bar-hs);
+  }
+
+  &.icon-hs2{
+    @include sprite($athletes-list-social-bar-hs);
+  }
+
+  &.icon-minus-circle{
+    @include sprite($minus-cirkle);
+  }
+
+  &.icon-step-back{
+    @include sprite($step-back);
+  }
+
+  &.icon-user{
+    @include sprite($user-gold);
+  }
+
+  &.icon-card{
+    @include sprite($card);
+  }
+
+  &.icon-padlock{
+    @include sprite($umb);
+  }
+
+  &.icon-bell{
+    @include sprite($kolokol);
+  }
+
+  &.icon-owl-next{
+    @include sprite($owl-next);
+  }
+
+  &.icon-owl-prev{
+    @include sprite($owl-prev);
+  }
+}

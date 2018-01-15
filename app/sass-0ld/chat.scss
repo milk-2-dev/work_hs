@@ -1,0 +1,134 @@
+
+.single-chat-message.sent {
+
+  .message-author {
+    margin-left: 16.66667%;
+  }
+  .message-text {
+    margin-left: 16.66667%;
+    background-color: #3a3a3c;
+    color: white;
+  }
+  .message-time {
+    margin-left: 16.66667%;
+  }
+}
+
+.single-chat-message.received {
+
+  .message-text {
+    background-color: #f3f3f3;
+  }
+}
+
+.single-chat-message {
+  padding: 1%;
+  margin-bottom: 2%;
+
+  .message-text {
+    width: 83.33333333%;
+  }
+
+  .message-time {
+    width: 83.33333333%;
+  }
+}
+
+.single-chat-message.unread {
+  background-color: #f7f7f7;
+}
+
+.chat-messages {
+  height: 80vh;
+  overflow: auto;
+}
+
+.chats-list {
+
+  .chats {
+
+    li {
+      width: 100%;
+    }
+  }
+}
+
+.chats-bodies-container {
+
+  .single-chat {
+
+    .chat-messages {
+      height: 69vh;
+      overflow: auto;
+    }
+  }
+}
+
+.chats {
+  height: 80vh;
+  overflow: auto;
+}
+
+.single-chat {
+  display: block !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.single-chat.active {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+
+// Chat modal styles
+
+div#chatModal .modal-content {
+  max-height: 90vh;
+  display: table;
+  width: 100%;
+}
+
+div#chatModal .chats-list {
+  display: inline-block;
+  max-height: 100%;
+  height: 100%;
+}
+
+div#chatModal .chats-bodies-container {
+  display: inline-block;
+  max-height: 100%;
+  height: 100%;
+}
+
+div#chatModal .modal-dialog {
+  width: 90%;
+}
+
+@media (max-width: 500px) {
+
+  .chats-list {
+    height: 20vh;
+
+    .chats {
+      height: 20vh;
+
+      li {
+        a {
+
+          p {
+            display: none;
+          }
+
+          h4 {
+            margin: 0%;
+          }
+        }
+      }
+    }
+  }
+
+
+}

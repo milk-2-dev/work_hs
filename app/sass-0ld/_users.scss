@@ -1,0 +1,81 @@
+@each $user-type, $user-color in (athletes, map_get($colors, 'athletes-color')),
+                    (brands, map_get($colors, 'brands-color')),
+                    (teams, map_get($colors, 'teams-color')){
+  .#{$user-type} {
+    .page__user-bar {
+      background: linear-gradient(to right, #fff 0%, #fff 54%, #{$user-color} 54%, #{$user-color} 100%);
+
+      .user-bar{
+
+        li{
+          &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #{$user-color};
+            opacity:.5;
+          }
+        }
+
+        @media(max-width: 767px){
+          background: #{$user-color};
+        }
+      }
+    }
+
+    .page-calendar{
+      .fc-highlight {
+        background: #{$user-color};
+      }
+
+      .fc-day-number{
+        &:before {
+          background: #{$user-color};
+        }
+      }
+    }
+
+    .calendar-month{
+      li{
+        &.active{
+          color: #{$user-color};
+        }
+      }
+    }
+
+    .event-custom-dot{
+      &:before {
+        background: #{$user-color};
+      }
+    }
+
+    .page-calendar__todo-list {
+      .panel{
+        em {
+          background: #{$user-color};
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .page__user-bar {
+        background: linear-gradient(to right, #fff 0%, #fff 48%, #{$user-color} 48%, #{$user-color} 100%);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .page__user-bar {
+        background: linear-gradient(to right, #fff 0%, #fff 35%, #{$user-color} 35%, #{$user-color} 100%);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .page__user-bar {
+        background: transparent;
+      }
+    }
+  }
+}

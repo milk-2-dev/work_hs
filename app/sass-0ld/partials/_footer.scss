@@ -1,0 +1,124 @@
+/* =========================================================================
+                                 FOOTER
+========================================================================= */
+
+.footer {
+    background: $dark-color;
+    border-top: 2px solid $black;
+    padding-top: 50px;
+    color: #fff;
+    position: relative;
+
+    .flex-container{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+
+
+
+    .footer-copyright {
+        margin-bottom: 20px;
+    }
+
+    .footer__terms {
+        a{
+            //font-size: 12px;
+            margin-bottom: 20px;
+            color: $white;
+            transition: .2s;
+            position: relative;
+            display: inline-block;
+            padding-right:20px;
+            line-height: 1;
+
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 1px;
+                height: 10px;
+                background: $white;
+                width: 1px;
+                right: 7px;
+            }
+
+            &:hover {
+                color: $accent-color;
+                text-decoration: none;
+            }
+
+            &:last-child {
+                padding-right:0;
+
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.footer-social{
+    h4 {
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-family: 'Refrigerator Delux';
+        font-size: 18px;
+    }
+}
+
+.footer-social__links {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid $white;
+        border-radius: 50%;
+        color: $white;
+        transition: .3s ease-in-out;
+        margin-left: 15px;
+
+        &:hover {
+            transform: rotate(360deg) scale(1.1);
+            color: $accent-color;
+            text-decoration: none;
+            border-color: $accent-color;
+        }
+
+        i {
+            font-size: 16px;
+        }
+    }
+}
+
+.footer-nav{
+    //margin-bottom: 80px;
+    @extend .top-nav;
+
+    li{
+        display: block;
+        text-align: left;
+
+        a{
+            padding: 0;
+            margin: 0 0 10px;
+            transition: .2s ease-in-out;
+
+            &:hover{
+                color: $accent-color;
+            }
+
+            &:before,
+            &:after{
+                display: none;
+            }
+        }
+    }
+}

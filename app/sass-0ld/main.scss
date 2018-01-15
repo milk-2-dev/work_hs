@@ -11,18 +11,17 @@
 @import '_animation';
 @import '_fullcalendar';
 @import '_modals';
-@import 'partials/_header';
-@import 'partials/_page-home';
-@import 'partials/_footer';
-@import 'partials/_blog';
-@import 'partials/_single-blog-page';
-@import 'partials/_athletes-list';
-@import 'partials/_single-athlete';
-@import 'partials/_video-player';
-@import 'partials/_chat-modal';
-@import 'partials/_sponsor';
-@import 'partials/_registration';
-@import 'partials/_about';
+@import 'partials/header';
+@import 'partials/page-home';
+@import 'partials/footer';
+@import 'partials/blog';
+@import 'partials/single-blog-page';
+@import 'partials/athletes-list';
+@import 'partials/single-athlete';
+@import 'partials/video-player';
+@import 'partials/chat-modal';
+@import 'partials/sponsor';
+@import 'partials/registration';
 
 .header__user-bar {
   ul {
@@ -846,7 +845,7 @@
 
   &:hover {
     .athletes-list__item-desc{
-      //top: 0;
+      top: 0;
       //padding-top: 40px;
     }
   }
@@ -2069,7 +2068,7 @@
 }
 
 .individual-campaign__section1{
-  min-height: 290px;
+  min-height: 750px;
   background-color: red;
 }
 .individual-campaign__task-menu a i span{

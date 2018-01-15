@@ -1,0 +1,15 @@
+@keyframes alert {
+  0%{top:-100%; opacity:0}
+  25%{top:-75%; opacity:0.25}
+  50%{top:-50%; opacity:0.5}
+  75%{top:-25%; opacity:0.75}
+  100%{top:150px; opacity:1}
+}
+
+@keyframes closeAlert {
+  0%{top:150px; opacity:1}
+  25%{top:-25%; opacity:0.75}
+  50%{top:-50%; opacity:0.5}
+  75%{top:-75%; opacity:0.25}
+  100%{top:-100%; opacity:0}
+}

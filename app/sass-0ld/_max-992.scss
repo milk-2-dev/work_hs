@@ -1,0 +1,274 @@
+@media (max-width: 992px) {
+  .header {
+    .top-nav{
+      ul{
+        text-align: left;
+      }
+      a{
+        padding: 8px 15px;
+      }
+    }
+  }
+
+  .margin-top{
+    padding-top: 47px;
+  }
+
+  .section-2 {
+    .flex-container{
+      flex-wrap: wrap;
+    }
+    .stats-item{
+      width:100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .section-4{
+    .how-item{
+      width: 100%;
+      margin-bottom: 30px;
+
+      &:after{
+        display: none;
+      }
+    }
+  }
+
+  .section-5{
+    .order-form{
+      .form-group{
+        padding-right:0;
+      }
+
+      input{
+        display: block;
+        width:300px;
+        margin: 0 auto 20px;
+        text-align: center;
+      }
+
+      .btn{
+        position: relative;
+        display: block;
+        width:300px;
+        margin: auto;
+      }
+    }
+  }
+
+  .athletes-list{
+    .flex-container{
+      justify-content: space-between;
+    }
+  }
+
+  .athletes-list__item {
+    //width: 45%;
+    //margin-bottom: 65px;
+    //min-height: 375px;
+    //
+    //&:nth-child(2n) {
+    //  margin-right: 0;
+    //}
+    //
+    //&:nth-child(3n) {
+    //  margin-right: 0;
+    //}
+
+    //img{
+    //  width: 375px;
+    //}
+  }
+
+  .page-calendar__slider{
+    width:100%;
+    margin-bottom:30px;
+  }
+
+  .page-calendar__todo-list{
+    padding-left:0;
+  }
+
+  .page-massages{
+    .flex-container{
+      flex-wrap: wrap;
+    }
+  }
+
+  .page-massages__nav{
+    width:100%;
+    margin-bottom: 10px;
+
+    ul{
+      li{
+        display: inline-block;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .page-filter{
+    .search-block{
+      //min-width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+  .progress_container{
+    .search-block{
+      margin-bottom: 0;
+      //min-width: auto;
+    }
+    .page-filter__item{
+      margin-top: 20px;
+      padding-right: 20px;
+      margin-right: 15px;
+      width: auto;
+    }
+
+    .page-filter__item:after{
+      // left: 0;
+      right: 0;
+    }
+  }
+
+  .options__item{
+    width: 50%;
+  }
+  .options__link{
+    margin: auto;
+    padding: 0;
+  }
+  .options__item{
+    margin-bottom: 20px;
+    &:nth-child(2n){
+      border-right: 0px;
+      padding-left: 20px;
+    }
+    &:first-child{
+      margin-left: 0px;
+    }
+    &:last-child{
+      margin-right: 0px;
+    }
+
+  }
+
+  .athletes-block__panel{
+    justify-content: flex-start;
+  }
+  .athletes-block{
+    .button-circle__add{
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  .page-filter__item{
+    margin-right: 0;
+    width:100%;
+
+    //&:first-child{
+    //  width:100%;
+    //  margin-bottom: 16px;
+    //  margin-right: 0;
+    //}
+
+    .select-block{
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .page-massages__list{
+    width:45%;
+  }
+
+  .page-massages__view{
+    width:55%;
+  }
+
+  .profile-section1 {
+    min-height: 450px;
+  }
+
+  .worked-with {
+    width: 70%;
+  }
+
+  .worked-with__item {
+    width: 33%;
+    text-align: center;
+  }
+
+  .user-status {
+    a {
+      margin-right: 16px;
+    }
+  }
+
+  .block-title{
+    p{
+      font-size: 40px;
+    }
+  }
+
+  .spec-half--img-left .spec-half__right {
+    margin-left: 40%;
+  }
+
+  .sponsor-info{
+    flex-direction: column;
+  }
+
+  .sponsor-info__left{
+    margin-bottom:50px;
+  }
+
+  .sponsor-info__left,
+  .sponsor-info__right{
+    width:100%;
+  }
+
+  .registration-aside{
+    margin-bottom: 40px;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+
+    li{
+      float: none;
+    }
+  }
+
+  .blog-list{
+    &:last-child{
+      margin-bottom: 50px;
+    }
+  }
+
+  .blog-popular{
+    &__item{
+      width: 47.9%;
+      float: left;
+      margin-right: 4.1%;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+
+      &:nth-child(2n){
+        margin-right:0;
+      }
+    }
+
+    &__image-wrapper{
+      img{
+        width:100%;
+      }
+    }
+  }
+  .campaigns-search .athletes-list .athletes-list__item{
+    width: 45%;
+  }
+}
