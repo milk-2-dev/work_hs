@@ -8,9 +8,7 @@
   .cover {
     width: 100%;
     height: 490px;
-    //background-color: #ec2330;
-    //background: linear-gradient(to bottom right, #ec2330, #de212d, #7d1319);
-    background-image: url('../../img/about-bg-red.png');
+    background-image: url('../img/about-bg-red.png');
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -113,7 +111,7 @@
           }
         }
       }
-      //++++++++++++++++++++++++++++++ARROWS++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++ARROWS++++++++++++++++++++++++++++++++++++++
       &:nth-child(1) {
         .step__text p {
           &:after {
@@ -129,10 +127,6 @@
             }
             @media (max-width: 768px) {
               display: none;
-              //right: -11px;
-              //top: -76px;
-              //width: 85%;
-              //height: calc(100% + 77px + 108px + 300px);
             }
             border-top: #ec2330 solid 6px;
             border-right: #ec2330 solid 8px;
@@ -152,9 +146,6 @@
             background-color: #ec2330;
             @media (max-width: 768px) {
               display: none;
-              //right: 0;
-              //left: unset;
-              //transform: translate(0, -50%);
             }
           }
           .pointer {
@@ -165,11 +156,6 @@
             z-index: -1;
             @media (max-width: 768px) {
               display: none;
-              //right: 0;
-              //left: unset;
-              //.inner {
-              //  transform: rotate(180deg) translateX(-10px);
-              //}
             }
             .inner {
               top: 0;
@@ -218,13 +204,6 @@
             }
             @media (max-width: 768px) {
               display: none;
-              //height: calc(100% + 77px + 150px + 300px);
-              //left: unset;
-              //right: 4px;
-              //border-left: none;
-              //width: 85%;
-              //border-top: #ec2330 solid 6px;
-              //border-right: #ec2330 solid 8px;
             }
           }
         }
@@ -287,7 +266,7 @@
           }
         }
       }
-      //++++++++++++++++++++++++++++++ARROWS-END++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++ARROWS-END++++++++++++++++++++++++++++++++++++++
 
     }
   }
@@ -310,7 +289,6 @@
     }
     .members {
       display: flex;
-      //flex-wrap: wrap;
       justify-content: space-around;
       margin-bottom: 130px;
       .member {
@@ -358,7 +336,6 @@
     }
     .steps {
       .step {
-        //display: block;
         flex-direction: column;
         .step__text {
           span {
