@@ -199,11 +199,41 @@ $(document).ready(function(){
 
     //profile page prof-image
     var owl = $("#profile-img-slider").owlCarousel({
+        items: 4,
+        slideSpeed: 500,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        loop: true,
+        mouseDrag: true,
+        singleItem: true,
+        dots: false,
+        margin: 2,
+        nav: true,
+        navText: [
+            "<i class='icon icon-slider-nav-left'></i>",
+            "<i class='icon icon-slider-nav'></i>"
+        ],
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1200:{
+                items:4
+            }
+        }
+    }).data('owlCarousel');
+
+    //profile page prof-image
+    var owl = $("#profile-img-slider-2").owlCarousel({
         items: 3,
         slideSpeed: 500,
         autoplay: true,
         autoplayTimeout: 4500,
-        loop: false,
+        loop: true,
         mouseDrag: true,
         singleItem: true,
         dots: false,
@@ -229,7 +259,7 @@ $(document).ready(function(){
 
     //profile page prof-news
     var owl = $("#profile-news-slider").owlCarousel({
-        items: 4,
+        items: 3,
         slideSpeed: 500,
         autoplay: false,
         //autoplayTimeout: 4500,
@@ -263,7 +293,7 @@ $(document).ready(function(){
                 owl2row: false,
             },
             1200:{
-                items:4
+                items:3
             }
         }
     }).data('owlCarousel');

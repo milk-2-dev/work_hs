@@ -1,0 +1,88 @@
+.campaign-apply{
+  counter-reset: task-number;
+  .profile-section1{
+    .user-status{
+      flex-direction: column;
+      align-items: center;
+      a{
+        margin-right: 0;
+        position: relative;
+        i{
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  .info-summary__item-title:before{
+    border-right-color: white;
+  }
+  .info-summary__item-title:after{
+    border-right-color: #fff;
+  }
+  .profile-section3{
+    .text{
+      font-size: 22px;
+      font-family: 'Open Sans';
+      padding-right: 60px;
+    }
+  }
+  .task{
+    &__item{
+      text-transform: uppercase;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    &__title{
+      display: inline-block;
+      padding-right: 50px;
+      position: relative;
+      margin-left: 41px;
+      &:before{
+        counter-increment: task-number;
+        content: counter(task-number);
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 27px;
+        height: 27px;
+        border-radius: 100%;
+        background: #ec2330;
+        margin-right: 14px;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &__desc{
+      display: inline-block;
+      font-weight: 100;
+    }
+  }
+  #profile-img-slider-2{
+    @extend #profile-img-slider
+  }
+  .block-title{
+    p{
+      &:after{
+        background: #ec2330;
+      }
+    }
+  }
+  .user-info span:after, .individual-campaign__task-user span:after{
+    background: #ec2330;
+  }
+  .top-nav a.active, .footer-nav a.active{
+    color: white;
+    &:after, &:before{
+      width: 50%;
+      background: #ec2330;
+    }
+  }
+}
+
